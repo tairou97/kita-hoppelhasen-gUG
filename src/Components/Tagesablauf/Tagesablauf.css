@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../assets/Satoshi-Variable.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Comico';
+    src: url("../assets/Comico-Regular.otf") format('truetype');
+
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tagesablauf {
+    border: 2px solid #474747;
+    margin: 20px;
+    display: grid;
+    gap: 10px;
+    height: 100Vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header"
+        "bringzeit bringzeit morgenkreis morgenkreis"
+        "mittagessen mittagessen mittagessen mittagessen"
+        "ruhezeit ruhezeit ruhezeit ruhezeit"
+        "vesper vesper vesper vesper"
+        "nachmittagszeit nachmittagszeit nachmittagszeit nachmittagszeit";
+}
+
+.tagesablauf>div {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #859F3D;
+    background-color: #88C273;
+
+    color: white;
+}
+
+.header {
+    grid-area: header;
+}
+
+.bringzeit {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-area: bringzeit;
+}
+
+.morgenkreis {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-area: morgenkreis;
+}
+
+.mittagessen {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ruhezeit {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vesper {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nachmittagszeit {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
