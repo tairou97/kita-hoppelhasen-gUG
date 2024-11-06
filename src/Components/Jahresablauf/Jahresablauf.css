@@ -1,0 +1,89 @@
+.jahresablauf {
+    font-family: 'Satoshi', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    margin: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-areas:
+        "header header header "
+        "box1 box2 box3 "
+        "box4 box5 box6 "
+        "box7 box8 box9 "
+        "box10 box11 box12 ";
+}
+
+.box {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #859F3D;
+    background-color: #88C273;
+    color: white;
+}
+
+.box>span {
+    font-size: 2rem;
+}
+
+.jahres-header {
+    font-family: 'Comico', sans-serif;
+    grid-area: header;
+    color: #859F3D;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-child(odd) {
+    background-color: #859F3D;
+}
+
+.box1 {
+    grid-area: box1;
+
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+
+.box11 {
+    grid-area: box11;
+
+}

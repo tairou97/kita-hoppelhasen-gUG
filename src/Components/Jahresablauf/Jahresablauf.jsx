@@ -1,27 +1,54 @@
 import React from "react";
+import "./Jahresablauf.css";
 
 const Jahresablauf = () => {
   return (
     <section className="jahresablauf">
-      {" "}
-      <h2>Annual Events</h2>
-      <ul>
-        <li>Elternabend (Parent-Teacher Meeting)</li>
-        <li>Laternenfest (Lantern Festival)</li>
-        <li>Weihnachtsfeier (Christmas Celebration)</li>
-        <li>Fasching (Carnival)</li>
-        <li>Osterfrühstück (Easter Breakfast)</li>
-        <li>Sommerfest (Summer Festival)</li>
-        <li>Fototag (Photo Day)</li>
-        <li>Kroko Zahnpflege (Crocodile Dental Care)</li>
-        <li>
+      <h1 className="jahres-header">Jahresablauf</h1>
+      <div className="box box1">
+        <span>Elternabend (Parent-Teacher Meeting)</span>
+      </div>
+      <div className="box box2">
+        <span>Laternenfest (Lantern Festival)</span>
+      </div>
+      <div className=" box box3">
+        <span>Weihnachtsfeier (Christmas Celebration)</span>
+      </div>
+      <div className=" box box4">
+        <span>Fasching (Carnival)</span>
+      </div>
+      <div className="box box5">
+        <span>Osterfrühstück (Easter Breakfast)</span>
+      </div>
+      <div className="box box6">
+        <span>
           Abschiedsfeier der Vorschulkinder (Farewell Party for Preschool
           Children)
-        </li>
-        <li>
+        </span>
+      </div>
+      <div className=" box box7">
+        <span>Sommerfest (Summer Festival)</span>
+      </div>
+      <div className="box box8">
+        {" "}
+        <span>Fototag (Photo Day)</span>
+      </div>
+      <div className=" box box9">
+        {" "}
+        <span>Kroko Zahnpflege (Crocodile Dental Care)</span>
+      </div>
+      <div className="box box10">
+        {" "}
+        <span>
+          Abschiedsfeier <strong>der Vorschulkinder</strong>
+        </span>
+      </div>
+      <div className="box box11">
+        {" "}
+        <span>
           Erste Hilfe Kurs der Erzieher/innen (First Aid Course for Educators)
-        </li>
-      </ul>
+        </span>
+      </div>
     </section>
   );
 };
