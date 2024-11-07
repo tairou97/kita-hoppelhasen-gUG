@@ -1,13 +1,17 @@
 import "./App.css";
-import Jahresablauf from "./Components/Jahresablauf/Jahresablauf";
-import Tagesablauf from "./Components/Tagesablauf/Tagesablauf";
+import Layout from "./Layout/Layout";
+import routes from "./Components/Routes";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Tagesablauf />
-      <Jahresablauf />
-    </>
+    <Layout>
+      <Routes>
+        {routes.map((route) => (
+          <Route key={route.Id} {...route} />
+        ))}
+      </Routes>
+    </Layout>
   );
 }
 

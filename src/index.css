@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaeb96;
+
+}
+
+.about {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #deffd3;
+}
+
+.programs {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(310, 100%, 94%);
+}
+
+.eltern {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(174, 59%, 85%);
+}
+
+.abläufe {
+    min-height: 100vh;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(174, 59%, 85%);
+}
+
+.pagenotfound {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7f7f;
+}
