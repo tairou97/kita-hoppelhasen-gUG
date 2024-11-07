@@ -1,6 +1,7 @@
 import React from "react";
-import Tagesablauf from "../Components/Tagesablauf/Tagesablauf";
-import Jahresablauf from "../Components/Jahresablauf/Jahresablauf";
+import "../Abläufe/Abloeufe.css";
+import Tagesablauf from "../../Components/Tagesablauf/Tagesablauf";
+import Jahresablauf from "../../Components/Jahresablauf/Jahresablauf";
 
 const Abloefe = () => {
   return (

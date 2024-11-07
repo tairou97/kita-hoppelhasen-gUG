@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../Programs/Programs.css";
 
 const Programs = () => {
   return <div className="programs">Programs</div>;

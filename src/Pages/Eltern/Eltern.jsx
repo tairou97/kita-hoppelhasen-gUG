@@ -1,4 +1,5 @@
 import React from "react";
+import "../Eltern/Eltern.css";
 
 const Eltern = () => {
   return (

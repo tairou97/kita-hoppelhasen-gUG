@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav>
+    <nav className="mainNav">
       <ul className="nav">
         {navBar.map((item) => (
           <li key={item.Id}>
