@@ -16,7 +16,7 @@ const Tagesablauf = () => {
           </p>
         </div>
         <div className="morgenkreis">
-          <strong>Morgenkreis/Frühstück:</strong> 8:30 - 9:00 Uhr
+          <h3>Morgenkreis/Frühstück:</h3> 8:30 - 9:00 Uhr
           <h3>pädagogische kernzeit</h3>
           <p>
             In dieser Zeit stehen gezielte pädagogische Aktivitäten im

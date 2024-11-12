@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import HeaderImg from "../../assets/img/home.png";
+import HeaderImg2 from "../../assets/img/home2.png";
+import Svg from "../../assets/img/hero-drawing.svg";
+import LongImg from "../../assets/img/longimg.png";
 
 const Home = () => {
   return (
@@ -9,14 +12,37 @@ const Home = () => {
         <div className="home home1">
           <img src={HeaderImg} alt="" />
         </div>
-        <div className="home home2">2</div>
-        <div className="home home3">3</div>
-        <div className="home home4">4</div>
-        <div className="home home5">5</div>
-        <div className="home home6">6</div>
+        <div className="home home2">
+          <h1>
+            Willkommen <span> in Kita Hoppelhasen</span>
+          </h1>
+          <p>
+            wussten Sie schon, dass in unserem Kindergarten 36Kinder von 1
+            Jahrnbis zum Ende des Grundschulaters von einem Tea erfahrener
+            Fachkräfte betreut werden? Wir bieten eine Vielzahl von Aktivitäten
+            und Programmen, die auf die individuellen Bedürfnisse jedes Kindes
+            zugeschnitten sind. Wir freuen uns darauf, Sie und Ihr Kind
+            kennenzulernen!
+          </p>
+        </div>
+        <div className="home home3">
+          {" "}
+          <img src={HeaderImg2} alt="" />
+        </div>
+        <div className="home home4">
+          <img src={Svg} alt="" />
+        </div>
+        <div className="home home5">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+            labore possimus praesentium cumque voluptas, animi consequatur
+          </p>
+        </div>
+        <div className="home home6">
+          {" "}
+          <img src={LongImg} alt="" />
+        </div>
         <div className="home home7">7</div>
-      </article>
-      <article className="homeArticle2">
         <div className="home home8">8</div>
         <div className="home home9">9</div>
         <div className="home home10">10</div>

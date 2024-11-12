@@ -1,29 +1,67 @@
 li a {
     font-family: "Comico", sans-serif;
     text-decoration: none;
-    color: #000000;
+    color: #859F3D;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0 1rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
 
+
+ul li a:hover {
+    color: #F78154;
+    transition: 0.5s;
+}
+
+/* Border Bottom Animation */
+li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    color: #F78154;
+    background-color: #F78154;
+    transition: width 0.4s ease-in-out;
+    /* sanfte Animation der Breite */
+}
+
+/* Stil beim Hover */
+li a:hover::before {
+    width: 100%;
+
+    /* Vollständige Breite der Border beim Hover */
+}
+
+
+
+
+
+.mainNav {}
+
 .nav {
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #859F3D;
+    padding: 1rem 0;
+    z-index: 1000;
+
     text-decoration: none;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    font-weight: 600;
+    background-color: white;
+    padding: 1rem;
+
 
 }
-
-/* .mainNav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #88C273;
-    height: 10vh;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-} */
