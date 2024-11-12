@@ -9,6 +9,18 @@
 
 }
 
+@font-face {
+    font-family: 'Tanker';
+    src: url("../../assets/Tanker-Regular.ttf") format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Supreme';
+    src: url("../../assets/Supreme-Variable.ttf") format('truetype');
+
+}
+
 body {
     background-color: #f4f4f4;
     margin: 0;
@@ -18,28 +30,66 @@ body {
 
 .tagesablauf {
     font-family: 'Satoshi', sans-serif;
-
     margin: 20px;
     display: grid;
     gap: 10px;
-    height: 100Vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "header header header header"
-        "bringzeit bringzeit morgenkreis morgenkreis"
-        "mittagessen mittagessen mittagessen mittagessen"
-        "ruhezeit ruhezeit ruhezeit ruhezeit"
-        "vesper vesper vesper vesper"
-        "nachmittagszeit nachmittagszeit nachmittagszeit nachmittagszeit";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header "
+        "bringzeit morgenkreis mittagessen"
+        "ruhezeit vesper nachmittagszeit"
+
+    ;
+}
+
+@media screen and (max-width: 768px) {
+    .tagesablauf {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header  header"
+            "bringzeit morgenkreis "
+            "mittagessen ruhezeit "
+            "vesper nachmittagszeit"
+        ;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .tagesablauf {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-areas:
+            "header"
+
+            "bringzeit"
+
+            "morgenkreis"
+
+            "mittagessen"
+
+            "ruhezeit"
+
+            "vesper"
+
+            "nachmittagszeit"
+        ;
+
+    }
+
 }
 
 .tagesablauf>div {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #859F3D;
-    background-color: #88C273;
+
+
     color: white;
+    width: 100%;
+    height: 260px;
+    padding: 20px;
+    text-shadow: #859F3D 1px 1px 1px;
+    border-radius: 18px;
+    background: #859F3D;
+    box-shadow: inset -10px 10px 20px #718734,
+        inset 10px -10px 20px #99b746;
 }
 
 .header {
@@ -53,14 +103,31 @@ body {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     grid-area: bringzeit;
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
+
 }
 
 .morgenkreis {
     background-color: #f4f4f4;
     border-radius: 5px;
-    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     grid-area: morgenkreis;
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
+
+}
+
+.morgenkreis p {
+    margin: 10px 0;
 }
 
 .mittagessen {
@@ -68,6 +135,12 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
 }
 
 .ruhezeit {
@@ -75,6 +148,12 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
 }
 
 .vesper {
@@ -82,6 +161,12 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
 }
 
 .nachmittagszeit {
@@ -89,4 +174,10 @@ body {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
 }
