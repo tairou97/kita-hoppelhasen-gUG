@@ -21,9 +21,14 @@
 
 }
 
+@font-face {
+    font-family: 'Pally';
+    src: url("../../assets/Pally-Variable.ttf") format('truetype');
+}
+
 body {
 
-    background-color: #FCFFE0;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,6 +47,126 @@ body {
 
     ;
 }
+
+
+.tagesablauf>div {
+    color: #859F3D;
+    width: 100%;
+    height: 290px;
+
+    padding: 20px 10px;
+    background: #E9EED9;
+    /* box-shadow: inset -10px 10px 20px #718734,
+        inset 10px -10px 20px #99b746; */
+}
+
+.box-tagesablauf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #E9EED9;
+    padding: 10px;
+    animation: ease-in-out 1s;
+    transition: 0.5s;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: "Pally", sans-serif;
+    font-weight: 700;
+    color: #859F3D;
+}
+
+.header {
+    font-size: 3rem;
+    font-family: "Pally", sans-serif;
+    font-weight: 700;
+    color: #859F3D;
+    padding: 2rem 0 0 0;
+    grid-area: header;
+    text-align: center;
+}
+
+.bringzeit {
+    background: #E9EED9;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    grid-area: bringzeit;
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
+}
+
+.morgenkreis {
+    background: #E9EED9;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    grid-area: morgenkreis;
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
+}
+
+
+.morgenkreis p {
+    margin: 10px 0;
+}
+
+.mittagessen {
+    background: #E9EED9;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
+}
+
+.ruhezeit {
+    background: #E9EED9;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    width: 100%;
+    /* Festlegen der maximalen Höhe */
+    overflow-y: auto;
+    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
+    padding: 10px;
+}
+
+.vesper {
+    background: #E9EED9;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.nachmittagszeit {
+    background: #E9EED9;
+    border-radius: 5px;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
     .tagesablauf {
@@ -77,108 +202,4 @@ body {
 
     }
 
-}
-
-.tagesablauf>div {
-
-
-    color: white;
-    width: 100%;
-    height: 260px;
-    padding: 20px;
-    text-shadow: #859F3D 1px 1px 1px;
-    border-radius: 18px;
-    background: #859F3D;
-    box-shadow: inset -10px 10px 20px #718734,
-        inset 10px -10px 20px #99b746;
-}
-
-.header {
-    font-family: 'Comico', sans-serif;
-    grid-area: header;
-}
-
-.bringzeit {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    grid-area: bringzeit;
-    cursor: pointer;
-    width: 100%;
-    /* Festlegen der maximalen Höhe */
-    overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
-    padding: 10px;
-
-}
-
-.morgenkreis {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    grid-area: morgenkreis;
-    cursor: pointer;
-    width: 100%;
-    /* Festlegen der maximalen Höhe */
-    overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
-    padding: 10px;
-
-}
-
-.morgenkreis p {
-    margin: 10px 0;
-}
-
-.mittagessen {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    width: 100%;
-    /* Festlegen der maximalen Höhe */
-    overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
-    padding: 10px;
-}
-
-.ruhezeit {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    width: 100%;
-    /* Festlegen der maximalen Höhe */
-    overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
-    padding: 10px;
-}
-
-.vesper {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    width: 100%;
-    /* Festlegen der maximalen Höhe */
-    overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
-    padding: 10px;
-}
-
-.nachmittagszeit {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    width: 100%;
-    /* Festlegen der maximalen Höhe */
-    overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
-    padding: 10px;
 }

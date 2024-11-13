@@ -6,7 +6,7 @@ import Jahresablauf from "../../Components/Jahresablauf/Jahresablauf";
 const Abloefe = () => {
   return (
     <section className="abläufe">
-      {/* <Tagesablauf /> */}
+      <Tagesablauf />
       <Jahresablauf />
     </section>
   );

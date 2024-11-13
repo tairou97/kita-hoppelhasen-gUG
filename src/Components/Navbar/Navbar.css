@@ -19,6 +19,9 @@ ul li a:hover {
 li a::before {
     content: '';
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     left: 0;
     width: 0;
