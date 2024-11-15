@@ -5,7 +5,7 @@ import HeaderImg2 from "../../assets/img/home2.png";
 
 import Svg from "../../assets/img/hero-drawing.svg";
 import Kinder from "../../assets/img/kinder.png";
-
+import Kinder2 from "../../assets/img/kinder2.png";
 const Home = () => {
   return (
     <section className="homePage">
@@ -16,7 +16,7 @@ const Home = () => {
               Willkommen in der Kita Hoppelhasen – Ein Ort, an dem Kinder
               wachsen, spielen und lernen.
             </h1>
-            <img src={HeaderImg2} alt="headerImg" />
+            <img src={HeaderImg} alt="headerImg" />
           </div>
         </div>
         <div className="homeArticle__header__p">
@@ -27,7 +27,7 @@ const Home = () => {
             liebevolle Umgebung zu bieten, in der sie sich entfalten und
             entwickeln können.
           </p>
-        </div>
+        </div>{" "}
       </article>
     </section>
   );

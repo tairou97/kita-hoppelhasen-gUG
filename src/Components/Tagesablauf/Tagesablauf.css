@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: #c3d2ae;
+    background-color: #FEFFA7;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,7 +50,7 @@ body {
 
 
 .tagesablauf>div {
-    color: #859F3D;
+    color: #435318;
     width: 100%;
     height: 290px;
 
@@ -74,7 +74,7 @@ h4 {
     font-size: 1.5rem;
     font-family: "Pally", sans-serif;
     font-weight: 700;
-    color: #859F3D;
+    color: #627f13;
 }
 
 .header {
