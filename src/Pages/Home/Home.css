@@ -20,7 +20,7 @@
     max-width: 1200px;
     padding: 0 1rem;
     background-color: #ffffff18;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     backdrop-filter: blur(10px);
 
     padding: 2rem;
@@ -44,7 +44,7 @@
     margin-right: 3rem;
     max-width: 1200px;
     padding: 0 1rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     backdrop-filter: blur(10px);
     background-color: #ffffff18;
 }
@@ -64,7 +64,7 @@
 
 .img-h1 img {
     width: 92%;
-    border-radius: 1.5rem;
+    /* border-radius: 1.5rem; */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin: 1rem;
 
