@@ -1,8 +1,10 @@
 li a {
-    font-family: "Comico", sans-serif;
+    font-family: "Supreme", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #859F3D;
-    font-size: 1.2rem;
+    color: #1b3c08;
+    font-size: 1.5rem;
     padding: 0 1rem;
     position: relative;
     display: inline-block;
@@ -11,7 +13,7 @@ li a {
 
 
 ul li a:hover {
-    color: #F78154;
+    color: #859F3D;
     transition: 0.5s;
 }
 
@@ -26,8 +28,8 @@ li a::before {
     left: 0;
     width: 0;
     height: 1px;
-    color: #F78154;
-    background-color: #F78154;
+    color: #859F3D;
+    background-color: #859F3D;
     transition: width 0.4s ease-in-out;
     /* sanfte Animation der Breite */
 }
@@ -46,25 +48,22 @@ li a:hover::before {
 .mainNav {}
 
 .nav {
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #859F3D;
-    padding: 1rem 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: rgba(250, 250, 250, 0.213);
+    backdrop-filter: blur(10px);
+    position: fixed;
     z-index: 1000;
-
     text-decoration: none;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color: white;
-    padding: 1rem;
 
-
+    padding: 2rem;
 }

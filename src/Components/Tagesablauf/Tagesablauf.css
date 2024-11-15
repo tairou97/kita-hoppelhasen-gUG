@@ -28,7 +28,7 @@
 
 body {
 
-    background-color: #ffffff;
+    background-color: #c3d2ae;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,6 +46,7 @@ body {
         "ruhezeit vesper nachmittagszeit"
 
     ;
+    margin-top: 6rem;
 }
 
 
