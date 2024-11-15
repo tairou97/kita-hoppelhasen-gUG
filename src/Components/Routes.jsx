@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "../Pages/Home/Home";
-import About from "../Pages/About/About";
+import About from "../Pages/Über Us/About";
 import Programs from "../Pages/Programs/Programs";
 import Eltern from "../Pages/Eltern/Eltern";
 import Abloefe from "../Pages/Abläufe/Abloeufe/";

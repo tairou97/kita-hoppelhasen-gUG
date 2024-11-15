@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navBar = [
     { name: "Home", to: "/", Id: 1 },
-    { name: "Über uns", to: "/über", Id: 2 },
+    { name: "Über uns", to: "/about", Id: 2 },
     { name: "Programs", to: "/programs", Id: 3 },
     { name: "Eltern", to: "/eltern", Id: 4 },
     { name: "Abläufe", to: "/abläufe", Id: 5 },

@@ -1,0 +1,101 @@
+.about {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.Über-uns {
+    font-family: "Supreme", sans-serif;
+    padding: 4rem;
+    color: #859F3D;
+    margin-top: 9rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff18;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+
+
+.Über-uns .head-h1 {
+    font-family: "Pally", sans-serif;
+    color: #1b3c08;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.Über-uns .text-p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #859F3D;
+}
+
+.logo {
+    width: 98%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.logo img {
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.Philosophie {
+    font-family: "Supreme", sans-serif;
+    font-weight: 700;
+    color: #859F3D;
+    padding: 4rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: #ffffff18;
+
+}
+
+.Philosophie .head-h4 {
+    font-family: "Pally", sans-serif;
+    color: #1b3c08;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.Philosophie .text-p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #859F3D;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b3c08;
+    color: #ffffff;
+    height: 40vh;
+    padding: 1rem;
+    font-family: "Supreme", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+    margin-top: 4rem;
+}
