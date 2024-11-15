@@ -55,16 +55,20 @@ body {
     height: 290px;
 
     padding: 20px 10px;
-    background: #E9EED9;
+    /* background: #E9EED9; */
     /* box-shadow: inset -10px 10px 20px #718734,
         inset 10px -10px 20px #99b746; */
 }
 
 .box-tagesablauf {
+
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 5px 5px 9px #cacaca,
+        -5px -5px 9px #f6f6f6;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: #E9EED9;
+    /* background: #E9EED9; */
     padding: 10px;
     animation: ease-in-out 1s;
     transition: 0.5s;
@@ -74,22 +78,22 @@ h4 {
     font-size: 1.5rem;
     font-family: "Pally", sans-serif;
     font-weight: 700;
-    color: #627f13;
+    color: #798645;
+    ;
 }
 
 .header {
     font-size: 3rem;
     font-family: "Pally", sans-serif;
     font-weight: 700;
-    color: #859F3D;
+    color: #798645;
+    ;
     padding: 2rem 0 0 0;
     grid-area: header;
     text-align: center;
 }
 
 .bringzeit {
-    background: #E9EED9;
-    border-radius: 5px;
     padding: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     grid-area: bringzeit;
@@ -102,8 +106,7 @@ h4 {
 }
 
 .morgenkreis {
-    background: #E9EED9;
-    border-radius: 5px;
+
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     grid-area: morgenkreis;
     cursor: pointer;
@@ -115,13 +118,16 @@ h4 {
 }
 
 
-.morgenkreis p {
+p {
     margin: 10px 0;
+    font-size: 1.2rem;
+    color: #859F3D;
+
 }
 
 .mittagessen {
-    background: #E9EED9;
-    border-radius: 5px;
+
+
     padding: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
@@ -133,8 +139,8 @@ h4 {
 }
 
 .ruhezeit {
-    background: #E9EED9;
-    border-radius: 5px;
+
+
     padding: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
@@ -146,7 +152,7 @@ h4 {
 }
 
 .vesper {
-    background: #E9EED9;
+
     border-radius: 5px;
     padding: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -157,7 +163,7 @@ h4 {
 }
 
 .nachmittagszeit {
-    background: #E9EED9;
+
     border-radius: 5px;
     padding: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */

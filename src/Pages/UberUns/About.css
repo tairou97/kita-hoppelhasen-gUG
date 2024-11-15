@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
 
-    padding: 2rem;
+    font-family: "Supreme", sans-serif;
+    font-size: 1.5rem;
     margin-top: 6rem;
     /* background-color: rgba(255, 255, 255, 0.452); */
     backdrop-filter: blur(10px);
@@ -24,8 +25,8 @@
 .Leitbild {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-
+    font-family: "Supreme", sans-serif;
+    font-size: 1.5rem;
     /* background-color: rgba(255, 255, 255, 0.452); */
     backdrop-filter: blur(10px);
     /* box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); */
@@ -36,11 +37,24 @@
 .head-h1 {
     font-size: 4rem;
     font-weight: 700;
-
-
+    text-transform: uppercase;
+    color: #798645;
 }
 
-.text-p {}
+.Lage-h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #798645;
+}
+
+strong {
+    color: #798645;
+}
+
+.text-p {
+    color: #222c05;
+    font-size: 1.5rem;
+}
 
 .logo {
     width: 100%;

@@ -23,7 +23,8 @@
     font-size: 3rem;
     font-family: "Pally", sans-serif;
     font-weight: 700;
-    color: #859F3D;
+    color: #798645;
+    ;
     display: flex;
     padding: 2rem 0 0 0;
     justify-content: center;
@@ -45,7 +46,7 @@
 .text {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #859F3D;
+    color: #798645;
     font-family: "Supreme", sans-serif;
     width: 15rem;
     height: auto;
