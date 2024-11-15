@@ -1,4 +1,4 @@
-.homePage {}
+/* .homePage {} */
 
 .homeArticle {
     display: flex;
@@ -67,8 +67,6 @@
     /* border-radius: 1.5rem; */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin: 1rem;
-
-
 }
 
 .img-h1 {
