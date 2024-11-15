@@ -7,17 +7,55 @@ const About = () => {
     <section className="about">
       <article className="Über-uns">
         <h1 className="head-h1">Über uns</h1>
-        <p className="text-p">
-          Die Kita Hoppelhasen ist mehr als nur ein Ort, an dem Kinder betreut
-          werden – sie ist ein Zuhause auf Zeit. Unser Team aus erfahrenen
-          Pädagoginnen und Pädagogen geht jeden Tag mit viel Herz und Hingabe an
-          die Arbeit. Wir fördern nicht nur das Lernen, sondern unterstützen die
-          Kinder auch dabei, ihre Persönlichkeit zu entwickeln und ihre
-          individuellen Stärken zu erkennen. Bei uns steht das Wohl jedes
-          einzelnen Kindes im Mittelpunkt. Ob im Freien oder in unseren
-          gemütlichen Innenräumen, wir gestalten jeden Tag so, dass die Kinder
-          mit Freude und Begeisterung dabei sind.
-        </p>
+        <div>
+          <p className="text-p">
+            Im Juni 2017 wurde die Hoppelhasen gUG (haftungsbeschränkt) mit Sitz
+            in Berlin zum Zweck des Betriebs von Kindertagesstätten gegründet.
+            Unsere gemeinnützige Gesellschaft ist ein freier Träger der
+            Jugendhilfe. Wir betreuen insgesamt 36 Kinder ab dem ersten
+            Lebensjahr bis hin zum Schulalter.
+          </p>
+          <strong>Pädagogischer Schwerpunkt:</strong>
+          <p className="text-p">
+            Der Schwerpunkt der Kita Hoppelhasen liegt auf zwei wesentlichen
+            Themenbereichen:
+            <ol>
+              <li>
+                <strong> Berliner Bildungsprogramm: </strong>
+                Besonders die <strong>Sprachförderung</strong> steht hier im
+                Fokus. Wir legen großen Wert darauf, die sprachliche Entwicklung
+                jedes Kindes zu fördern.
+              </li>
+              <li>
+                <strong> Bewegung und Ernährung: </strong>
+                Wir achten besonders auf eine ausgewogene Ernährung und fördern
+                die körperliche Bewegung der Kinder durch verschiedene
+                Aktivitäten.
+              </li>
+            </ol>
+          </p>
+
+          <strong>Qualitätssicherung</strong>
+          <p className="text-p">
+            Der Träger ist an regelmäßigem Austausch mit dem Fachpersonal
+            interessiert und offen für <strong>Wünsche und Kritik</strong>.
+            Zusammen mit der
+            {""}
+            {""} <strong>Kita-Leitung</strong> prüft er die Umsetzung des
+            pädagogischen Konzepts und trägt somit zur kontinuierlichen{" "}
+            <strong>Qualitätssicherung</strong> bei. Unser Konzept ist dabei{" "}
+            {""}
+            {""}
+            dynamisch und wird regelmäßig an aktuelle Richtlinien angepasst.
+          </p>
+
+          <strong>Offenheit für Vielfalt</strong>
+          <p className="text-p">
+            Unsere Arbeit ist nicht an einer bestimmten Weltanschauung oder
+            Religion ausgerichtet. Kinder aller Kulturen und Religionen sind bei
+            uns herzlich willkommen.
+          </p>
+        </div>
       </article>{" "}
       <article className="logo">
         <div>
@@ -25,16 +63,41 @@ const About = () => {
           <img src={Logo} alt="" />
         </div>
       </article>
-      <article className="Philosophie">
-        <h4 className="head-h4">Unsere Werte und Philosophie</h4>
+      <article className="Leitbild">
+        <strong className="head-h4">
+          Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
+        </strong>
         <p className="text-p">
-          In der Kita Hoppelhasen glauben wir daran, dass jedes Kind einzigartig
-          ist und seine ganz eigene Art zu lernen und die Welt zu entdecken hat.
-          Wir schaffen eine Umgebung, die die Kinder ermutigt, neugierig zu sein
-          und sich selbst auszuprobieren. Durch eine achtsame und respektvolle
-          Erziehung legen wir den Grundstein für das Vertrauen in die eigene
-          Person und das Entdecken der eigenen Fähigkeiten.
+          Ausgehend von den elementaren Bedürfnissen der Kinder wollen wir in
+          unserer Kita die Möglichkeit schaffen, dass diese individuell gelebt
+          werden können.
+        </p>{" "}
+        <p className="text-p">
+          Wir möchten den Kindern helfen, sich zu eigenverantwortlichen und
+          gemeinschaftsfähigen Persönlichkeiten zu entwickeln. Dabei legen wir
+          besonderen Wert darauf, dass sie die notwendigen Basiskompetenzen
+          erlangen und die vielfältigen Bildungsbereiche kennenlernen.
         </p>
+        <p className="text-p">
+          Ein klar strukturierter, bewegungsorientierter Tag, stets verlässliche
+          Rituale sowie ein umfangreiches, frei zugängliches Angebot an Mal- und
+          Bastelmaterial in den Gruppenräumen eröffnen den Kindern viele
+          Möglichkeiten:
+          <ul>
+            <li>
+              Sich mit den Dingen des täglichen Lebens auseinanderzusetzen
+            </li>
+            <li>Zusammenhänge zu erkennen</li>
+            <li>Kenntnisse zu vertiefen und zu begreifen</li>
+          </ul>
+        </p>
+        <p className="text-p"></p>
+      </article>
+      <article className="logo">
+        <strong>Lage und soziales Umfeld</strong>
+        Die Kita – Hoppelhasen gUG (haftungsbeschränkt) befindet sich im Bezirk
+        Treptow-Köpenick und dort im Ortsteil Köpenick. Der Bezirk
+        Treptow-Köpenick liegt im Südosten von Berlin.
       </article>
     </section>
   );
