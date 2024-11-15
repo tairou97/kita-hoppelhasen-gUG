@@ -68,3 +68,40 @@ strong {
     height: auto;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 900px) {
+    .about {
+        padding: 1rem;
+    }
+
+    .Über-uns {
+        margin-top: 2rem;
+    }
+
+    .Leitbild {
+        margin-top: 2rem;
+    }
+
+    .head-h1 {
+        font-size: 2rem;
+    }
+
+    .Lage-h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-p {
+        font-size: 1rem;
+    }
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}

@@ -38,25 +38,28 @@ const About = () => {
         </div>
       </article>
       <article className="Leitbild">
-        <h1 className="head-h1">
+        <div>
           {" "}
-          Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
-        </h1>
-        <p className="text-p">
-          {" "}
-          Von den elementaren Bedürfnissen der Kinder ausgehend, wollen wir in
-          unserer Kita die Möglichkeit schaffen, dass diese individuell gelebt
-          werden können. Wir wollen den Kindern helfen und sie unterstützen,
-          sich zu eigenverantwortlichen und gemeinschaftsfähigen
-          Persönlichkeiten zu entwickeln, die hierzu notwendigen
-          Basiskompetenzen zu erlangen und die vielfältigen Bildungsbereiche
-          anzubieten und zu vermitteln. Ein klar strukturierter
-          Bewegungsorientierter Tag, stets verlässliche Rituale so wie ein
-          umfangreiches, frei zugängliches Angebot an Mal –und Bastelmaterial in
-          den Gruppenräumen, eröffnen den Kindern viele Möglichkeiten, sich mit
-          den Dingen des täglichen Lebens auseinander zu setzen, Zusammenhänge
-          zu erkennen, Kenntnisse zu vertiefen und zu begreifen.
-        </p>
+          <h1 className="head-h1">
+            {" "}
+            Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
+          </h1>
+          <p className="text-p">
+            {" "}
+            Von den elementaren Bedürfnissen der Kinder ausgehend, wollen wir in
+            unserer Kita die Möglichkeit schaffen, dass diese individuell gelebt
+            werden können. Wir wollen den Kindern helfen und sie unterstützen,
+            sich zu eigenverantwortlichen und gemeinschaftsfähigen
+            Persönlichkeiten zu entwickeln, die hierzu notwendigen
+            Basiskompetenzen zu erlangen und die vielfältigen Bildungsbereiche
+            anzubieten und zu vermitteln. Ein klar strukturierter
+            Bewegungsorientierter Tag, stets verlässliche Rituale so wie ein
+            umfangreiches, frei zugängliches Angebot an Mal –und Bastelmaterial
+            in den Gruppenräumen, eröffnen den Kindern viele Möglichkeiten, sich
+            mit den Dingen des täglichen Lebens auseinander zu setzen,
+            Zusammenhänge zu erkennen, Kenntnisse zu vertiefen und zu begreifen.
+          </p>
+        </div>
       </article>
       <article className="Lage">
         <h3 className="Lage-h3">Lage und soziales Umfeld</h3>
