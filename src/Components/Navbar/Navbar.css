@@ -1,9 +1,16 @@
-li a {
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a {
     font-family: "Supreme", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    color: #1b3c08;
+    color: #feffe9;
+    text-shadow: 1px 1px 10px #000000;
     font-size: 1.5rem;
     padding: 0 1rem;
     position: relative;
@@ -12,8 +19,10 @@ li a {
 }
 
 
+
 ul li a:hover {
-    color: #859F3D;
+    color: #FEFFA7;
+    text-shadow: 1px 1px 2px #859F3D;
     transition: 0.5s;
 }
 
@@ -37,35 +46,28 @@ li a::before {
 /* Stil beim Hover */
 li a:hover::before {
     width: 100%;
-
     /* Vollständige Breite der Border beim Hover */
 }
 
-
-
-
-
-.mainNav {}
+/* .mainNav {} */
 
 .nav {
     width: 100%;
     display: flex;
-
-    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: end;
     align-items: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    /* padding: 2rem; */
+}
+
+.nav:hover {
+
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: rgba(250, 250, 250, 0.213);
     backdrop-filter: blur(10px);
-    position: fixed;
-
-    z-index: 1000;
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-
-    padding: 2rem;
 }

@@ -27,7 +27,11 @@
 }
 
 body {
-    background-color: #FEFFA7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #feffe9;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,7 +65,6 @@ body {
 }
 
 .box-tagesablauf {
-
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow: 5px 5px 9px #cacaca,
         -5px -5px 9px #f6f6f6;

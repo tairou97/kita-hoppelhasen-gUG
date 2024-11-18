@@ -1,0 +1,32 @@
+.footer {
+    grid-column: 1/5;
+    grid-row: 1;
+    background-color: #b8bc7f;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+    width: 100%;
+}
+
+.footer p {
+    color: #feffe9;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #feffe9;
+    padding: 0.1rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lin {
+
+    padding: 0.3rem;
+}
