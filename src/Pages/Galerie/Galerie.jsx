@@ -30,14 +30,14 @@ import SuperHasen2 from "../../assets/superHasen/super2.png";
 // import SuperHasen10 from "../Galerie/Image/SuperHasen/super10.png";
 
 // Küche
-import Küche1 from "../Galerie/Image/Kuche/kuche1.png";
-import Küche2 from "../Galerie/Image/Kuche/kuche2.png";
-import Küche3 from "../Galerie/Image/Kuche/kuche3.png";
-import Küche4 from "../Galerie/Image/Kuche/kuche3.png";
+// import Küche1 from "../Galerie/Image/Kuche/kuche1.png";
+// import Küche2 from "../Galerie/Image/Kuche/kuche2.png";
+// import Küche3 from "../Galerie/Image/Kuche/kuche3.png";
+// import Küche4 from "../Galerie/Image/Kuche/kuche3.png";
 
 // Spielplatz
-import Spielplatz1 from "../Galerie/Image/Spiel/Spiel1.png";
-import Spielplatz2 from "../Galerie/Image/Spiel/Spiel2.png";
+// import Spielplatz1 from "../Galerie/Image/Spiel/Spiel1.png";
+// import Spielplatz2 from "../Galerie/Image/Spiel/Spiel2.png";
 // import Spielplatz3 from "../Galerie/Image/Spiel/Spiel3.png";
 // import Spielplatz4 from "../Galerie/Image/Spiel/Spiel4.png";
 // import Spielplatz5 from "../Galerie/Image/Spiel/Spiel5.png";
@@ -73,14 +73,14 @@ const Galerie = () => {
       // { src: SuperHasen10, text: "Super-Hasen Bild 10" },
     ],
     Küche: [
-      { src: Küche1, text: "Küche Bild 1" },
-      { src: Küche2, text: "Küche Bild 2" },
-      { src: Küche3, text: "Küche Bild 3" },
-      { src: Küche4, text: "Küche Bild 4" },
+      // { src: Küche1, text: "Küche Bild 1" },
+      // { src: Küche2, text: "Küche Bild 2" },
+      // { src: Küche3, text: "Küche Bild 3" },
+      // { src: Küche4, text: "Küche Bild 4" },
     ],
     Spielplatz: [
-      { src: Spielplatz1, text: "Spielplatz Bild 1" },
-      { src: Spielplatz2, text: "Spielplatz Bild 2" },
+      // { src: Spielplatz1, text: "Spielplatz Bild 1" },
+      // { src: Spielplatz2, text: "Spielplatz Bild 2" },
       // { src: Spielplatz3, text: "Spielplatz Bild 3" },
       // { src: Spielplatz4, text: "Spielplatz Bild 4" },
       // { src: Spielplatz5, text: "Spielplatz Bild 5" },
