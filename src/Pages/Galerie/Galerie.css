@@ -94,12 +94,12 @@
     padding: 5px;
 }
 
-/* Hover-Effekt für Boxen */
+
 .gallery-box:hover {
     transform: scale(1.05);
 }
 
-/* Modal Hintergrund */
+
 .fullscreen {
     position: fixed;
     top: 0;
@@ -107,6 +107,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +115,6 @@
     cursor: pointer;
 }
 
-/* Vergrößertes Bild */
 .fullscreen img {
     max-width: 90%;
     max-height: 90%;
