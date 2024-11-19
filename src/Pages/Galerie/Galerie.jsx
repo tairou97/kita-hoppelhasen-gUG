@@ -3,24 +3,24 @@ import "../../Pages/Galerie/Galerie.css";
 
 // Mini-Hasen
 
-import MiniHasen1 from "../../assets/image/mini1.png";
-import MiniHasen2 from "../../assets/image/mini2.png";
-import MiniHasen3 from "../../assets/image/mini3.png";
-import MiniHasen4 from "../../assets/image/mini4.png";
-import MiniHasen5 from "../../assets/image/mini5.png";
-import MiniHasen6 from "../../assets/image/mini6.png";
-import MiniHasen7 from "../../assets/image/mini7.png";
-import MiniHasen8 from "../../assets/image/mini8.png";
-import MiniHasen9 from "../../assets/image/mini9.png";
-import MiniHasen10 from "../../assets/image/mini10.png";
-import MiniHasen11 from "../../assets/image/mini11.png";
-import MiniHasen12 from "../../assets/image/mini12.png";
-import MiniHasen13 from "../../assets/image/mini13.png";
+// import MiniHasen1 from "../../assets/image/mini1.png";
+// import MiniHasen2 from "../../assets/image/mini2.png";
+// import MiniHasen3 from "../../assets/image/mini3.png";
+// import MiniHasen4 from "../../assets/image/mini4.png";
+// import MiniHasen5 from "../../assets/image/mini5.png";
+// import MiniHasen6 from "../../assets/image/mini6.png";
+// import MiniHasen7 from "../../assets/image/mini7.png";
+// import MiniHasen8 from "../../assets/image/mini8.png";
+// import MiniHasen9 from "../../assets/image/mini9.png";
+// import MiniHasen10 from "../../assets/image/mini10.png";
+// import MiniHasen11 from "../../assets/image/mini11.png";
+// import MiniHasen12 from "../../assets/image/mini12.png";
+// import MiniHasen13 from "../../assets/image/mini13.png";
 
 // Super-Hasen
-import SuperHasen1 from "../../assets/image/super1.png";
-import SuperHasen2 from "../../assets/image/super2.png";
-import SuperHasen3 from "../../assets/image/super3.png";
+// import SuperHasen1 from "../../assets/image/super1.png";
+// import SuperHasen2 from "../../assets/image/super2.png";
+// import SuperHasen3 from "../../assets/image/super3.png";
 
 // import SuperHasen4 from "../Galerie/Image/SuperHasen/super4.png";
 // import SuperHasen5 from "../Galerie/Image/SuperHasen/super5.png";
@@ -47,24 +47,24 @@ import SuperHasen3 from "../../assets/image/super3.png";
 const Galerie = () => {
   const galleries = {
     "Mini-Hasen": [
-      { src: MiniHasen1, text: "Mini-Hasen Bild 1" },
-      { src: MiniHasen2, text: "Mini-Hasen Bild 2" },
-      { src: MiniHasen3, text: "Mini-Hasen Bild 3" },
-      { src: MiniHasen4, text: "Mini-Hasen Bild 4" },
-      { src: MiniHasen5, text: "Mini-Hasen Bild 5" },
-      { src: MiniHasen6, text: "Mini-Hasen Bild 6" },
-      { src: MiniHasen7, text: "Mini-Hasen Bild 7" },
-      { src: MiniHasen8, text: "Mini-Hasen Bild 8" },
-      { src: MiniHasen9, text: "Mini-Hasen Bild 9" },
-      { src: MiniHasen10, text: "Mini-Hasen Bild 10" },
-      { src: MiniHasen11, text: "Mini-Hasen Bild 11" },
-      { src: MiniHasen12, text: "Mini-Hasen Bild 12" },
-      { src: MiniHasen13, text: "Mini-Hasen Bild 13" },
+      // { src: MiniHasen1, text: "Mini-Hasen Bild 1" },
+      // { src: MiniHasen2, text: "Mini-Hasen Bild 2" },
+      // { src: MiniHasen3, text: "Mini-Hasen Bild 3" },
+      // { src: MiniHasen4, text: "Mini-Hasen Bild 4" },
+      // { src: MiniHasen5, text: "Mini-Hasen Bild 5" },
+      // { src: MiniHasen6, text: "Mini-Hasen Bild 6" },
+      // { src: MiniHasen7, text: "Mini-Hasen Bild 7" },
+      // { src: MiniHasen8, text: "Mini-Hasen Bild 8" },
+      // { src: MiniHasen9, text: "Mini-Hasen Bild 9" },
+      // { src: MiniHasen10, text: "Mini-Hasen Bild 10" },
+      // { src: MiniHasen11, text: "Mini-Hasen Bild 11" },
+      // { src: MiniHasen12, text: "Mini-Hasen Bild 12" },
+      // { src: MiniHasen13, text: "Mini-Hasen Bild 13" },
     ],
     "Super-Hasen": [
-      { src: SuperHasen1, text: "Super-Hasen Bild 1" },
-      { src: SuperHasen2, text: "Super-Hasen Bild 2" },
-      { src: SuperHasen3, text: "Super-Hasen Bild 3" },
+      // { src: SuperHasen1, text: "Super-Hasen Bild 1" },
+      // { src: SuperHasen2, text: "Super-Hasen Bild 2" },
+      // { src: SuperHasen3, text: "Super-Hasen Bild 3" },
       // { src: SuperHasen4, text: "Super-Hasen Bild 4" },
       // { src: SuperHasen5, text: "Super-Hasen Bild 5" },
       // { src: SuperHasen6, text: "Super-Hasen Bild 6" },
