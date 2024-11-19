@@ -308,3 +308,101 @@
 
 
 /* ============================== */
+@media screen and (max-width: 1200px) {
+    .homeContainer {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 Spalten für Tablets */
+    }
+
+    .home1 .head-h1 {
+        font-size: 2rem;
+        /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+
+    .home4,
+    .home5 {
+        flex-direction: column;
+        /* Vertikal auf kleineren Bildschirmen */
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .home4 .mini,
+    .home5 .super {
+        width: 100%;
+    }
+
+    .home4 .mini img,
+    .home5 img {
+        width: 100%;
+        /* Bilder in voller Breite */
+        height: auto;
+    }
+
+    .home3 {
+        padding: 4rem 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        grid-template-columns: 1fr;
+        /* 1 Spalte für mobile Geräte */
+    }
+
+    .home3 {
+        padding: 2rem 4rem;
+        /* Weniger Padding */
+    }
+
+    .home4,
+    .home5 {
+        padding: 4rem 2rem;
+    }
+
+    .home1 .head-h1 {
+        font-size: 1.8rem;
+    }
+
+    .home4 .miniText h3,
+    .home5 .superText h3 {
+        font-size: 2rem;
+    }
+
+    .home4 .miniText p,
+    .home5 .superText p {
+        font-size: 1rem;
+        /* Kleinere Textgröße für mobile Geräte */
+    }
+
+    .home1 button {
+        font-size: 1.2rem;
+        padding: 0.6rem 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home1 .head-h1 {
+        font-size: 1.5rem;
+    }
+
+    .home4 .mini img,
+    .home5 img {
+        width: 100%;
+        /* Bilder passen sich der Bildschirmbreite an */
+        height: auto;
+    }
+
+    .home3 .HeaderP {
+        font-size: 1.5rem;
+    }
+
+    .home4 .miniText p,
+    .home5 .superText p {
+        font-size: 1rem;
+    }
+
+    .home6 .HeaderP2 {
+        font-size: 1.5rem;
+    }
+}

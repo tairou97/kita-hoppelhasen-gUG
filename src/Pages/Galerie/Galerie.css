@@ -3,10 +3,11 @@
     min-height: 100vh;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Arial', sans-serif;
-
 }
 
 /* Boxen-Grid */
@@ -16,9 +17,8 @@
     margin-top: 10rem;
     padding: 20px;
     border-radius: 10px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-
+    /* 4 Spalten für größere Bildschirme */
 }
 
 /* Galerieüberschrift */
@@ -27,12 +27,9 @@
     font-weight: bold;
     color: #2f3105;
     text-transform: uppercase;
-    /* margin-top: 5rem; */
     grid-column: 1 / -1;
     grid-row: 1;
 }
-
-
 
 /* Buttons für die Auswahl der Galerien */
 .gallery-buttons {
@@ -67,12 +64,9 @@
     color: #feffe9;
 }
 
-
-
 .gallery-box {
     width: 100%;
     display: flex;
-
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -84,7 +78,6 @@
     width: 100%;
     object-fit: cover;
     height: auto;
-
 }
 
 .gallery-box p {
@@ -94,11 +87,9 @@
     padding: 5px;
 }
 
-
 .gallery-box:hover {
     transform: scale(1.05);
 }
-
 
 .fullscreen {
     position: fixed;
@@ -122,13 +113,50 @@
 }
 
 /* Responsivität */
-@media (max-width: 768px) {
-    .gallery-box {
-        width: 150px;
+
+/* Tablets und kleinere Bildschirme (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 Spalten für mittlere Bildschirme */
     }
 
     .gallery-button {
         padding: 8px 12px;
         font-size: 12px;
+    }
+}
+
+/* Mobile Geräte (max-width: 768px) */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 Spalten für kleinere Bildschirme */
+    }
+
+    .gallery-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .gallery-box {
+        width: 100%;
+    }
+
+    .gallery-container h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Sehr kleine Bildschirme (max-width: 480px) */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        /* 1 Spalte für sehr kleine Bildschirme */
+    }
+
+    .gallery-button {
+        width: 100%;
+        font-size: 11px;
     }
 }

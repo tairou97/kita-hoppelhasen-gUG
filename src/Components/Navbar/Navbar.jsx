@@ -1,9 +1,10 @@
-// Navbar.js
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navBar = [
     { name: "Home", to: "/", Id: 1 },
     { name: "Über uns", to: "/about", Id: 2 },
@@ -14,10 +15,23 @@ const Navbar = () => {
 
   return (
     <nav className="mainNav">
-      <ul className="nav">
+      {/* Burger-Icon */}
+      <div
+        className={`burger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
+      </div>
+
+      {/* Menü */}
+      <ul className={`nav ${menuOpen ? "open" : ""}`}>
         {navBar.map((item) => (
           <li key={item.Id}>
-            <NavLink to={item.to}>{item.name}</NavLink>
+            <NavLink to={item.to} onClick={() => setMenuOpen(false)}>
+              {item.name}
+            </NavLink>
           </li>
         ))}
       </ul>
