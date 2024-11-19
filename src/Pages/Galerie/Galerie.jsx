@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import "../../Pages/Galerie/Galerie.css";
-import Image1 from "../../assets/img/kinder2.png";
-import Image2 from "../../assets/img/hero2.png";
-import Image3 from "../../assets/img/kinder.png";
 
 // Mini-Hasen
 
