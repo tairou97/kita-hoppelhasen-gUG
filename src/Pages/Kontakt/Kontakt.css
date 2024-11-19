@@ -1,7 +1,53 @@
-.programs {
-    height: 100vh;
+.container {
+
+    min-height: 100vh;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(310, 100%, 94%);
+}
+
+.heading {
+
+    text-align: center;
+    color: #5a9e68;
+    margin-top: 7rem;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #5a9e68;
+}
+
+.text {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.text a {
+    color: #5a9e68;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
