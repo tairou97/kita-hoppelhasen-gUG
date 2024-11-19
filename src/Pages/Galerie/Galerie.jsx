@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../Pages/Galerie/Galerie.css";
 
 // Mini-Hasen
-import MiniHasen1 from "./Image/miniHasen/mini1.png";
-import MiniHasen2 from "./Image/miniHasen/mini2.png";
+import MiniHasen1 from "../../assets/miniHasen/mini1.png";
+import MiniHasen2 from "../../assets/miniHasen/mini2.png";
 // import MiniHasen3 from "../Galerie/Image/MiniHasen/mini3.png";
 // import MiniHasen4 from "../Galerie/Image/MiniHasen/mini4.png";
 // import MiniHasen5 from "../Galerie/Image/MiniHasen/mini5.png";
