@@ -38,10 +38,10 @@ import Küche4 from "../Galerie/Image/Kuche/kuche3.png";
 // Spielplatz
 import Spielplatz1 from "../Galerie/Image/Spiel/Spiel1.png";
 import Spielplatz2 from "../Galerie/Image/Spiel/Spiel2.png";
-import Spielplatz3 from "../Galerie/Image/Spiel/Spiel3.png";
-import Spielplatz4 from "../Galerie/Image/Spiel/Spiel4.png";
-import Spielplatz5 from "../Galerie/Image/Spiel/Spiel5.png";
-import Spielplatz6 from "../Galerie/Image/Spiel/Spiel6.png";
+// import Spielplatz3 from "../Galerie/Image/Spiel/Spiel3.png";
+// import Spielplatz4 from "../Galerie/Image/Spiel/Spiel4.png";
+// import Spielplatz5 from "../Galerie/Image/Spiel/Spiel5.png";
+// import Spielplatz6 from "../Galerie/Image/Spiel/Spiel6.png";
 
 const Galerie = () => {
   const galleries = {
@@ -81,10 +81,10 @@ const Galerie = () => {
     Spielplatz: [
       { src: Spielplatz1, text: "Spielplatz Bild 1" },
       { src: Spielplatz2, text: "Spielplatz Bild 2" },
-      { src: Spielplatz3, text: "Spielplatz Bild 3" },
-      { src: Spielplatz4, text: "Spielplatz Bild 4" },
-      { src: Spielplatz5, text: "Spielplatz Bild 5" },
-      { src: Spielplatz6, text: "Spielplatz Bild 6" },
+      // { src: Spielplatz3, text: "Spielplatz Bild 3" },
+      // { src: Spielplatz4, text: "Spielplatz Bild 4" },
+      // { src: Spielplatz5, text: "Spielplatz Bild 5" },
+      // { src: Spielplatz6, text: "Spielplatz Bild 6" },
     ],
   };
 
