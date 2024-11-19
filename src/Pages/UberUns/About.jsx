@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
 import Logo from "../../assets/img/logo.png";
+import { motion } from "framer-motion";
+import Flag from "..//..//Components/SuperHasen/EventFlage";
 
 const About = () => {
   return (
@@ -33,8 +35,7 @@ const About = () => {
       </article>{" "}
       <article className="logo">
         <div>
-          {" "}
-          <img src={Logo} alt="" />
+          <Flag />
         </div>
       </article>
       <article className="Leitbild">

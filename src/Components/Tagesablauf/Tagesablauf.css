@@ -30,7 +30,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
     background-color: #feffe9;
     margin: 0;
     padding: 0;
@@ -47,7 +46,6 @@ body {
         "header header header "
         "bringzeit morgenkreis mittagessen"
         "ruhezeit vesper nachmittagszeit"
-
     ;
     margin-top: 6rem;
 }

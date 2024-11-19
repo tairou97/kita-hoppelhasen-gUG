@@ -46,10 +46,7 @@
     font-weight: 400;
     color: #feffe9;
     text-shadow: 1px 1px 10px #000000;
-
 }
-
-
 
 .home1 button {
     padding: 0.8rem 3rem;
@@ -57,7 +54,7 @@
     font-weight: bold;
     background-color: #798645;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     margin: 2rem 0 4rem 0;
     cursor: pointer;
     text-transform: uppercase;
@@ -139,6 +136,7 @@
     padding: 8rem 8rem 2rem;
     display: flex;
     grid-column: 1/5;
+    width: 100%;
 }
 
 .home4 .mini {
@@ -157,15 +155,17 @@
     box-shadow: 5px 5px 10px #404725,
         -5px -5px 10px #b2c565; */
 
+
 }
 
 .miniText {
     width: 50%;
     display: flex;
+    padding: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+
     font-family: "Supreme", sans-serif;
 }
 
@@ -190,7 +190,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #2f3105;
     color: #feffe9;
 }
@@ -202,6 +202,7 @@
 
 /* ==============Home 5================ */
 .home5 {
+    width: 100%;
     padding: 2rem 8rem 2rem;
     grid-column: 1/5;
     display: flex;
@@ -234,8 +235,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem;
 
-    padding: 5rem;
 }
 
 .superText h3 {
@@ -259,7 +260,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #2f3105;
     color: #feffe9;
 }
@@ -307,13 +308,3 @@
 
 
 /* ============================== */
-
-@media screen and (max-width: 1024px) {
-    .homeContainer {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "home1 home1 home2 home2" "home3 home3 home3 home3" "home4 home4 home4 home4" "home5 home5 home5 home5" "home6 home6 home6 home6";
-    }
-
-
-
-}

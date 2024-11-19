@@ -8,7 +8,7 @@ const Navbar = () => {
     { name: "Home", to: "/", Id: 1 },
     { name: "Über uns", to: "/about", Id: 2 },
     { name: "Programs", to: "/programs", Id: 3 },
-    { name: "Eltern", to: "/eltern", Id: 4 },
+    { name: "Galerie", to: "/galerie", Id: 4 },
     { name: "Abläufe", to: "/abläufe", Id: 5 },
   ];
 

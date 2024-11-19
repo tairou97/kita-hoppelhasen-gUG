@@ -1,0 +1,134 @@
+/* Hauptcontainer */
+.gallery-container {
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+
+}
+
+/* Boxen-Grid */
+.gallery-grid {
+    display: grid;
+    gap: 15px;
+    margin-top: 10rem;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+/* Galerieüberschrift */
+.gallery-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2f3105;
+    text-transform: uppercase;
+    /* margin-top: 5rem; */
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+
+
+/* Buttons für die Auswahl der Galerien */
+.gallery-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.gallery-button {
+    padding: 10px 15px;
+    background-color: #b8bc7f;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-button.active {
+    background-color: #242221;
+    color: #feffe9;
+    transform: scale(1.1);
+}
+
+.gallery-button:hover {
+    background-color: #242221;
+    color: #feffe9;
+}
+
+
+
+.gallery-box {
+    width: 100%;
+    display: flex;
+
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-box img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+
+}
+
+.gallery-box p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Hover-Effekt für Boxen */
+.gallery-box:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Hintergrund */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Vergrößertes Bild */
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .gallery-box {
+        width: 150px;
+    }
+
+    .gallery-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

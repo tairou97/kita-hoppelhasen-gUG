@@ -68,6 +68,7 @@ const Home = () => {
         </p>
       </motion.div>
       {/* Mini Hasen Abschnitt */}
+
       <motion.div
         className="home home4"
         initial={{ x: -200, opacity: 0 }}
@@ -142,7 +143,7 @@ const Home = () => {
             die Kinder kümmern. Wir legen großen Wert darauf, dass sich die
             Kinder bei uns wohlfühlen und gerne in die Kita kommen.
           </p>
-          {/* <Flagg /> */}
+          <Flagg />
         </div>
       </motion.div>
     </motion.section>
