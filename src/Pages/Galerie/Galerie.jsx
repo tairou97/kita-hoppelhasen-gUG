@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../Pages/Galerie/Galerie.css";
 
 // Mini-Hasen
-// import MiniHasen1 from "../Galerie/Image/MiniHasen/mini1.png";
+import MiniHasen1 from "./Image/miniHasen/mini1.png";
 import MiniHasen2 from "../Galerie/Image/MiniHasen/mini2.png";
 import MiniHasen3 from "../Galerie/Image/MiniHasen/mini3.png";
 import MiniHasen4 from "../Galerie/Image/MiniHasen/mini4.png";
@@ -45,7 +45,7 @@ import Spielplatz6 from "../Galerie/Image/Spiel/Spiel6.png";
 const Galerie = () => {
   const galleries = {
     "Mini-Hasen": [
-      { src: MiniHasen2, text: "Mini-Hasen Bild 1" },
+      { src: MiniHasen1, text: "Mini-Hasen Bild 1" },
       { src: MiniHasen2, text: "Mini-Hasen Bild 2" },
       { src: MiniHasen3, text: "Mini-Hasen Bild 3" },
       { src: MiniHasen4, text: "Mini-Hasen Bild 4" },
