@@ -19,7 +19,7 @@ import MiniHasen3 from "../../assets/miniHasen/mini3.png";
 
 // Super-Hasen
 import SuperHasen1 from "../../assets/superHasen/super1.png";
-import SuperHasen2 from "../Galerie/Image/SuperHasen/super2.png";
+import SuperHasen2 from "../../assets/superHasen/super2.png";
 // import SuperHasen3 from "../Galerie/Image/SuperHasen/super3.png";
 // import SuperHasen4 from "../Galerie/Image/SuperHasen/super4.png";
 // import SuperHasen5 from "../Galerie/Image/SuperHasen/super5.png";
@@ -63,14 +63,14 @@ const Galerie = () => {
     "Super-Hasen": [
       { src: SuperHasen1, text: "Super-Hasen Bild 1" },
       { src: SuperHasen2, text: "Super-Hasen Bild 2" },
-      { src: SuperHasen3, text: "Super-Hasen Bild 3" },
-      { src: SuperHasen4, text: "Super-Hasen Bild 4" },
-      { src: SuperHasen5, text: "Super-Hasen Bild 5" },
-      { src: SuperHasen6, text: "Super-Hasen Bild 6" },
-      { src: SuperHasen7, text: "Super-Hasen Bild 7" },
-      { src: SuperHasen8, text: "Super-Hasen Bild 8" },
-      { src: SuperHasen9, text: "Super-Hasen Bild 9" },
-      { src: SuperHasen10, text: "Super-Hasen Bild 10" },
+      // { src: SuperHasen3, text: "Super-Hasen Bild 3" },
+      // { src: SuperHasen4, text: "Super-Hasen Bild 4" },
+      // { src: SuperHasen5, text: "Super-Hasen Bild 5" },
+      // { src: SuperHasen6, text: "Super-Hasen Bild 6" },
+      // { src: SuperHasen7, text: "Super-Hasen Bild 7" },
+      // { src: SuperHasen8, text: "Super-Hasen Bild 8" },
+      // { src: SuperHasen9, text: "Super-Hasen Bild 9" },
+      // { src: SuperHasen10, text: "Super-Hasen Bild 10" },
     ],
     Küche: [
       { src: Küche1, text: "Küche Bild 1" },
