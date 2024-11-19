@@ -18,16 +18,16 @@ import MiniHasen3 from "../../assets/miniHasen/mini3.png";
 // import MiniHasen13 from "../Galerie/Image/MiniHasen/mini13.png";
 
 // Super-Hasen
-import SuperHasen1 from "../Galerie/Image/SuperHasen/super1.png";
+import SuperHasen1 from "../../assets/superHasen/super1.png";
 import SuperHasen2 from "../Galerie/Image/SuperHasen/super2.png";
-import SuperHasen3 from "../Galerie/Image/SuperHasen/super3.png";
-import SuperHasen4 from "../Galerie/Image/SuperHasen/super4.png";
-import SuperHasen5 from "../Galerie/Image/SuperHasen/super5.png";
-import SuperHasen6 from "../Galerie/Image/SuperHasen/super6.png";
-import SuperHasen7 from "../Galerie/Image/SuperHasen/super7.png";
-import SuperHasen8 from "../Galerie/Image/SuperHasen/super8.png";
-import SuperHasen9 from "../Galerie/Image/SuperHasen/super9.png";
-import SuperHasen10 from "../Galerie/Image/SuperHasen/super10.png";
+// import SuperHasen3 from "../Galerie/Image/SuperHasen/super3.png";
+// import SuperHasen4 from "../Galerie/Image/SuperHasen/super4.png";
+// import SuperHasen5 from "../Galerie/Image/SuperHasen/super5.png";
+// import SuperHasen6 from "../Galerie/Image/SuperHasen/super6.png";
+// import SuperHasen7 from "../Galerie/Image/SuperHasen/super7.png";
+// import SuperHasen8 from "../Galerie/Image/SuperHasen/super8.png";
+// import SuperHasen9 from "../Galerie/Image/SuperHasen/super9.png";
+// import SuperHasen10 from "../Galerie/Image/SuperHasen/super10.png";
 
 // Küche
 import Küche1 from "../Galerie/Image/Kuche/kuche1.png";
