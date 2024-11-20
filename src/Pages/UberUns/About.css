@@ -3,11 +3,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    min-height: 100vh;
+    /* padding: 2rem; */
     width: 100%;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin-left: auto;
     margin-right: auto;
+
+}
+
+.imgeTop {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15rem;
+
+}
+
+.imgeTop img {
+    width: 100vw;
+    object-fit: cover;
+    height: auto;
+    position: fixed;
 }
 
 .Über-uns {
@@ -15,10 +31,12 @@
     flex-direction: column;
     font-family: "Supreme", sans-serif;
     font-size: 1.5rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
     backdrop-filter: blur(10px);
 
+    padding: 1.5rem 3rem;
 
+    background-color: #feffe9;
 }
 
 .Leitbild {
@@ -27,6 +45,8 @@
     font-family: "Supreme", sans-serif;
     font-size: 1.5rem;
     backdrop-filter: blur(10px);
+    background-color: #feffe9;
+    padding: 0 3rem;
 }
 
 .head-h1 {
@@ -34,6 +54,18 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #798645;
+}
+
+.lage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Supreme", sans-serif;
+    font-size: 1.5rem;
+
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    background-color: #feffe9;
 }
 
 .Lage-h3 {
@@ -64,22 +96,41 @@ strong {
     margin: 0 auto;
 }
 
+.map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 900px) {
-    .about {
-        padding: 1rem;
+    .about {}
+
+    .imgeTop img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        position: fixed;
 
     }
 
     .Über-uns {
         margin-top: 2rem;
+        padding: 0 1rem;
     }
 
     .Leitbild {
         margin-top: 2rem;
+        padding: 0 1rem;
     }
 
     .head-h1 {
         font-size: 2rem;
+    }
+
+    .lage {
+        margin-top: 2rem;
+        padding: 1rem;
     }
 
     .Lage-h3 {
@@ -100,6 +151,14 @@ strong {
         margin: 0 auto;
     }
 
+    .map {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -129,15 +188,15 @@ strong {
 
 @media screen and (max-width: 500px) {
     .head-h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .Lage-h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .text-p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .logo {

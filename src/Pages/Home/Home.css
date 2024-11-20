@@ -1,6 +1,5 @@
 .homeContainer {
     min-height: 100vh;
-
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
@@ -9,7 +8,6 @@
         "home3 home3 home3 home3"
         "home9 home10 home11 home12"
         "home13 home14 home15 home16"; */
-
 }
 
 .flag {
@@ -17,15 +15,12 @@
     gap: 10px;
 }
 
-/* .home {} */
-
 .home1 {
     grid-column: 1/span 2;
     grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 1;
     color: #feffe9;
 }
@@ -81,7 +76,6 @@
 /* ==============Home 2================ */
 
 .home2 {
-    background-color: blue;
     grid-column: 1/5;
     grid-row: 1;
 
@@ -142,8 +136,6 @@
 .home4 .mini {
     width: 50%;
     height: auto;
-
-
 }
 
 .home4 .mini img {
@@ -154,18 +146,14 @@
     background: #798645;
     box-shadow: 5px 5px 10px #404725,
         -5px -5px 10px #b2c565; */
-
-
 }
 
 .miniText {
     width: 50%;
     display: flex;
-    padding: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-family: "Supreme", sans-serif;
 }
 
@@ -214,10 +202,6 @@
     width: 100%;
     object-fit: cover;
     height: auto;
-    /* border-radius: 0px;
-    background: #798645;
-    box-shadow: 5px 5px 10px #404725,
-        -5px -5px 10px #b2c565; */
 }
 
 .super {
@@ -235,7 +219,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+
 
 }
 
@@ -371,7 +355,7 @@
 
     .home4 .miniText p,
     .home5 .superText p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         /* Kleinere Textgröße für mobile Geräte */
     }
 
@@ -393,8 +377,80 @@
         height: auto;
     }
 
+    .home3 .text-h3 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
     .home3 .HeaderP {
+        font-size: 1.1rem;
+    }
+
+    .home4,
+    .home5 {
+        padding: 0rem;
+    }
+
+    .home4 .miniText h3,
+    .home5 .superText h3 {
         font-size: 1.5rem;
+    }
+
+    .home4 .miniText p,
+    .home5 .superText p {
+        font-size: 1.1rem;
+
+    }
+
+    .home4 .miniText button {
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .home4 .miniText a {
+        font-size: 1rem;
+    }
+
+    .home5 .superText button {
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .home5 .superText a {
+        font-size: 1rem;
+    }
+
+    .home4 .mini,
+    .home5 .super {
+        width: 100%;
+    }
+
+    .home4 .mini img,
+    .home5 .super img {
+        width: 60%;
+    }
+
+    .home6 .HeaderP2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home1 .head-h1 {
+        font-size: 1.2rem;
+    }
+
+    .home3 .text-h3 {
+        font-size: 1.5rem;
+    }
+
+    .home3 .HeaderP {
+        font-size: 1rem;
+    }
+
+    .home4 .miniText h3,
+    .home5 .superText h3 {
+        font-size: 1.2rem;
     }
 
     .home4 .miniText p,
@@ -402,7 +458,26 @@
         font-size: 1rem;
     }
 
-    .home6 .HeaderP2 {
-        font-size: 1.5rem;
+    .home4 .miniText button {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
     }
+
+    .home4 .miniText a {
+        font-size: 1rem;
+    }
+
+    .home5 .superText button {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .home5 .superText a {
+        font-size: 1rem;
+    }
+
+    .home6 .HeaderP2 {
+        font-size: 1rem;
+    }
+
 }

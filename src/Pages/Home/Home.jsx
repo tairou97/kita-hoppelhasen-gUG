@@ -15,6 +15,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+      <div></div>
       {/* Header-Bereich mit Willkommensanimation */}
       <motion.div
         className="home home1"
