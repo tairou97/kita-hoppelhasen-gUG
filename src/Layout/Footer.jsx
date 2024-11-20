@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import Impressum from "../Components/Impressum/Impressum";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,11 +34,11 @@ const Footer = () => {
         </p>
       </div>
       <div className="info">
+        <p>&copy; 2020 Kita Hoppelhasen. Alle Rechte vorbehalten.</p>
         <p>
-          &copy; {new Date().getFullYear()} Kita Hoppelhasen. Alle Rechte
-          vorbehalten.
-        </p>
-        <p>
+          <Link href="/impressum" className="imprint-link">
+            Impressum
+          </Link>
           <a href="/datenschutz" className="privacy-link">
             Datenschutz
           </a>

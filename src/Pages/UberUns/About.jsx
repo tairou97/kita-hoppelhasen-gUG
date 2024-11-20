@@ -3,7 +3,7 @@ import "./About.css";
 import Logo from "../../assets/img/logo.png";
 import { motion } from "framer-motion";
 import Flag from "..//..//Components/SuperHasen/EventFlage";
-import ImageTop from "../../assets/img/logo2.png";
+import ImageTop from "../../assets/img/logo.png";
 
 const About = () => {
   return (
@@ -12,81 +12,84 @@ const About = () => {
       <div className="imgeTop">
         <img src={ImageTop} alt="" />
       </div>
-      <article className="Über-uns">
-        <h1 className="head-h1">Über uns</h1>
-        <div>
-          <p className="text-p">
-            Im Juni 2017 wurde die Hoppelhasen gUG (haftungsbeschränkt) mit Sitz
-            in Berlin zum Zweck des Betriebs von Kindertagesstätten gegründet.
-            Unsere gemeinnützige Gesellschaft, die Hoppelhasen gUG
-            (haftungsbeschränkt), ist ein freier Träger der Jugendhilfe. Wir
-            betreuen insgesamt 36 Kinder ab dem ersten Lebensjahr bis hin zum
-            Schulalter. Pädagogischer Schwerpunkt der Kita Hoppelhasen gUG
-            (haftungsbeschränkt) liegt zum einen auf das Thema Berliner
-            Bildungsprogramm, wobei in besonderem Maße die Sprachförderung im
-            Fokus steht und zum anderen auf das Thema „Bewegung und Ernährung“,
-            worauf wir besonders Wert legen.
-          </p>
-          <p className="text-p">
-            Der Träger ist an regelmäßigem Austausch mit dem Fachpersonal
-            interessiert und offen für Wünsche und Kritik. Er prüft zusammen mit
-            der Kita-Leitung die Umsetzung des Konzepts und trägt damit zur
-            Qualitätssicherung bei. Das Konzept ist dabei dynamisch und wird an
-            aktuelle Richtlinien angepasst. Unsere Arbeit wird an keiner
-            Weltanschauung oder Religion ausgerichtet. Kinder aller Kulturen und
-            Religionen sind bei uns herzlich Willkommen.
-          </p>
-        </div>
-      </article>{" "}
-      <article className="logo">
-        <div>
-          <Flag />
-        </div>
-      </article>
-      <article className="Leitbild">
-        <div>
-          {" "}
-          <h1 className="head-h1">
+      <div className="container-about">
+        <article className="Über-uns">
+          <h1 className="head-h1">Über uns</h1>
+          <div>
+            <p className="text-p">
+              Im Juni 2017 wurde die Hoppelhasen gUG (haftungsbeschränkt) mit
+              Sitz in Berlin zum Zweck des Betriebs von Kindertagesstätten
+              gegründet. Unsere gemeinnützige Gesellschaft, die Hoppelhasen gUG
+              (haftungsbeschränkt), ist ein freier Träger der Jugendhilfe. Wir
+              betreuen insgesamt 36 Kinder ab dem ersten Lebensjahr bis hin zum
+              Schulalter. Pädagogischer Schwerpunkt der Kita Hoppelhasen gUG
+              (haftungsbeschränkt) liegt zum einen auf das Thema Berliner
+              Bildungsprogramm, wobei in besonderem Maße die Sprachförderung im
+              Fokus steht und zum anderen auf das Thema „Bewegung und
+              Ernährung“, worauf wir besonders Wert legen.
+            </p>
+            <p className="text-p">
+              Der Träger ist an regelmäßigem Austausch mit dem Fachpersonal
+              interessiert und offen für Wünsche und Kritik. Er prüft zusammen
+              mit der Kita-Leitung die Umsetzung des Konzepts und trägt damit
+              zur Qualitätssicherung bei. Das Konzept ist dabei dynamisch und
+              wird an aktuelle Richtlinien angepasst. Unsere Arbeit wird an
+              keiner Weltanschauung oder Religion ausgerichtet. Kinder aller
+              Kulturen und Religionen sind bei uns herzlich Willkommen.
+            </p>
+          </div>
+        </article>{" "}
+        <article className="logo">
+          <div>
+            <Flag />
+          </div>
+        </article>
+        <article className="Leitbild">
+          <div>
             {" "}
-            Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
-          </h1>
+            <h1 className="head-h1">
+              {" "}
+              Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
+            </h1>
+            <p className="text-p">
+              {" "}
+              Von den elementaren Bedürfnissen der Kinder ausgehend, wollen wir
+              in unserer Kita die Möglichkeit schaffen, dass diese individuell
+              gelebt werden können. Wir wollen den Kindern helfen und sie
+              unterstützen, sich zu eigenverantwortlichen und
+              gemeinschaftsfähigen Persönlichkeiten zu entwickeln, die hierzu
+              notwendigen Basiskompetenzen zu erlangen und die vielfältigen
+              Bildungsbereiche anzubieten und zu vermitteln. Ein klar
+              strukturierter Bewegungsorientierter Tag, stets verlässliche
+              Rituale so wie ein umfangreiches, frei zugängliches Angebot an Mal
+              –und Bastelmaterial in den Gruppenräumen, eröffnen den Kindern
+              viele Möglichkeiten, sich mit den Dingen des täglichen Lebens
+              auseinander zu setzen, Zusammenhänge zu erkennen, Kenntnisse zu
+              vertiefen und zu begreifen.
+            </p>
+          </div>
+        </article>
+        <article className="lage">
+          <h3 className="Lage-h3">Lage und soziales Umfeld</h3>
           <p className="text-p">
-            {" "}
-            Von den elementaren Bedürfnissen der Kinder ausgehend, wollen wir in
-            unserer Kita die Möglichkeit schaffen, dass diese individuell gelebt
-            werden können. Wir wollen den Kindern helfen und sie unterstützen,
-            sich zu eigenverantwortlichen und gemeinschaftsfähigen
-            Persönlichkeiten zu entwickeln, die hierzu notwendigen
-            Basiskompetenzen zu erlangen und die vielfältigen Bildungsbereiche
-            anzubieten und zu vermitteln. Ein klar strukturierter
-            Bewegungsorientierter Tag, stets verlässliche Rituale so wie ein
-            umfangreiches, frei zugängliches Angebot an Mal –und Bastelmaterial
-            in den Gruppenräumen, eröffnen den Kindern viele Möglichkeiten, sich
-            mit den Dingen des täglichen Lebens auseinander zu setzen,
-            Zusammenhänge zu erkennen, Kenntnisse zu vertiefen und zu begreifen.
+            Die Kita – Hoppelhasen gUG (haftungsbeschränkt) befindet sich im
+            Bezirk Treptow-Köpenick und dort im Ortsteil Köpenick. Der Bezirk
+            Treptow-Köpenick liegt im Südosten von Berlin.
           </p>
-        </div>
-      </article>
-      <article className="lage">
-        <h3 className="Lage-h3">Lage und soziales Umfeld</h3>
-        <p className="text-p">
-          Die Kita – Hoppelhasen gUG (haftungsbeschränkt) befindet sich im
-          Bezirk Treptow-Köpenick und dort im Ortsteil Köpenick. Der Bezirk
-          Treptow-Köpenick liegt im Südosten von Berlin.
-        </p>
-        <div className="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4862.586439625965!2d13.5809876!3d52.4557169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84869bbefc2c7%3A0x272a277bc1bdef13!2sMandrellapl.%203%2C%2012555%20Berlin!5e0!3m2!1sde!2sde!4v1732031221219!5m2!1sde!2sde"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps"
-          ></iframe>
-        </div>
-      </article>
+          <div className="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4862.586439625965!2d13.5809876!3d52.4557169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84869bbefc2c7%3A0x272a277bc1bdef13!2sMandrellapl.%203%2C%2012555%20Berlin!5e0!3m2!1sde!2sde!4v1732031221219!5m2!1sde!2sde"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps"
+            ></iframe>
+          </div>
+        </article>
+      </div>
     </section>
   );
 };
