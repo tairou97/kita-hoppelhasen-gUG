@@ -6,11 +6,12 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navBar = [
-    { name: "Home", to: "/", Id: 1 },
+    { name: "Home Test", to: "/", Id: 1 },
     { name: "Über uns", to: "/about", Id: 2 },
     { name: "Galerie", to: "/galerie", Id: 3 },
     { name: "Abläufe", to: "/abläufe", Id: 4 },
     { name: "Kontakt", to: "/kontakt", Id: 5 },
+    { name: "Home", to: "/home", Id: 6 },
   ];
 
   return (

@@ -299,7 +299,7 @@
     }
 
     .home1 .head-h1 {
-        font-size: 2rem;
+        /* font-size: 2rem; */
         /* Kleinere Schriftgröße für kleinere Bildschirme */
     }
 
@@ -345,7 +345,7 @@
     }
 
     .home1 .head-h1 {
-        font-size: 1.8rem;
+        /* font-size: 1.8rem; */
     }
 
     .home4 .miniText h3,
@@ -360,14 +360,14 @@
     }
 
     .home1 button {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         padding: 0.6rem 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .home1 .head-h1 {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 
     .home4 .mini img,
@@ -437,7 +437,7 @@
 
 @media screen and (max-width: 320px) {
     .home1 .head-h1 {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
 
     .home3 .text-h3 {
