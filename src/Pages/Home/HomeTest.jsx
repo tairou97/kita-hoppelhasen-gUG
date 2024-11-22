@@ -17,9 +17,8 @@ const HomeTest = () => {
         {/* ==============Überschrift =============*/}
         <div className="headHeader">
           <h1 className="">Willkommen in der Kita Hoppelhasen</h1>
-          <button>
-            <Link to="/about">mehr</Link>
-          </button>
+
+          <Link to="/about">mehr</Link>
         </div>
       </div>
       <div className="home2">
@@ -52,6 +51,7 @@ const HomeTest = () => {
               Freundschaften und entdecken spielerisch die Welt – alles in einer
               warmen, sicheren Umgebung voller Fürsorge und Freude.
             </p>
+
             <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Link to="/minihasen">Mehr erfahren</Link>
             </button>
