@@ -14,8 +14,9 @@ const About = () => {
       </div>
       <div className="container-about">
         <article className="Über-uns">
-          <h1 className="head-h1">Über uns</h1>
           <div>
+            {" "}
+            <h1 className="head-h1">Über uns</h1>
             <p className="text-p">
               Im Juni 2017 wurde die Hoppelhasen gUG (haftungsbeschränkt) mit
               Sitz in Berlin zum Zweck des Betriebs von Kindertagesstätten
@@ -46,9 +47,7 @@ const About = () => {
         </article>
         <article className="Leitbild">
           <div>
-            {" "}
             <h1 className="head-h1">
-              {" "}
               Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
             </h1>
             <p className="text-p">

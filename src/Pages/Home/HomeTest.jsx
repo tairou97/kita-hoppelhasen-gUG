@@ -8,6 +8,10 @@ import SuperHasen from "../../assets/img/superHasen.png";
 const HomeTest = () => {
   return (
     <section className="conatinerHome">
+      <div className="back">
+        {" "}
+        <Link to="/">Top</Link>{" "}
+      </div>
       <div className="home1">
         {/* ==============Image =============*/}
         <div className="headImg">
@@ -18,15 +22,18 @@ const HomeTest = () => {
         <div className="headHeader">
           <h1 className="">Willkommen in der Kita Hoppelhasen</h1>
 
-          <Link to="/about">mehr</Link>
+          <Link to="/about">Mehr erfahren</Link>
         </div>
       </div>
       <div className="home2">
         <div className="homeBox1">
+          {" "}
           <div className="homeBox1-1">
+            {" "}
             <h3 className="text-h3">
               Ein Ort, an dem Kinder wachsen, spielen und lernen.
             </h3>
+            <span></span>
             <p className="HeaderP">
               Wir sind eine Kindertagesstätte in Berlin, die sich auf die
               Betreuung und Förderung von Kindern im Alter von 0 bis 6 Jahren

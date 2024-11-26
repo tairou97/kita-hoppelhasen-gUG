@@ -26,6 +26,12 @@
     src: url("../../assets/Pally-Variable.ttf") format('truetype');
 }
 
+
+@font-face {
+    font-family: 'Lucida';
+    src: url("../../assets/LucidaHandwritingStdBlack.TTF") format('truetype');
+}
+
 body {
     min-height: 100vh;
     display: flex;

@@ -74,6 +74,7 @@ const Jahresablauf = () => {
   return (
     <section className="jahresablauf">
       <h1 className="jahres-header">Jahresablauf</h1>
+      <h1 className="jahres-header">Jahresprogramm</h1>
       <div className="jahresablauf-container">
         {jahresablaufData.map((item) => (
           <div key={item.id} className={`box box${item.id}`}>

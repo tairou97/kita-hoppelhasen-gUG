@@ -6,6 +6,7 @@ const Tagesablauf = () => {
   return (
     <>
       <section className="tagesablauf ">
+        {/* <h2 className="header">Tagesprogramm</h2> */}
         <h2 className="header">Tagesablauf</h2>
         <div className="box-tagesablauf">
           <div className="bringzeit">
@@ -18,7 +19,6 @@ const Tagesablauf = () => {
             </p>
           </div>
         </div>
-
         <div className="box-tagesablauf">
           <div className="morgenkreis">
             <h4>Frühstück 8:30 - 9:00 Uhr</h4>
@@ -36,7 +36,6 @@ const Tagesablauf = () => {
             </p>
           </div>
         </div>
-
         <div className="box-tagesablauf">
           {" "}
           <div className="mittagessen">
@@ -50,7 +49,6 @@ const Tagesablauf = () => {
             </p>
           </div>
         </div>
-
         <div className="box-tagesablauf">
           {" "}
           <div className="ruhezeit">
@@ -64,7 +62,6 @@ const Tagesablauf = () => {
             </p>
           </div>
         </div>
-
         <div className="box-tagesablauf">
           {" "}
           <div className="vesper">
@@ -75,7 +72,6 @@ const Tagesablauf = () => {
             </p>
           </div>
         </div>
-
         <div className="box-tagesablauf">
           <div className="nachmittagszeit">
             <h4>Nachmittagszeit 14:30 - 16:30 Uhr</h4>

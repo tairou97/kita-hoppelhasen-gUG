@@ -7,7 +7,7 @@ import Abloefe from "../Pages/Abläufe/Abloeufe/";
 import PageNotFound from "../Pages/Pagenotfound/PageNotFound";
 import SuperHasen from "./SuperHasen/SuperHasen";
 import MiniHasen from "./MiniHasen/MiniHasen";
-import Impressum from "./Impressum/Impressum";
+import Impressum from "../Components/Impressum/Impressum";
 import HomeTest from "../Pages/Home/HomeTest";
 
 const routes = [

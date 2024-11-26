@@ -8,6 +8,23 @@
         "home2 home2"; */
 }
 
+.back {
+    background-color: #d6d02a;
+    color: #2f3105;
+    font-family: "Lucida";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.back a {
+    text-decoration: none;
+    color: #2f3105;
+}
+
 .home1 {
     /* grid-column: 1/span 2;
     grid-row: 1; */
@@ -35,19 +52,19 @@
     grid-row: 1;
     font-size: 3rem;
     padding: 2rem;
+
 }
 
 .home1 .headHeader h1 {
     font-size: 5rem;
     color: #feffe9;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-
+    font-family: "Lucida";
 }
 
 .home1 .headHeader a {
     font-size: 1rem;
     padding: 1rem 5rem;
-
     border: none;
     background-color: #2f3105;
     color: #feffe9;
@@ -60,6 +77,7 @@
 
 .home1 .headHeader p {
     font-size: 1rem;
+
 }
 
 /* Home Box2 */
@@ -70,19 +88,36 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: auto;
-    width: 92%;
+
 }
 
 .home2 .homeBox1 {
     grid-column: 1/5;
     grid-row: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    width: 92%;
+    padding: 4rem;
 }
 
+
 .home2 .homeBox1-1 {
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.home2 .homeBox1-1 h3 {
+    color: #2f3105;
+    font-size: 5rem;
+}
+
+.home2 .homeBox1-1 .HeaderP {
+    font-size: 2rem;
 }
 
 .homeBox2 {
@@ -91,10 +126,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    width: 92%;
 }
 
 .homeBox3 {
-
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    width: 92%;
     grid-column: 1/5;
     grid-row: 3;
     display: grid;
@@ -109,11 +151,13 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .homeBox2-text h3,
 .homeBox3-text h3 {
+    font-family: "Lucida";
     font-size: 2rem;
     color: #2f3105;
     margin-bottom: 1rem;
@@ -123,10 +167,13 @@
 .homeBox3-text button {
     padding: 1rem 2rem;
     border: none;
-    background-color: #2f3105;
+    border-radius: 9px;
+    background: #869f3e;
+    box-shadow: inset 10px 10px 20px #768c37,
+        inset -10px -10px 20px #96b245;
     color: #000;
     font-size: 1.2rem;
-    border-radius: 5px;
+
     cursor: pointer;
     transition: all 0.3s;
     display: flex;
@@ -139,12 +186,19 @@
     color: #feffe9;
 }
 
-.homeBox2-text button:hover {
-    background-color: #000;
+.homeBox2-text button:hover,
+.homeBox3-text button:hover {
+    background-color: #647a24;
     color: #fff;
 }
 
 
+.homeBox2-img img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.homeBox3-img img {}
 
 .homeBox2-img img,
 .homeBox3-img img {
@@ -155,27 +209,55 @@
     max-height: auto;
     min-height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .homeBox4 {
     display: flex;
+    background-color: #fffdc0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 6rem 11rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     grid-column: 1/5;
     grid-row: 4;
     color: #2f3105;
+    width: 100%;
+}
+
+.homeBox4 h2 {
+    font-size: 2rem;
+    font-family: "Lucida";
+    color: #2f3105;
+    margin-bottom: 1rem;
 }
 
 .homeBox4 .home-team {}
 
 @media screen and (max-width:1100px) {
+    .home1 .headHeader h1 {
+        font-size: 4rem;
+    }
+
+    .home1 .headHeader {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .home1 .headHeader a {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        background-color: #2f3105;
+        color: #feffe9;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
 
     .home2 {
         grid-template-columns: repeat(3, 1fr);
@@ -201,10 +283,30 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
     }
-
 }
 
 @media screen and (max-width: 910px) {
+    .home1 .headHeader h1 {
+        font-size: 4rem;
+    }
+
+    .home1 .headHeader {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .home1 .headHeader a {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        background-color: #2f3105;
+        color: #feffe9;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
 
     .home2 {
         grid-template-columns: repeat(3, 1fr);
@@ -218,6 +320,29 @@
     .homeBox2 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+    }
+
+    .homeBox1 {
+        position: relative;
+    }
+
+
+
+    .home2 .homeBox1-1 h3 {
+        color: #2f3105;
+        font-size: 4rem;
+    }
+
+    .home2 .homeBox1-1 .HeaderP {
+        font-size: 1.6rem;
+
+    }
+
+
+    .homeBox1-1 span {
+        height: 30px;
+        width: 30px;
+        background-color: #2f3105;
     }
 
     .homeBox3 {
@@ -274,7 +399,7 @@
     }
 
     .home1 .headHeader h1 {
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
 
     .home2 {
@@ -335,7 +460,7 @@
 
     .homeBox4 {
         padding: 1rem;
-        margin-bottom: 1rem;
+
     }
 
     .homeBox4 .home-team {
@@ -347,7 +472,7 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 602px) {
     .home1 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
@@ -381,7 +506,217 @@
     }
 
     .home1 .headHeader h1 {
+        font-size: 2.2rem;
+    }
+
+    .homeBox1 .homeBox1-1 h3 {
+        font-size: 2.2rem;
+    }
+
+    .homeBox2-text h3,
+    .homeBox3-text h3 {
+        font-size: 2.2rem;
+    }
+
+    .home-team h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+    }
+
+}
+
+@media screen and (max-width: 483px) {
+    .home1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .home1 .headImg {
+        grid-column: 1/span 1;
+        grid-row: 1;
+    }
+
+    .home1 .headImg img {}
+
+    .home1 .headHeader {
+        grid-column: 1/span 1;
+        grid-row: 1;
+        font-size: 1rem;
+        margin-top: 1.9rem;
+        padding: 1rem;
+    }
+
+    .home1 .headHeader a {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        background-color: #2f3105;
+        color: #feffe9;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
+
+    .home1 .headHeader h1 {
         font-size: 1.5rem;
     }
 
+    .home2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .homeBox1 {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .homeBox1 .homeBox1-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeBox1 .homeBox1-1 h3 {
+        font-size: 1.8rem;
+    }
+
+
+    .homeBox2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .homeBox3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .homeBox2-text,
+    .homeBox3-text {
+        padding: 1rem;
+    }
+
+
+    .homeBox2-text h3,
+    .homeBox3-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .homeBox2-text button,
+    .homeBox3-text button {
+        padding: 0.5rem 1.5rem;
+        border: none;
+        background-color: #2f3105;
+        color: #000;
+        font-size: 1.1rem;
+        border-radius: 5px
+    }
+
+    .home-team h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 310px) {
+    .home1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .home1 .headImg {
+        grid-column: 1/span 1;
+        grid-row: 1;
+    }
+
+    .home1 .headImg img {}
+
+    .home1 .headHeader {
+        grid-column: 1/span 1;
+        grid-row: 1;
+        font-size: 1rem;
+        margin-top: 1.9rem;
+        padding: 1rem;
+    }
+
+    .home1 .headHeader a {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        background-color: #2f3105;
+        color: #feffe9;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
+
+    .home1 .headHeader h1 {
+        font-size: .9rem;
+    }
+
+    .home2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .homeBox1 {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .homeBox1 .homeBox1-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeBox2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .homeBox3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .homeBox2-text,
+    .homeBox3-text {
+        padding: 1rem;
+    }
+
+    .homeBox2-text button,
+    .homeBox3-text button {
+        padding: 0.5rem 1.5rem;
+        border: none;
+        background-color: #2f3105;
+        color: #000;
+        font-size: 1.1rem;
+        border-radius: 5px
+    }
 }
