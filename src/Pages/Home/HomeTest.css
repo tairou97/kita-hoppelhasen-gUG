@@ -87,7 +87,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 10px;
 
 }
 
@@ -97,8 +96,8 @@
     max-width: 1200px;
     margin: 0 auto;
     height: auto;
-    width: 92%;
-    padding: 4rem;
+    padding: 0 1rem;
+
 }
 
 
@@ -108,7 +107,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    font-size: 3rem;
+
 }
 
 .home2 .homeBox1-1 h3 {
@@ -142,6 +141,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin-bottom: 2rem;
 }
 
 .homeBox2-text,
@@ -165,7 +165,6 @@
 
 .homeBox2-text button,
 .homeBox3-text button {
-    padding: 1rem 2rem;
     border: none;
     border-radius: 9px;
     background: #869f3e;
@@ -173,9 +172,10 @@
         inset -10px -10px 20px #96b245;
     color: #000;
     font-size: 1.2rem;
-
+    padding: 0.5rem 1.5rem;
     cursor: pointer;
     transition: all 0.3s;
+    margin-top: 1rem;
     display: flex;
     justify-content: start;
 }
@@ -539,8 +539,6 @@
         grid-row: 1;
     }
 
-    .home1 .headImg img {}
-
     .home1 .headHeader {
         grid-column: 1/span 1;
         grid-row: 1;
@@ -572,7 +570,6 @@
     }
 
     .homeBox1 {
-        padding: 1rem;
         margin-bottom: 1rem;
     }
 
@@ -581,12 +578,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 2rem 1rem;
     }
 
     .homeBox1 .homeBox1-1 h3 {
         font-size: 1.8rem;
+
     }
 
+    .home2 .homeBox1-1 .HeaderP {
+        font-size: 1.2rem;
+
+    }
 
     .homeBox2 {
         grid-template-columns: repeat(1, 1fr);
@@ -597,7 +600,7 @@
     .homeBox3 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
@@ -605,7 +608,7 @@
 
     .homeBox2-text,
     .homeBox3-text {
-        padding: 1rem;
+        padding: 0.3rem;
     }
 
 

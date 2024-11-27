@@ -40,7 +40,6 @@
     grid-row: 1;
     font-size: 5rem;
     text-transform: uppercase;
-
     color: #fefeea;
     text-align: center;
     font-family: "Lucida", cursive;
@@ -65,6 +64,7 @@
     /* border: 1px solid red;
     background-color: #af4b04; */
     padding: 1rem;
+    border-radius: 10px;
     /* background: #cbd6a8; */
     box-shadow: inset 5px 5px 3px #b7c197,
         inset -5px -5px 3px #dfebb9;

@@ -33,7 +33,6 @@ const HomeTest = () => {
             <h3 className="text-h3">
               Ein Ort, an dem Kinder wachsen, spielen und lernen.
             </h3>
-            <span></span>
             <p className="HeaderP">
               Wir sind eine Kindertagesstätte in Berlin, die sich auf die
               Betreuung und Förderung von Kindern im Alter von 0 bis 6 Jahren

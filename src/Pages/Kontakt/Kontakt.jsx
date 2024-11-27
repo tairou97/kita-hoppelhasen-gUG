@@ -17,7 +17,7 @@ const Kontakt = () => {
         <div className="adresse">
           {" "}
           <p>
-            <strong> Kita Hoppelhasen gUG </strong>
+            <strong> Kita Hoppelhasen gUG (haftungsbeschränkt) </strong>
             <br />
             Mandrellaplatz 3, 12555 Berlin <br />
             <a href="mailto:kita-hoppelhasen@web.de">kita-hoppelhasen@web.de</a>

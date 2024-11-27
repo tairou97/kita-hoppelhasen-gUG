@@ -55,7 +55,7 @@ const About = () => {
         <article className="Leitbild">
           <div>
             <h1 className="head-h1">
-              Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
+              Leitbild der Hoppelhasen <span>gUG (haftungsbeschränkt)</span>
             </h1>
             <p className="text-p">
               {" "}
