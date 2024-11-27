@@ -17,7 +17,8 @@ const Kontakt = () => {
         <div className="adresse">
           {" "}
           <p>
-            Kita Hoppelhasen gUG <br />
+            <strong> Kita Hoppelhasen gUG </strong>
+            <br />
             Mandrellaplatz 3, 12555 Berlin <br />
             <a href="mailto:kita-hoppelhasen@web.de">kita-hoppelhasen@web.de</a>
             <br />
@@ -30,7 +31,7 @@ const Kontakt = () => {
           </p>
         </div>{" "}
         <div className="ansprechpartner">
-          <p className="text">
+          <p>
             <strong>Ansprechpartnerinnen</strong>
             <br />
             <span> Gamze Tinmaz (Kitaleitung)</span>
@@ -38,7 +39,7 @@ const Kontakt = () => {
             <span> Eda Efe (stellv. Kitaleitung)</span>
           </p>
 
-          <p className="text">
+          <p>
             <strong>Geschäftsführung:</strong>
             <br />
             <span> Mustafa Tinmaz</span>

@@ -6,3 +6,18 @@
 
 
 }
+
+.abläufe img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+    z-index: 1;
+}
+
+.abläufe h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}

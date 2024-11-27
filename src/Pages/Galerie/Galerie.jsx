@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../Pages/Galerie/Galerie.css";
+import GalerieHero from "../../assets/img/Galerie.png";
 
 // Mini-Hasen
 
@@ -94,6 +95,7 @@ const Galerie = () => {
   return (
     <div className="gallery-container">
       {/* Boxen in einer Reihe */}
+      <img src={GalerieHero} alt="" />
       <div className="gallery-grid">
         {" "}
         <h1>Galerie</h1>

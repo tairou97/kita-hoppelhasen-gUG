@@ -4,13 +4,14 @@ import Logo from "../../assets/img/logo.png";
 import { motion } from "framer-motion";
 import Flag from "..//..//Components/SuperHasen/EventFlage";
 import ImageTop from "../../assets/img/logo.png";
+import UberUs from "../../assets//img/heroUberUs.png";
 
 const About = () => {
   return (
     <section className="about">
       {" "}
       <div className="imgeTop">
-        <img src={ImageTop} alt="" />
+        <img src={UberUs} alt="" />
       </div>
       <div className="container-about">
         <article className="Über-uns">

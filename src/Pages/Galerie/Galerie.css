@@ -2,7 +2,7 @@
 .gallery-container {
     min-height: 100vh;
     text-align: center;
-    padding: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,11 +10,20 @@
     font-family: 'Arial', sans-serif;
 }
 
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+}
+
 /* Boxen-Grid */
 .gallery-grid {
     display: grid;
     gap: 15px;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     padding: 20px;
     border-radius: 10px;
     grid-template-columns: repeat(4, 1fr);
@@ -23,7 +32,7 @@
 
 /* Galerieüberschrift */
 .gallery-container h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #2f3105;
     text-transform: uppercase;
