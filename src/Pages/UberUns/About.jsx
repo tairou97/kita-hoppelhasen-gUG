@@ -9,11 +9,17 @@ import UberUs from "../../assets//img/heroUberUs.png";
 const About = () => {
   return (
     <section className="about">
-      {" "}
-      <div className="imgeTop">
-        <img src={UberUs} alt="" />
-      </div>
+      {/* <div className="container-about">
+        <div className="about1">1</div>
+        <div className="about2">2</div>
+        <div className="about3">3</div>
+        <div className="about4">4</div>
+      </div>{" "} */}
       <div className="container-about">
+        {" "}
+        <div className="imgeTop">
+          <img src={UberUs} alt="" />
+        </div>
         <article className="Über-uns">
           <div>
             {" "}
