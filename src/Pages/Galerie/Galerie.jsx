@@ -72,7 +72,7 @@ const Galerie = () => {
       { src: SuperHasen9, text: "Super-Hasen Bild 9" },
       { src: SuperHasen10, text: "Super-Hasen Bild 10" },
     ],
-    Küche: [
+    "hauseigene Küche": [
       { src: Küche1, text: "Küche Bild 1" },
       { src: Küche2, text: "Küche Bild 2" },
       { src: Küche3, text: "Küche Bild 3" },

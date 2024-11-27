@@ -1,16 +1,14 @@
 .abläufe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
+    padding: 0 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .abläufe img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     object-fit: cover;
     object-position: center;
     filter: brightness(80%);
@@ -20,4 +18,5 @@
 .abläufe h1 {
     font-size: 4rem;
     text-transform: uppercase;
+    font-family: "Lucida", sans-serif;
 }

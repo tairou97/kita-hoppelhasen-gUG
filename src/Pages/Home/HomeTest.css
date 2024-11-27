@@ -1,11 +1,5 @@
 .conatinerHome {
     min-height: 100vh;
-
-    /* grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    grid-template-areas:
-        "home1 home1"
-        "home2 home2"; */
 }
 
 .back {
@@ -87,7 +81,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-
 }
 
 .home2 .homeBox1 {
@@ -129,6 +122,7 @@
     margin: 0 auto;
     height: auto;
     width: 92%;
+
 }
 
 .homeBox3 {
@@ -194,11 +188,12 @@
 
 
 .homeBox2-img img {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
 }
 
-.homeBox3-img img {}
+.homeBox3-img img {
+    border-radius: 10px;
+}
 
 .homeBox2-img img,
 .homeBox3-img img {

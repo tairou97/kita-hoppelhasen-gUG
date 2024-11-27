@@ -2,12 +2,12 @@
 .gallery-container {
     min-height: 100vh;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Arial', sans-serif;
+    padding: 0 1rem;
 }
 
 .gallery-container img {
@@ -23,11 +23,10 @@
 .gallery-grid {
     display: grid;
     gap: 15px;
-    /* margin-top: 10rem; */
-    padding: 20px;
     border-radius: 10px;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 Spalten für größere Bildschirme */
+    margin-bottom: 1rem;
+    margin: 2rem 0;
 }
 
 /* Galerieüberschrift */
@@ -38,6 +37,7 @@
     text-transform: uppercase;
     grid-column: 1 / -1;
     grid-row: 1;
+    font-family: "Lucida", cursive;
 }
 
 /* Buttons für die Auswahl der Galerien */
