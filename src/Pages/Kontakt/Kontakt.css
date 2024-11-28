@@ -18,7 +18,6 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    z-index: 0;
     grid-column: 1/span 2;
     grid-row: 1;
 }
@@ -26,7 +25,8 @@
 .kontaktBox1 .imgHero img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     grid-column: 1/span 2;
     grid-row: 1;
     object-fit: cover;
@@ -37,35 +37,31 @@
 
 .kontaktBox1 h1 {
     grid-column: 1/span 2;
-    grid-row: 1;
-    font-size: 5rem;
+    grid-row: 2;
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #fefeea;
+    color: #798645;
     text-align: center;
     font-family: "Lucida", cursive;
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .kontaktBox2 {
-
     display: grid;
     /* border: #af4b04 1px solid; */
     grid-template-columns: repeat(2, 1fr);
-    margin: 3rem;
+    margin: 0 3rem 3rem 3rem;
     gap: 1rem;
     border-radius: 10px;
 }
 
 .kontaktBox2 .adresse {
-    /* border: 1px solid red;
-    background-color: #af4b04; */
     padding: 1rem;
     border-radius: 10px;
-    /* background: #cbd6a8; */
     box-shadow: inset 5px 5px 3px #b7c197,
         inset -5px -5px 3px #dfebb9;
 }
@@ -73,7 +69,6 @@
 .adresse strong {
     color: darkolivegreen;
     font-size: 1.5rem;
-
 }
 
 .adresse p {
@@ -81,7 +76,6 @@
     padding: 1rem;
 }
 
-.adresse span {}
 
 .kontaktBox2 .adresse a {
     color: darkolivegreen;
@@ -109,9 +103,6 @@
     font-size: 1.4rem;
     padding: 1rem;
 }
-
-.ansprechpartner span {}
-
 
 .kontaktBox3 {
     height: 30rem;

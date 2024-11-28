@@ -26,7 +26,6 @@
     src: url("../../assets/Pally-Variable.ttf") format('truetype');
 }
 
-
 @font-face {
     font-family: 'Lucida';
     src: url("../../assets/LucidaHandwritingStdBlack.TTF") format('truetype');
@@ -39,13 +38,13 @@ body {
     background-color: #feffe9;
     margin: 0;
     padding: 0;
+    font-family: "Supreme", sans-serif;
     box-sizing: border-box;
 }
 
 .tagesablauf {
-    font-family: 'Satoshi', sans-serif;
-    margin: 20px;
     display: grid;
+    width: 100%;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -53,74 +52,93 @@ body {
         "bringzeit morgenkreis mittagessen"
         "ruhezeit vesper nachmittagszeit"
     ;
-    margin-top: 6rem;
 }
 
+.tagesablauf {
+    background-image: url("../../assets/img/TagesImg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 100%;
+
+    max-width: 1300px;
+}
 
 .tagesablauf>div {
     color: #435318;
     width: 100%;
     height: 290px;
-
     padding: 20px 10px;
-    /* background: #E9EED9; */
-    /* box-shadow: inset -10px 10px 20px #718734,
-        inset 10px -10px 20px #99b746; */
+    border-radius: 10px;
+    background-color: #feffe9;
+}
+
+.tagesablauf>div::after {
+    background-color: #859F3D;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    content: "Im Text scrollen.";
+}
+
+.tagesablauf>div:nth-child(6)::after {
+    margin-top: 4rem;
 }
 
 .box-tagesablauf {
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow: 5px 5px 9px #cacaca,
+    border: 3px solid #a4d716;
+    box-shadow: 5px 5px 9px #798645,
         -5px -5px 9px #f6f6f6;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* background: #E9EED9; */
     padding: 10px;
     animation: ease-in-out 1s;
     transition: 0.5s;
+
 }
 
 h4 {
     font-size: 1.5rem;
-    font-family: "Pally", sans-serif;
+    font-family: "Supreme", sans-serif;
     font-weight: 700;
     color: #798645;
-    ;
+
 }
 
 .header {
-    font-size: 3rem;
-    font-family: "Pally", sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family: "Lucida", sans-serif;
     font-weight: 700;
-    color: #798645;
-    ;
-    padding: 2rem 0 0 0;
+    color: #feffe9;
+    background-color: #7986456e;
+    padding: 10px;
+    border-radius: 10px;
     grid-area: header;
     text-align: center;
+
 }
 
 .bringzeit {
     padding: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     grid-area: bringzeit;
     cursor: pointer;
     width: 100%;
-    /* Festlegen der maximalen Höhe */
     overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
     padding: 10px;
 }
 
 .morgenkreis {
-
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     grid-area: morgenkreis;
     cursor: pointer;
     width: 100%;
-    /* Festlegen der maximalen Höhe */
     overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
     padding: 10px;
 }
 
@@ -129,40 +147,27 @@ p {
     margin: 10px 0;
     font-size: 1.2rem;
     color: #859F3D;
-
 }
 
 .mittagessen {
-
-
     padding: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
     width: 100%;
-    /* Festlegen der maximalen Höhe */
     overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
     padding: 10px;
 }
 
 .ruhezeit {
-
-
     padding: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
     width: 100%;
-    /* Festlegen der maximalen Höhe */
     overflow-y: auto;
-    /* Vertikalen Scrollbalken bei Überlauf anzeigen */
     padding: 10px;
 }
 
 .vesper {
-
     border-radius: 5px;
     padding: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
     width: 100%;
     overflow-y: auto;
@@ -170,18 +175,15 @@ p {
 }
 
 .nachmittagszeit {
-
     border-radius: 5px;
     padding: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     cursor: pointer;
     width: 100%;
     overflow-y: auto;
     padding: 10px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .tagesablauf {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -194,9 +196,21 @@ p {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .tagesablauf {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header  header"
+            "bringzeit morgenkreis "
+            "mittagessen ruhezeit "
+            "vesper nachmittagszeit"
+        ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tagesablauf {
+        grid-template-columns: 1fr;
         grid-template-areas:
             "header"
 
@@ -213,6 +227,156 @@ p {
             "nachmittagszeit"
         ;
 
+    }
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .tagesablauf {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+
+            "bringzeit"
+
+            "morgenkreis"
+
+            "mittagessen"
+
+            "ruhezeit"
+
+            "vesper"
+
+            "nachmittagszeit"
+        ;
+
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+
+    .tagesablauf {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+
+            "bringzeit"
+
+            "morgenkreis"
+
+            "mittagessen"
+
+            "ruhezeit"
+
+            "vesper"
+
+            "nachmittagszeit"
+        ;
+        width: 100%;
+    }
+
+    .tagesablauf div {
+        width: 100%;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 280px) {
+    .tagesablauf {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+
+            "bringzeit"
+
+            "morgenkreis"
+
+            "mittagessen"
+
+            "ruhezeit"
+
+            "vesper"
+
+            "nachmittagszeit"
+        ;
+
+    }
+
+    .header {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 240px) {
+    .tagesablauf {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+
+            "bringzeit"
+
+            "morgenkreis"
+
+            "mittagessen"
+
+            "ruhezeit"
+
+            "vesper"
+
+            "nachmittagszeit"
+        ;
+
+    }
+
+    .header {
+        font-size: .8rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 
 }

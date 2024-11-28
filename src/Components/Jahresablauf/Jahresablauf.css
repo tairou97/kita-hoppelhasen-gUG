@@ -1,8 +1,10 @@
 .jahresablauf {
     font-family: 'Satoshi', sans-serif;
-    display: grid;
     margin: 20px;
     gap: 10px;
+    margin: 0 auto;
+
+    max-width: 1300px;
 }
 
 .jahresablauf-container {
@@ -10,18 +12,20 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "box box box box ";
+
 }
 
 .jahres-header {
-    font-size: 3rem;
-    font-family: "Pally", sans-serif;
+    font-size: clamp(1rem, 5vw, 4rem);
+    font-family: "Lucida", sans-serif;
     font-weight: 700;
-    color: #798645;
-    ;
-    display: flex;
-    padding: 2rem 0 0 0;
-    justify-content: center;
-    align-items: center;
+    color: #feffe9;
+    background-color: #798645;
+    padding: 10px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .box {
@@ -82,12 +86,23 @@
 
 @media screen and (max-width: 535px) {
     .jahres-header {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .jahresablauf-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "box   ";
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .jahres-header {
+        font-size: 1.01rem;
+    }
+
+    .text {
+        font-size: 1rem;
     }
 
 }

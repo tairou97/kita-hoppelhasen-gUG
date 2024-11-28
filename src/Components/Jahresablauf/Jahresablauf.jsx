@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"; // Importiere Framer Motion
 import "./Jahresablauf.css";
 import Img from "../../assets/img/img.png";
 
@@ -71,26 +72,47 @@ const Jahresablauf = () => {
       imgSrc: Img,
     },
   ];
+
   return (
     <section className="jahresablauf">
-      <h1 className="jahres-header">Jahresablauf</h1>
-      <h1 className="jahres-header">Jahresprogramm</h1>
+      <h2 className="jahres-header">Jahresprogramm</h2>
       <div className="jahresablauf-container">
         {jahresablaufData.map((item) => (
-          <div key={item.id} className={`box box${item.id}`}>
-            <div>
+          <motion.div
+            key={item.id}
+            className={`box box${item.id}`}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: item.id * 0.1,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 300,
+            }}
+            whileHover={{ scale: 1.05 }} // Hover-Effekt
+          >
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: item.id * 0.2, duration: 0.5 }}
+            >
               <img
                 src={item.imgSrc}
                 alt={`${item.name} - ${item.englishName}`}
                 className="event-image"
               />
-            </div>
+            </motion.div>
+
             <div className="text">
-              <span>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: item.id * 0.3, duration: 0.4 }}
+              >
                 {item.name} ({item.englishName})
-              </span>
+              </motion.span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
