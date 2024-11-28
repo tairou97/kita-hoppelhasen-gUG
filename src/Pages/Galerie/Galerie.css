@@ -8,16 +8,15 @@
     align-items: center;
     font-family: 'Arial', sans-serif;
     padding: 0 1rem;
+    border-radius: 5px;
 }
 
 .gallery-container img {
     width: 100%;
     height: auto;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 5px;
     object-fit: cover;
-    object-position: center;
-    filter: brightness(80%);
+
 }
 
 /* Boxen-Grid */
@@ -28,6 +27,7 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 1rem;
     margin: 2rem 0;
+    border-radius: 10px;
 }
 
 /* Galerieüberschrift */
@@ -83,12 +83,14 @@
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
+    border-radius: 5px;
 }
 
 .gallery-box img {
     width: 100%;
     object-fit: cover;
     height: auto;
+    border-radius: 5px;
 }
 
 .gallery-box p {
@@ -120,7 +122,7 @@
 .fullscreen img {
     max-width: 90%;
     max-height: 90%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* Responsivität */

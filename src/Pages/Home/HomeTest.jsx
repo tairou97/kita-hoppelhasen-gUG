@@ -3,33 +3,68 @@ import "./HomeTest.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Hero2 from "../../assets/img/hero2.png";
-import MiniHasen from "../../assets/img/miniHasen.png";
-import SuperHasen from "../../assets/img/superHasen.png";
+import MiniHasen from "../../assets/img/minihasen.png";
+import SuperHasen from "../../assets/img/superhasen.png";
+
 const HomeTest = () => {
   return (
-    <section className="conatinerHome">
-      <div className="back">
-        {" "}
-        <Link to="/">Top</Link>{" "}
-      </div>
-      <div className="home1">
-        {/* ==============Image =============*/}
-        <div className="headImg">
-          {" "}
-          <img src={Hero2} alt="" />
-        </div>{" "}
-        {/* ==============Überschrift =============*/}
-        <div className="headHeader">
-          <h1 className="">Willkommen in der Kita Hoppelhasen</h1>
+    <motion.section
+      className="conatinerHome"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.div
+        className="back"
+        initial={{ y: -50 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <Link to="/">Top</Link>
+      </motion.div>
 
-          <Link to="/about">Mehr erfahren</Link>
+      <motion.div
+        className="home1"
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="headImg">
+          <motion.img
+            src={Hero2}
+            alt=""
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.6 }}
+          />
         </div>
-      </div>
+        <div className="headHeader">
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            Willkommen in der Kita Hoppelhasen
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+          >
+            <Link to="/about">Mehr erfahren</Link>
+          </motion.div>
+        </div>
+      </motion.div>
+
       <div className="home2">
-        <div className="homeBox1">
-          {" "}
+        <motion.div
+          className="homeBox1"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <div className="homeBox1-1">
-            {" "}
             <h3 className="text-h3">
               Ein Ort, an dem Kinder wachsen, spielen und lernen.
             </h3>
@@ -41,12 +76,23 @@ const HomeTest = () => {
               entwickeln können.
             </p>
           </div>
-        </div>
-        <div className="homeBox2">
+        </motion.div>
+
+        <motion.div
+          className="homeBox2"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <div className="homeBox2-img">
-            {" "}
             <Link to="/minihasen">
-              <img src={MiniHasen} alt="" />
+              <motion.img
+                src={MiniHasen}
+                alt=""
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              />
             </Link>
           </div>
           <div className="homeBox2-text">
@@ -57,14 +103,23 @@ const HomeTest = () => {
               Freundschaften und entdecken spielerisch die Welt – alles in einer
               warmen, sicheren Umgebung voller Fürsorge und Freude.
             </p>
-
-            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <Link to="/minihasen">Mehr erfahren</Link>
-            </button>
+            </motion.button>
           </div>
-        </div>
-        <div className="homeBox3">
-          <div className=" homeBox3-text">
+        </motion.div>
+
+        <motion.div
+          className="homeBox3"
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="homeBox3-text">
             <h3>Super Hasen</h3>
             <p>
               Die Super-Hasen bereiten sich voller Stolz auf die Schule vor. Mit
@@ -72,18 +127,32 @@ const HomeTest = () => {
               begleiten wir sie auf ihrem Weg, damit sie den nächsten
               Lebensabschnitt mit Selbstvertrauen und Neugier beginnen können.
             </p>
-            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <Link to="/superhasen">Mehr erfahren</Link>
-            </button>
+            </motion.button>
           </div>
           <div className="homeBox3-img">
             <Link to="/superhasen">
-              <img src={SuperHasen} alt="" />
+              <motion.img
+                src={SuperHasen}
+                alt=""
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="homeBox4">
+        <motion.div
+          className="homeBox4"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           <div className="home-team">
             <h2>Unser Team</h2>
             <p className="HeaderP2">
@@ -93,9 +162,9 @@ const HomeTest = () => {
               Kinder bei uns wohlfühlen und gerne in die Kita kommen.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
