@@ -3,8 +3,8 @@ import "./HomeTest.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Hero2 from "../../assets/img/hero2.png";
-import MiniHasen from "../../assets/img/minihasen.png";
-import SuperHasen from "../../assets/img/superhasen.png";
+import MiniHasen from "../../assets/img/miniHasen.png";
+import SuperHasen from "../../assets/img/superHasen.png";
 
 const HomeTest = () => {
   return (
