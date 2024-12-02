@@ -6,6 +6,7 @@ import Hero2 from "../../assets/img/hero2.png";
 import MiniHasen from "../../assets/img/miniHasen.png";
 import SuperHasen from "../../assets/img/superHasen.png";
 import ScrollButton from "../../Components/ScrollButton";
+import DatenSchutzHinweis from "../../Components/DatenSchutzHinweis";
 const HomeTest = () => {
   return (
     <motion.section
@@ -21,7 +22,6 @@ const HomeTest = () => {
         transition={{ duration: 0.6 }}
       >
         <ScrollButton />
-        <Link to="/">Top</Link>
       </motion.div>
 
       <motion.div
@@ -56,7 +56,7 @@ const HomeTest = () => {
           </motion.div>
         </div>
       </motion.div>
-
+      <DatenSchutzHinweis />
       <div className="home2">
         <motion.div
           className="homeBox1"
