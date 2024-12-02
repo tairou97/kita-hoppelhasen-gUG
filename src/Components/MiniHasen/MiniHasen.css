@@ -4,17 +4,79 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     max-width: 1300px;
-    background-color: aqua;
+
 }
 
+.link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fefeea;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, #b8df57 0%, #869f3e 100%);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-image 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover-Effekt */
+.link a:hover {
+    transform: scale(1.1);
+    /* Vergrößert den Button */
+    background-image: linear-gradient(to right, #869f3e 0%, #b8df57 100%);
+    /* Farbänderung des Verlaufs */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    /* Tiefere Schatten */
+}
+
+
 .mini-text {
+    background-image: linear-gradient(to right, #b8df57 0%, #869f3e 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 3rem;
+    font-family: "Supreme", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    /* Weicher und tiefer Schatten */
+}
+
+.mini-text h1 {
+    color: #2f3105;
+    font-family: "Lucida", sans-serif;
+    text-shadow: 10px 10px 10px rgba(4, 4, 4, 0.274);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mini-text h2 {
+    color: #fefeea;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.727);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mini-text p {
+    color: #fefeea;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.727);
+
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .Card {

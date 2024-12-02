@@ -6,11 +6,15 @@ import CardSlider from "./CardSlider";
 const MiniHasen = () => {
   return (
     <div className="minihasen">
-      <div className="mini-text">
+      {" "}
+      <div className="link">
         {" "}
         <Link to="/">Startseite</Link>
+      </div>
+      <div className="mini-text">
+        {" "}
         <h1>Mini Hasen</h1>
-        <h1>Mini-Hasen: Der erste große Schritt in eine spannende Welt </h1>
+        <h2> Der erste große Schritt in eine spannende Welt </h2>
         <p>
           Unsere Mini-Hasen sind die jüngsten Kinder in der Kita Hoppelhasen.
           Neugierig und aufgeweckt entdecken sie voller Freude die Welt um sich
