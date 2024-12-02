@@ -9,7 +9,8 @@ const SuperHasen = () => {
     <div className="superhasen">
       <Flage />
       <Link to="/">Startseite</Link>
-      <h1>Super-Hasen: Kleine Umweltschützer bereit für die große Schulzeit</h1>
+      <h1>Super Hasen</h1>
+      <h2>Super-Hasen: Kleine Umweltschützer bereit für die große Schulzeit</h2>
       <p>
         Unsere Super-Hasen sind Kinder, die nicht nur voller Stolz auf die
         Schule vorbereitet werden, sondern auch ein besonderes Bewusstsein für

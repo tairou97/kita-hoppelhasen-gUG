@@ -14,14 +14,14 @@
 
 /* Banner */
 .cookie-banner {
-    background-color: #ffffff;
-    padding: 20px 30px;
-    border-radius: 12px;
-    max-width: 500px;
+    background-color: #fefeea;
+    padding: 40px 30px;
+    border-radius: 10px;
+    max-width: 600px;
     width: 90%;
     text-align: center;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
-    font-family: "Roboto", sans-serif;
+    font-family: "Supreme", sans-serif;
 }
 
 /* Titel */
@@ -29,7 +29,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #333333;
+    color: #869f3e;
 }
 
 /* Beschreibung */
@@ -56,13 +56,27 @@
 
 .cookie-checkbox {
     margin-right: 10px;
+    color: #1abc58;
     transform: scale(1.2);
+    cursor: pointer;
+    border-color: #ab6f0f;
+    background-color: #ad3728;
 }
+
+.cookie-checkbox:checked {
+    background-color: #ad3728;
+    /* Change background when checked */
+    border-color: #ab6f0f;
+    /* Match border to background */
+}
+
+
+
 
 /* Button */
 .cookie-accept-button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #d6d02a;
+    color: #fefeea;
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -73,5 +87,5 @@
 }
 
 .cookie-accept-button:hover {
-    background-color: #0056b3;
+    background-color: #b8b31a;
 }

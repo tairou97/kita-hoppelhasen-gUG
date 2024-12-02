@@ -1,0 +1,121 @@
+/* Hauptcontainer der Galerie */
+.gallery-container {
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Stil für das Hauptbild */
+.main-image {
+    margin-bottom: 20px;
+}
+
+.main-img {
+    width: 100%;
+    max-width: 900px;
+    /* Maximale Größe des Hauptbilds */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    /* Sanfte Übergänge */
+}
+
+/* Container für die Thumbnails */
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Abstand zwischen den Thumbnails */
+    flex-wrap: wrap;
+    /* Zeilenumbruch bei kleinerer Bildschirmgröße */
+    margin-top: 20px;
+}
+
+/* Stil für jedes Thumbnail */
+.thumbnail-container {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    /* Transparenter Rand */
+    transition: transform 0.3s ease, border 0.3s ease;
+    /* Sanfte Übergänge */
+}
+
+/* Stil für die Thumbnail-Bilder */
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Größere Thumbnails für größere Bildschirme */
+.thumbnail-container {
+    width: 100px;
+    height: 100px;
+}
+
+/* Hover-Effekt für Thumbnails */
+.thumbnail-container:hover {
+    transform: scale(1.1);
+    /* Vergrößern beim Hover */
+    border: 2px solid #007bff;
+    /* Randfarbe beim Hover */
+}
+
+/* Aktives Thumbnail */
+.thumbnail-container.selected {
+    border: 2px solid #007bff;
+    /* Randfarbe für das ausgewählte Thumbnail */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1200px) {
+
+    /* Auf Bildschirmen kleiner als 1200px: Hauptbild weiterhin max. 800px */
+    .main-img {
+        max-width: 600px;
+    }
+
+    /* Thumbnails auf Bildschirmen zwischen 1200px und 768px: 90px statt 150px */
+    .thumbnail-container {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Auf Bildschirmen kleiner als 768px: Das Hauptbild wird 100% der Breite */
+    .main-img {
+        max-width: 100%;
+    }
+
+    /* Thumbnails auf Bildschirmen zwischen 768px und 480px: 75px statt 90px */
+    .thumbnail-container {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* Auf kleinen Bildschirmen: Thumbnails auf 3 pro Reihe (statt 5 oder 6) */
+    .thumbnails {
+        gap: 10px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Auf Bildschirmen kleiner als 480px: Thumbnails auf 60px statt 75px */
+    .thumbnail-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Auf sehr kleinen Bildschirmen: Thumbnails 2 pro Reihe */
+    .thumbnails {
+        gap: 5px;
+        justify-content: space-evenly;
+    }
+}
