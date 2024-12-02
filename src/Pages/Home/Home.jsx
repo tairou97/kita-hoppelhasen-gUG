@@ -7,6 +7,8 @@ import MiniHasen from "../../assets/img/miniHasen.png";
 import SuperHasen from "../../assets/img/superHasen.png";
 import Flagg from "../../Components/SuperHasen/EventFlage";
 
+import ScrollButton from "../../Components/ScrollButton";
+
 const Home = () => {
   return (
     <motion.section
@@ -34,7 +36,7 @@ const Home = () => {
           </motion.button>
         </motion.div>
       </motion.div>
-      {/* Bildanimation */}
+      {/* Bildanimation */} <ScrollButton />
       <motion.div
         className="home home2"
         initial={{ x: -200, opacity: 0 }}
@@ -50,7 +52,6 @@ const Home = () => {
           />
         </div>
       </motion.div>
-
       <motion.div
         className="home home3"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -68,7 +69,6 @@ const Home = () => {
         </p>
       </motion.div>
       {/* Mini Hasen Abschnitt */}
-
       <motion.div
         className="home home4"
         initial={{ x: -200, opacity: 0 }}

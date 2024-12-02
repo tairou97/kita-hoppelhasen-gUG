@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Hero2 from "../../assets/img/hero2.png";
 import MiniHasen from "../../assets/img/miniHasen.png";
 import SuperHasen from "../../assets/img/superHasen.png";
-
+import ScrollButton from "../../Components/ScrollButton";
 const HomeTest = () => {
   return (
     <motion.section
@@ -20,6 +20,7 @@ const HomeTest = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
       >
+        <ScrollButton />
         <Link to="/">Top</Link>
       </motion.div>
 

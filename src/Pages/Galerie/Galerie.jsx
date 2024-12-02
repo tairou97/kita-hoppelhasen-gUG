@@ -49,7 +49,6 @@ const Galerie = () => {
       { src: MiniHasen1, text: "Mini-Hasen Bild 1" },
       { src: MiniHasen2, text: "Mini-Hasen Bild 2" },
       { src: MiniHasen3, text: "Mini-Hasen Bild 3" },
-      { src: MiniHasen4, text: "Mini-Hasen Bild 4" },
       { src: MiniHasen5, text: "Mini-Hasen Bild 5" },
       { src: MiniHasen6, text: "Mini-Hasen Bild 6" },
       { src: MiniHasen7, text: "Mini-Hasen Bild 7" },
@@ -94,41 +93,43 @@ const Galerie = () => {
 
   return (
     <div className="gallery-container">
-      {/* Boxen in einer Reihe */}
-      <img src={GalerieHero} alt="" />
-      <div className="gallery-grid">
-        {" "}
-        <h1>Galerie</h1>
-        {/* Buttons für Galerieauswahl */}
-        <div className="gallery-buttons">
-          {Object.keys(galleries).map((gallery) => (
-            <button
-              key={gallery}
-              className={`gallery-button ${
-                activeGallery === gallery ? "active" : ""
-              }`}
-              onClick={() => setActiveGallery(gallery)}
-            >
-              {gallery}
-            </button>
-          ))}
-        </div>
-        {galleries[activeGallery].map((item, index) => (
-          <div
-            className="gallery-box"
-            key={index}
-            onClick={() => setFullscreenImage(item.src)}
-          >
-            <img src={item.src} alt={item.text} />
+      <div className="gallery">
+        {/* Boxen in einer Reihe */}
+        <img src={GalerieHero} alt="" />
+        <div className="gallery-grid">
+          {" "}
+          <h1>Galerie</h1>
+          {/* Buttons für Galerieauswahl */}
+          <div className="gallery-buttons">
+            {Object.keys(galleries).map((gallery) => (
+              <button
+                key={gallery}
+                className={`gallery-button ${
+                  activeGallery === gallery ? "active" : ""
+                }`}
+                onClick={() => setActiveGallery(gallery)}
+              >
+                {gallery}
+              </button>
+            ))}
           </div>
-        ))}
-      </div>{" "}
-      {/* Fullscreen Image */}
-      {fullscreenImage && (
-        <div className="fullscreen" onClick={() => setFullscreenImage(null)}>
-          <img src={fullscreenImage} alt="Fullscreen" />
-        </div>
-      )}
+          {galleries[activeGallery].map((item, index) => (
+            <div
+              className="gallery-box"
+              key={index}
+              onClick={() => setFullscreenImage(item.src)}
+            >
+              <img src={item.src} alt={item.text} />
+            </div>
+          ))}
+        </div>{" "}
+        {/* Fullscreen Image */}
+        {fullscreenImage && (
+          <div className="fullscreen" onClick={() => setFullscreenImage(null)}>
+            <img src={fullscreenImage} alt="Fullscreen" />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 /* Hauptcontainer */
 .gallery-container {
-    min-height: 100vh;
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -19,8 +19,16 @@
 
 }
 
+.gallery {
+    width: 100%;
+    height: 100vh;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
 /* Boxen-Grid */
 .gallery-grid {
+
     display: grid;
     gap: 15px;
     border-radius: 10px;
