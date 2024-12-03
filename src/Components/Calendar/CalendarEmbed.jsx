@@ -1,42 +1,22 @@
 import React from "react";
+import "./CalendarEmbed.css"; // Importiere die CSS-Datei
 
 const CalendarEmbed = ({
-  padding = "10px",
-  borderRadius = "10px",
   calendarUrl = "https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBerlin&showTz=0&showTabs=0&showNav=0&showTitle=0&src=mr.tbrown1997%40gmail.com",
-  width = "1200px",
-  height = "600px",
-  display = "flex",
-  justifyContent = "center",
-  alignItems = "center",
-  flexDirection = "column",
-  border = "2px solid black",
-  marginTop = "10px",
 }) => {
   return (
-    <div
-      style={{
-        marginTop,
-        border,
-        padding,
-        borderRadius,
-        display,
-        justifyContent,
-        alignItems,
-        flexDirection,
-      }}
-    >
-      <h1>hhsh</h1>
-      <iframe
-        src={calendarUrl}
-        style={{
-          width,
-          height,
-          borderRadius,
-        }}
-        frameBorder="0"
-        scrolling="no"
-      />
+    <div className="CalendarMain">
+      {" "}
+      <h2>Liebe Eltern Hier ist die Planung für 2024 / 2025</h2>
+      <div className="calendar-container">
+        <iframe
+          src={calendarUrl}
+          className="calendar-iframe"
+          frameBorder="0"
+          scrolling="no"
+          title="Google Calendar"
+        />
+      </div>
     </div>
   );
 };

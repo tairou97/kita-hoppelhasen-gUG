@@ -1,0 +1,104 @@
+.CalendarMain {
+    margin: 4rem;
+    background-color: #f7fac2;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.CalendarMain h2 {
+    color: #2f3105;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.calendar-container {
+    background-color: #feffe9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Standardstil des iFrames */
+.calendar-iframe {
+
+    width: 100%;
+    height: 50vh;
+    /* Höhe relativ zur Ansichtshöhe */
+    border-radius: 5px;
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .calendar-iframe {
+        height: 30vh;
+        /* Weniger Höhe für Tablets */
+    }
+
+    .CalendarMain {
+        margin: 2rem .1rem;
+        background-color: #f7fac2;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .CalendarMain h2 {
+        color: #2f3105;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .calendar-container {
+        padding: 5px;
+        width: 100%;
+        /* Weniger Padding für kleine Bildschirme */
+    }
+
+    .CalendarMain {
+        background-color: #f7fac2;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .calendar-iframe {
+        height: 50vh;
+
+        /* Noch weniger Höhe für Smartphones */
+    }
+}
+
+
+@media screen and (max-width: 324px) {
+    .calendar-iframe {
+        height: 30vh;
+        /* Weniger Höhe für Tablets */
+    }
+
+    .CalendarMain {
+        margin: 1rem;
+        background-color: #f7fac2;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .CalendarMain h2 {
+        color: #2f3105;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 2rem;
+    }
+
+}

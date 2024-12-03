@@ -12,7 +12,12 @@ const Abloefe = () => {
       <h1>Tages- & Jahresprogramme</h1>
       <Tagesablauf />
       <Jahresablauf />
-      <CalendarEmbed />
+      <CalendarEmbed
+        padding="20px"
+        calendarUrl="https://calendar.google.com/calendar/embed?src=example%40gmail.com&ctz=Europe%2FBerlin"
+        width="1200px"
+        height="700px"
+      />
     </section>
   );
 };
