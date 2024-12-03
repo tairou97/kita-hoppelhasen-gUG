@@ -60,13 +60,14 @@
 .thumbnail-container:hover {
     transform: scale(1.1);
     /* Vergrößern beim Hover */
-    border: 2px solid #007bff;
+
+
     /* Randfarbe beim Hover */
 }
 
 /* Aktives Thumbnail */
 .thumbnail-container.selected {
-    border: 2px solid #007bff;
+
     /* Randfarbe für das ausgewählte Thumbnail */
 }
 

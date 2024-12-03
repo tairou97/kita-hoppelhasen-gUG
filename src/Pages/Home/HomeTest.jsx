@@ -56,7 +56,7 @@ const HomeTest = () => {
           </motion.div>
         </div>
       </motion.div>
-      <DatenSchutzHinweis />
+
       <div className="home2">
         <motion.div
           className="homeBox1"
