@@ -39,12 +39,13 @@ const CardSlider = () => {
   ];
 
   const handleThumbnailClick = (image) => {
-    setMainImage(image); // Setze das Hauptbild
+    setMainImage(image);
   };
 
   return (
     <div className="gallery-container">
       {/* Hauptbild */}
+
       <div className="main-image">
         <img src={mainImage} alt="Main" className="main-img" />
       </div>

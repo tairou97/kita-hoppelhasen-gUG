@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Impressum from "../Components/Impressum/Impressum";
+import Impressum from "../Components/DatenSchutz/DatenSchutzHinweis";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -44,7 +44,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link to="/impressum" className="imprint-link">
+            <Link to="/Impressum" className="imprint-link">
               Impressum
             </Link>
           </p>

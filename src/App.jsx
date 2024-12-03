@@ -3,7 +3,7 @@ import Layout from "./Layout/Layout";
 import routes from "./Components/Routes";
 import { Route, Routes } from "react-router-dom";
 import ScrollButton from "../src/Components/ScrollButton";
-import DatenSchutzHinweis from "../src/Components/DatenSchutzHinweis";
+
 function App() {
   return (
     <Layout>

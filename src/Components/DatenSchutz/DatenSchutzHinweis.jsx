@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Components/DatenSchutzHinweis.css";
+import "../DatenSchutz/DatenSchutzHinweis.css";
 
 const DatenSchutzHinweis = () => {
   const [accepted, setAccepted] = useState(false);

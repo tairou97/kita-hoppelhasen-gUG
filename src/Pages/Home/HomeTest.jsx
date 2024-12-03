@@ -6,7 +6,7 @@ import Hero2 from "../../assets/img/hero2.png";
 import MiniHasen from "../../assets/img/miniHasen.png";
 import SuperHasen from "../../assets/img/superHasen.png";
 import ScrollButton from "../../Components/ScrollButton";
-import DatenSchutzHinweis from "../../Components/DatenSchutzHinweis";
+
 const HomeTest = () => {
   return (
     <motion.section

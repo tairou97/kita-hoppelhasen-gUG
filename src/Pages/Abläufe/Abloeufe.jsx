@@ -3,6 +3,7 @@ import "../Abläufe/Abloeufe.css";
 import Tagesablauf from "../../Components/Tagesablauf/Tagesablauf";
 import Jahresablauf from "../../Components/Jahresablauf/Jahresablauf";
 import AbloefeImg from "../../assets/img/programme.png";
+import CalendarEmbed from "../../Components/Calendar/CalendarEmbed";
 
 const Abloefe = () => {
   return (
@@ -11,6 +12,7 @@ const Abloefe = () => {
       <h1>Tages- & Jahresprogramme</h1>
       <Tagesablauf />
       <Jahresablauf />
+      <CalendarEmbed />
     </section>
   );
 };
