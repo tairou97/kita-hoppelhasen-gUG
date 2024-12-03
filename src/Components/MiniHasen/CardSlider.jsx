@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import MiniHasen1 from "../../assets/image/miniHasen/mini1.png";
 import MiniHasen2 from "../../assets/image/miniHasen/mini2.png";
 import MiniHasen3 from "../../assets/image/miniHasen/mini3.png";
-import MiniHasen4 from "../../assets/image/miniHasen/mini4.png";
+// import MiniHasen4 from "../../assets/image/miniHasen/mini4.png";
 import MiniHasen5 from "../../assets/image/miniHasen/mini5.png";
 import MiniHasen6 from "../../assets/image/miniHasen/mini6.png";
 import MiniHasen7 from "../../assets/image/miniHasen/mini7.png";
@@ -26,7 +26,7 @@ const CardSlider = () => {
     MiniHasen1,
     MiniHasen2,
     MiniHasen3,
-    MiniHasen4,
+    // MiniHasen4,
     MiniHasen5,
     MiniHasen6,
     MiniHasen7,

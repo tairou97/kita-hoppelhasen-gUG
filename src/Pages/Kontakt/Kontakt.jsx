@@ -56,6 +56,11 @@ const Kontakt = () => {
             <strong>Öffnungszeiten:</strong>
             <br />
             <span>Montag - Freitag: 7:00 - 16:30 Uhr</span>
+            <br />
+            <br />
+            <strong>Sprechzeiten:</strong>
+            <br />
+            <span>Dienstags - Donnerstags</span>
           </p>
         </div>
         <div className="ansprechpartner">

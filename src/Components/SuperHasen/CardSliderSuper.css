@@ -1,6 +1,6 @@
 /* Hauptcontainer der Galerie */
 .gallery-container {
-    margin: 0 auto;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -111,11 +111,13 @@
     .thumbnail-container {
         width: 60px;
         height: 60px;
+
     }
 
     /* Auf sehr kleinen Bildschirmen: Thumbnails 2 pro Reihe */
     .thumbnails {
         gap: 5px;
         justify-content: center;
+
     }
 }

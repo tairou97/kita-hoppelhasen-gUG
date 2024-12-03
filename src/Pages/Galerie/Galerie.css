@@ -1,6 +1,5 @@
 /* Hauptcontainer */
 .gallery-container {
-
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,7 @@
 
 .gallery {
     width: 100%;
-
+    min-height: 100vh;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -85,6 +84,7 @@
 
 .gallery-box {
     width: 100%;
+    max-height: 200px;
     display: flex;
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
