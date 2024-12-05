@@ -36,9 +36,10 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: #dff8bf34;
-
-
+    background-color: #F0F9E8;
+    background: #faffeccf;
+    background-color: #ffffff;
+    background-color: #feffe9;
     margin: 0;
     padding: 0;
     font-family: "Supreme", sans-serif;

@@ -24,7 +24,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              +49 123 456 7890
+              030/257 396 54
             </a>
           </p>
           <p>
@@ -33,7 +33,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              info@example.com
+              kita-hoppelhasen@web.de
             </a>
           </p>{" "}
         </div>

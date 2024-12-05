@@ -29,14 +29,124 @@
     color: #2f3105;
 }
 
-.head-h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
+/* Über Uns */
+.uber-uns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "uberText uberText uberText imguber imguber"
+    ;
+    ;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+    color: #2f3105;
+}
+
+
+.uberText {
+    grid-area: uberText;
+    padding: 1rem;
+    color: #2f3105;
+
+}
+
+.uberText .head-h1 {
+    font-size: 5rem;
     font-weight: 700;
     color: #2f3105;
-    margin-bottom: 1rem;
-    margin: 2rem 0;
-    font-family: "Lucida", cursive;
+    color: #869f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-family: "Lucida", sans-serif;
+}
+
+.uberText .text-p {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.imguber {
+    grid-area: imguber;
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.imguber img {
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.Leitbild {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "imgLeitbild imgLeitbild imgLeitbild imgLeitbild imgLeitbild"
+        "LeitbildText LeitbildText LeitbildText LeitbildText LeitbildText"
+    ;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    color: #2f3105;
+}
+
+.imgLeitbild {
+    grid-area: imgLeitbild;
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.imgLeitbild img {
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Leitbild .textLeitbild {
+    grid-area: LeitbildText;
+    padding: 1rem;
+    color: #2f3105;
+
 }
 
 .Leitbild .head-h1 {
@@ -44,60 +154,185 @@
     text-transform: uppercase;
     font-weight: 700;
     color: #2f3105;
+    color: #869f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
     margin: 2rem 0;
     font-family: "Supreme", sans-serif;
 }
 
 .head-h1 span {
-
     text-transform: none;
     font-weight: 700;
     color: #2f3105;
+    color: #869f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 320px) {
-    .container-about {
-        grid-column: 1/5;
-        grid-row: 4;
+.lage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "lageText lageText lageText imgLage imgLage"
+    ;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+    color: #2f3105;
+}
+
+
+.lageText {
+    grid-area: lageText;
+    padding: 1rem;
+    color: #2f3105;
+
+}
+
+.map {
+    grid-area: imgLage;
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.lageText .Lage-h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2f3105;
+    color: #869f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.lageText .text-p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .uber-uns {
+        grid-template-areas:
+            "uberText uberText uberText uberText uberText"
+            "imguber imguber imguber imguber imguber"
+        ;
     }
 
-    .container-about .head-h1 {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #2f3105;
-        margin-bottom: 1rem;
-        margin: 2rem 0;
-
+    .Leitbild {
+        grid-template-areas:
+            "imgLeitbild imgLeitbild imgLeitbild imgLeitbild imgLeitbild"
+            "LeitbildText LeitbildText LeitbildText LeitbildText LeitbildText"
+        ;
     }
 
-    .container-about .head-h1 span {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #2f3105;
-        margin-bottom: 1rem;
-        margin: 2rem 0;
-
+    .lage {
+        grid-template-areas:
+            "lageText lageText lageText lageText lageText"
+            "imgLage imgLage imgLage imgLage imgLage"
+        ;
     }
 
 }
 
-@media screen and (min-width: 768px) {
-    .container-about {
-        grid-column: 1/5;
-        grid-row: 4;
+@media screen and (max-width: 768px) {
+    .uberText .head-h1 {
+        font-size: 3rem;
+    }
+
+    .Leitbild .head-h1 {
+        font-size: 2rem;
+    }
+
+    .lageText .Lage-h3 {
+        font-size: 2rem;
+    }
+
+    .uberText .text-p {
+        font-size: 1rem;
+    }
+
+    .Leitbild .textLeitbild {
+        font-size: 1rem;
+    }
+
+    .lageText .text-p {
+        font-size: 1rem;
     }
 
 }
 
 
-@media screen and (min-width: 1024px) {
-    .container-about {
-        grid-column: 1/5;
-        grid-row: 4;
+@media screen and (max-width: 480px) {
+    .uber-uns {
+        padding: .1rem;
+    }
+
+    .uberText {
+        padding: 1rem 0;
+    }
+
+    .uberText .head-h1 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .Leitbild .head-h1 {
+        font-size: 1.5rem;
+    }
+
+    .lageText .Lage-h3 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .uberText .text-p {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .Leitbild {
+        padding: .1rem;
+    }
+
+    .Leitbild .textLeitbild {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .lageText .text-p {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .lage {
+        padding: .1rem;
     }
 
 }

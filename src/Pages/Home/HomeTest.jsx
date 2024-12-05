@@ -116,11 +116,12 @@ const HomeTest = () => {
                 duration: 0.8,
               }}
             >
-              <h3>Unsere Programme</h3>
+              <h3>Was uns auszeichnet</h3>
               <p>
-                Wir bieten verschiedene Programme für Kinder im Alter von 0 bis
-                6 Jahren an. Von den Mini-Hasen bis zu den Super-Hasen – bei uns
-                ist für jeden etwas dabei.
+                Wir legen großen Wert auf eine individuelle Förderung jedes
+                Kindes. Durch unsere hauseigene Küche, einfühlsame Betreuung und
+                eine Atmosphäre der Geborgenheit schaffen wir optimale
+                Bedingungen für das Wohlbefinden und die Entwicklung der Kinder.
               </p>
               <motion.button
                 whileHover={{

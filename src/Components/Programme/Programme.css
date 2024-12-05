@@ -1,0 +1,75 @@
+.conatinerProgramme {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.programmBox1 {
+    width: 100%;
+    padding: 0 1rem 3rem;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.programmBox1 img {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+}
+
+.programmBox2 {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    grid-template-columns: minmax(1px, 1fr)minmax(1px, 1fr)minmax(1px, 1fr);
+    column-gap: 45px;
+    row-gap: 40px;
+
+
+}
+
+.programmBox2 h2 {
+    font-weight: bold;
+    color: #798645;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programmBox3 {
+    padding: 2rem;
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-template-columns: minmax(1px, 1fr)minmax(1px, 1fr)minmax(1px, 1fr);
+    column-gap: 45px;
+    row-gap: 40px;
+}
+
+.imgHero {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.imgHero img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    grid-column: 1/span 2;
+    grid-row: 1;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+}
