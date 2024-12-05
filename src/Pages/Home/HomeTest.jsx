@@ -6,6 +6,7 @@ import Hero2 from "../../assets/img/hero2.png";
 import MiniHasen from "../../assets/img/miniHasen.png";
 import SuperHasen from "../../assets/img/superHasen.png";
 import ScrollButton from "../../Components/ScrollButton";
+import Programm from "../../assets/img/programm.png";
 
 const HomeTest = () => {
   return (
@@ -76,6 +77,63 @@ const HomeTest = () => {
               liebevolle Umgebung zu bieten, in der sie sich entfalten und
               entwickeln können.
             </p>
+          </div>
+        </motion.div>
+        <motion.div
+          className="programme"
+          initial={{ x: -150, opacity: 0, rotate: -5 }}
+          whileInView={{ x: 0, opacity: 1, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 15,
+            duration: 1,
+          }}
+        >
+          <div className="programme-box">
+            <div className="img">
+              <motion.img
+                src={Programm}
+                alt=""
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.3,
+                  ease: "easeOut",
+                }}
+              />
+            </div>
+            <motion.div
+              className="programme-box1"
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                duration: 0.8,
+              }}
+            >
+              <h3>Unsere Programme</h3>
+              <p>
+                Wir bieten verschiedene Programme für Kinder im Alter von 0 bis
+                6 Jahren an. Von den Mini-Hasen bis zu den Super-Hasen – bei uns
+                ist für jeden etwas dabei.
+              </p>
+              <motion.button
+                whileHover={{
+                  scale: 1.2,
+                  backgroundColor: "#b8df57",
+                  color: "#fff",
+                  boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)",
+                }}
+                whileTap={{ scale: 0.9, backgroundColor: "#a4c73c" }}
+              >
+                <Link to="/programmeFoerKinder">Mehr erfahren</Link>
+              </motion.button>
+            </motion.div>
           </div>
         </motion.div>
 

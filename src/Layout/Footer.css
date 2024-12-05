@@ -3,7 +3,7 @@
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     background-color: #b8bc7f;
-
+    background-color: #82ad4d;
     display: flex;
     justify-content: center;
     flex-direction: column;
