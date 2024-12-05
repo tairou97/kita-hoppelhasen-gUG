@@ -35,10 +35,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-    background-color: #F0F9E8;
-    background: #faffeccf;
-    background-color: #ffffff;
     background-color: #feffe9;
     margin: 0;
     padding: 0;

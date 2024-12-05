@@ -73,3 +73,35 @@
     object-position: center;
     filter: brightness(80%);
 }
+
+@media screen and (min-width: 320px) {
+    .programmBox2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .programmBox3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .programmBox2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .programmBox3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .programmBox2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .programmBox3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

@@ -121,7 +121,7 @@
     max-width: 1200px;
     margin: 3rem auto;
     width: 92%;
-    background-color: #f6f6f6;
+
 }
 
 .programme-box .img img:hover {
@@ -132,10 +132,10 @@
 
 .programme-box {
     padding: 1rem;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #F0F9E8;
+
 }
 
 .programme-box .img img {
@@ -218,9 +218,8 @@
     margin: .5rem;
     border-radius: 20px;
     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #d6d02a;
-    background-color: #fffdc0;
-    background-color: #F0F9E8;
+
+    color: #feffe9;
 }
 
 .homeBox2-text h3,
@@ -297,7 +296,7 @@
     display: flex;
     background-color: #feffe9;
     background-color: #fffdc0;
-    background-color: #F0F9E8;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
