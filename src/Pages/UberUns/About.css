@@ -61,6 +61,7 @@
     color: #869f3e;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 0 1rem;
+    text-align: start;
     text-transform: uppercase;
     font-family: "Lucida", sans-serif;
 }
@@ -91,7 +92,7 @@
     min-width: auto;
     max-height: auto;
     min-height: auto;
-    object-fit: cover;
+    object-fit: fill;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

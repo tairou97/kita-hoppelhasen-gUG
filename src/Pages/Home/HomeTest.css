@@ -94,13 +94,12 @@
     padding: 2rem;
 }
 
-.home2 .homeBox1-1 h3 {
+.home2 .homeBox1-1 .text-h3 {
     color: #d6d02a;
-    color: #869f3e;
     text-shadow: 1px 1px 1px #00000080;
-    font-size: 5rem;
+    font-size: 2.8rem;
     font-weight: bolder;
-    text-align: center;
+    text-align: start;
 }
 
 .home2 .homeBox1-1 .HeaderP {
@@ -143,27 +142,39 @@
     object-fit: cover;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .programme-box1 {
-    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .programme-box1 h3 {
     font-family: "Lucida";
     font-size: 3rem;
+    text-align: start;
     color: #d6d02a;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .programme-box1 p {
     font-size: 1.5rem;
+    text-align: start;
+
 }
 
 .programme-box1 button {
     border: none;
+    text-align: start;
     border-radius: 9px;
     background: #869f3e;
     box-shadow: inset 10px 10px 20px #768c37,
@@ -215,7 +226,7 @@
     font-size: 1.5rem;
     margin: .5rem;
     border-radius: 20px;
-
+    text-align: start;
     color: #feffe9;
 }
 
@@ -224,12 +235,14 @@
     font-family: "Lucida";
     font-size: 2rem;
     color: #869f3e;
+    text-align: start;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
 }
 
 .homeBox2-text button,
 .homeBox3-text button {
+    text-align: start;
     border: none;
     border-radius: 9px;
     background: #869f3e;
@@ -241,8 +254,7 @@
     cursor: pointer;
     transition: all 0.3s;
     margin-top: 1rem;
-    display: flex;
-    justify-content: start;
+    text-align: start;
 }
 
 .homeBox2-text button a,
@@ -312,6 +324,11 @@
 
 .homeBox4 .home-team {
     font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 @media screen and (max-width:1100px) {
@@ -361,6 +378,10 @@
     .homeBox4 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 }
 
@@ -404,7 +425,9 @@
         position: relative;
     }
 
-
+    .home2 .homeBox1-1 .text-h3 {
+        font-size: 2.9rem;
+    }
 
     .home2 .homeBox1-1 .HeaderP {
         font-size: 1.5rem;
@@ -461,6 +484,10 @@
     .homeBox4 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 
     .homeBox4 .HeaderP2 {
@@ -518,6 +545,10 @@
         margin-bottom: 1rem;
     }
 
+    .home2 .homeBox1-1 .text-h3 {
+        font-size: 2.5rem;
+    }
+
     .homeBox1 .homeBox1-1 {
         display: flex;
         flex-direction: column;
@@ -551,17 +582,14 @@
         width: 100%;
     }
 
-
     .homeBox2 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-
     }
 
     .homeBox3 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
@@ -591,17 +619,15 @@
 
     .homeBox4 {
         padding: 1rem;
-
     }
 
     .homeBox4 .home-team {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
     }
 }
-
 
 @media screen and (max-width: 602px) {
     .home1 {
@@ -636,7 +662,9 @@
         text-decoration: none;
     }
 
-
+    .home2 .homeBox1-1 .text-h3 {
+        font-size: 1.9rem;
+    }
 
     .home2 .homeBox1-1 .HeaderP {
         font-size: 1.5rem;
@@ -657,7 +685,6 @@
     .programme-box .img img {
         width: 100%;
     }
-
 
     .home2 .homeBox1-1 h3 {
         color: #d6d02a;
@@ -699,6 +726,13 @@
         font-size: 2.2rem;
     }
 
+    .homeBox4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
     .home-team h2 {
         display: flex;
         flex-direction: column;
@@ -713,6 +747,7 @@
     .home1 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
+
     }
 
     .home1 .headImg {
@@ -741,19 +776,30 @@
         text-decoration: none;
     }
 
+    .home2 .homeBox1-1 .text-h3 {
+        font-size: 1.7rem;
+    }
+
     .home2 .homeBox1-1 h3 {
         color: #d6d02a;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         font-size: 5rem;
+
     }
 
     .home2 .homeBox1-1 .HeaderP {
         font-size: 1.5rem;
+
+
     }
 
 
     .homeBox1 .homeBox1-1 h3 {
         font-size: 2.2rem;
+    }
+
+    .programme-box1 p {
+        font-size: 1.2rem;
     }
 
     .programme-box .img {
@@ -762,6 +808,7 @@
 
     .programme-box .img img {
         width: 100%;
+        background-color: #647a24;
     }
 
 
@@ -813,13 +860,21 @@
     .homeBox2-text,
     .homeBox3-text {
         padding: 0.3rem;
+        text-align: center;
+    }
 
+    .homeBox2 p,
+    .homeBox3 p {
+
+        font-size: 1.2rem;
     }
 
 
     .homeBox2-text h3,
     .homeBox3-text h3 {
         font-size: 1.8rem;
+
+
     }
 
     .homeBox2-text button,
@@ -829,7 +884,8 @@
         background-color: #2f3105;
         color: #000;
         font-size: 1.1rem;
-        border-radius: 5px
+        border-radius: 5px;
+
     }
 
     .home-team h2 {
@@ -838,6 +894,13 @@
         justify-content: center;
         align-items: center;
         font-size: 1.8rem;
+    }
+
+    .homeBox4 .home-team {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 
 }
@@ -877,10 +940,15 @@
         text-decoration: none;
     }
 
+    .home2 .homeBox1-1 .text-h3 {
+        font-size: 1.5rem;
+    }
+
     .home2 .homeBox1-1 h3 {
         color: #d6d02a;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         font-size: 5rem;
+
     }
 
     .home2 .homeBox1-1 .HeaderP {
@@ -962,6 +1030,10 @@
     .homeBox4 .home-team {
         padding: 1rem 0.5rem;
         font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
 
     .homeBox4 .home-team .HeaderP2 {
