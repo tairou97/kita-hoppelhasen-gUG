@@ -14,83 +14,264 @@
     justify-content: start;
     align-items: center;
     width: 100%;
+    padding: 1rem 3rem;
     margin-top: 5rem;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.741);
 }
 
 .link a {
     text-decoration: none;
     color: #fefeea;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.727);
     font-size: 1.5rem;
-    background-image: linear-gradient(to right, #b8df57 0%, #869f3e 100%);
-    padding: 1rem 2rem;
+    background-color: #859f3e;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-image 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover-Effekt */
 .link a:hover {
     transform: scale(1.1);
     /* Vergrößert den Button */
-    background-image: linear-gradient(to right, #869f3e 0%, #b8df57 100%);
+    background-color: #859f3e;
     /* Farbänderung des Verlaufs */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     /* Tiefere Schatten */
 }
 
-
 .mini-text {
-    background-image: linear-gradient(to right, #b8df57 0%, #869f3e 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #859f3e;
+    padding: 2rem;
     font-family: "Supreme", sans-serif;
     font-size: 1.5rem;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    /* Weicher und tiefer Schatten */
 }
 
 .mini-text h1 {
+    text-align: start;
     color: #2f3105;
     font-family: "Lucida", sans-serif;
-    text-shadow: 10px 10px 10px rgba(4, 4, 4, 0.274);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.727);
+    font-size: 3rem;
+    color: #d6d02a;
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .mini-text h2 {
-    color: #fefeea;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.727);
+    text-align: start;
+    color: #feffe9;
+    color: #859f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.727);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .mini-text p {
-    color: #fefeea;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.727);
-
+    text-align: start;
+    color: #859f3e;
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .Card {
+    width: 100%;
+
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-
-    padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .mini h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+
+        width: 100%;
+        padding: 0;
+
+    }
+
+
+    .link a {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin: 0 1.1rem;
+
+    }
+
+    .minihasen {
+        gap: 1rem;
+        width: 95%;
+    }
+
+    .mini-text {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .mini-text h1 {
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    .mini-text h2 {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    .mini-text p {
+        font-size: 1.4rem;
+        text-align: start;
+    }
+
+    .Card {
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .link a {
+        font-size: 1.2rem;
+        padding: 0.3rem .8rem;
+        margin: 0 1.1rem;
+
+    }
+
+    .minihasen {
+        gap: 1rem;
+        width: 95%;
+    }
+
+    .mini-text {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .link {
+
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .mini-text h1 {
+        font-size: 1.8rem;
+        text-align: start;
+    }
+
+    .mini-text h2 {
+        font-size: 1.3rem;
+        text-align: start;
+    }
+
+    .mini-text p {
+        font-size: 1.2rem;
+        text-align: start;
+    }
+
+    .Card {
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .link a {
+        font-size: 1.1rem;
+        padding: 0.3rem .8rem;
+        margin: 0 1.1rem;
+
+    }
+
+    .minihasen {
+        gap: 1rem;
+        width: 95%;
+    }
+
+
+    .mini-text {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .mini-text h1 {
+        font-size: 1.8rem;
+        text-align: start;
+    }
+
+    .mini-text h2 {
+        font-size: 1.3rem;
+        text-align: start;
+    }
+
+    .mini-text p {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+
+    .Card {
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .link a {
+        font-size: 1.1rem;
+        padding: 0.3rem .8rem;
+        margin: 0 1.1rem;
+
+    }
+
+    .minihasen {
+        gap: 1rem;
+        width: 95%;
+    }
+
+    .mini-text {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .mini-text h1 {
+        font-size: 1.8rem;
+        text-align: start;
+    }
+
+    .mini-text h2 {
+        font-size: 1.3rem;
+        text-align: start;
+    }
+
+    .mini-text p {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+
+    .Card {
+        padding: 1rem;
+    }
+
 }

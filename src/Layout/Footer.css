@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 4rem;
+
     width: 100%;
 }
 
@@ -22,25 +22,29 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
+
     align-items: center;
+}
+
+.footer .footerBox1 p {
+    font-size: 1.1rem;
 }
 
 .footer .footerBox2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
     align-items: center;
 }
 
 .footer .footerBox3 p {
-    color: #2f3105;
+    color: #feffe9;
+    font-size: 1.1rem;
     text-align: center;
     text-shadow: 1px 1px 1px #0000002e;
 }
 
 .info a {
-    color: #2f3105;
+    color: #feffe9;
     text-decoration: none;
 }

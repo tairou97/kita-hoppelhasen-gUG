@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 .2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     grid-column: 1/5;
     grid-row: 4;
@@ -52,7 +52,6 @@
     grid-area: uberText;
     padding: 1rem;
     color: #2f3105;
-
 }
 
 .uberText .head-h1 {
@@ -262,28 +261,51 @@
 }
 
 @media screen and (max-width: 768px) {
+    .uber-uns {
+        padding: .1rem;
+    }
+
+    .uberText {
+        padding: 1rem 0;
+    }
+
     .uberText .head-h1 {
-        font-size: 3rem;
-    }
-
-    .Leitbild .head-h1 {
         font-size: 2rem;
-    }
-
-    .lageText .Lage-h3 {
-        font-size: 2rem;
+        padding: 0 0.5rem;
     }
 
     .uberText .text-p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        padding: 1rem 0.4rem;
+    }
+
+    .Leitbild {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+
     }
 
     .Leitbild .textLeitbild {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        padding: 0;
+    }
+
+    .textLeitbild .head-h1 {
+        font-size: 1.7rem;
+    }
+
+    .lageText .Lage-h3 {
+        font-size: 1.5rem;
+        padding: 0;
     }
 
     .lageText .text-p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        padding: 0;
+    }
+
+    .lage {
+        padding: .1rem;
     }
 
 }
@@ -295,12 +317,17 @@
     }
 
     .uberText {
-        padding: 1rem 0;
+        padding: 1rem 0.4rem;
     }
 
     .uberText .head-h1 {
         font-size: 2rem;
         padding: 0;
+    }
+
+    .uberText .text-p {
+        font-size: 1.1rem;
+        padding: 1rem 0;
     }
 
     .Leitbild .head-h1 {
@@ -312,9 +339,9 @@
         padding: 0;
     }
 
-    .uberText .text-p {
-        font-size: 1rem;
-        padding: 1rem 0;
+    .lageText .text-p {
+        font-size: 1.1rem;
+        padding: 0;
     }
 
     .Leitbild {
@@ -322,17 +349,20 @@
     }
 
     .Leitbild .textLeitbild {
-        font-size: 1rem;
-        padding: 0;
+        font-size: 1.1rem;
+        padding: 1rem 0.4rem;
     }
 
-    .lageText .text-p {
-        font-size: 1rem;
+
+    .lageText p {
+        font-size: 1.1rem;
         padding: 0;
     }
 
     .lage {
         padding: .1rem;
     }
+
+
 
 }

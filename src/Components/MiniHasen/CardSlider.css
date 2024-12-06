@@ -4,6 +4,14 @@
     text-align: center;
 }
 
+.gallery-container img {
+    min-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
 /* Stil für das Hauptbild */
 .main-image {
     margin-bottom: 20px;
