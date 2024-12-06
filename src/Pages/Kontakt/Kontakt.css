@@ -1,4 +1,4 @@
-.mainContainer {
+/* .mainContainer {
     display: grid;
     width: 100%;
     min-height: 100vh;
@@ -52,7 +52,6 @@
 
 .kontaktBox2 {
     display: grid;
-    /* border: #af4b04 1px solid; */
     grid-template-columns: repeat(2, 1fr);
     margin: 0 3rem 3rem 3rem;
     gap: 1rem;
@@ -83,8 +82,6 @@
 }
 
 .kontaktBox2 .ansprechpartner {
-    /* border: 1px solid red;
-    background-color: #af048d; */
     border-radius: 10px;
     padding: 1rem;
     background: #cbd6a8;
@@ -158,5 +155,157 @@
         height: 100%;
         border-radius: 10px;
     }
+
+} */
+
+.kontaktContainer {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+
+}
+
+
+/* ===================kontaktBox1==================== */
+.kontaktBox1 {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    /* background-color: rgb(255, 174, 0); */
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.kontaktBox1 img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ===================kontaktBox2==================== */
+.kontaktBox2 {
+    grid-column: 1/span 2;
+    grid-row: 2;
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+
+.kontaktBox2 h1 {
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #798645;
+    text-align: center;
+    font-family: "Lucida", cursive;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+/* ====================kontaktBox3=================== */
+.kontaktBox3 {
+    grid-column: 1/span 2;
+    grid-row: 3;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontaktBox3 .kontaktImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kontaktBox3 .kontaktImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kontaktBox3 .kontaktAdresse {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #798645;
+
+}
+
+.kontaktBox3 .kontaktAdresse p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #feffe9;
+}
+
+/* ======================kontaktBox4================= */
+.kontaktBox4 {
+    grid-column: 1/span 2;
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kontaktBox4 .kontaktAnsprech {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #798645;
+}
+
+.kontaktBox4 .kontaktAnsprech p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #feffe9;
+}
+
+.kontaktBox4 .kontaktImg2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kontaktBox4 .kontaktImg2 img {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.kontaktBox5 {
+    grid-column: 1/span 2;
+    grid-row: 5;
+
+    height: 100%;
+    width: 100%;
 
 }
