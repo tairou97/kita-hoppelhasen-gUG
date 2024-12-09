@@ -9,6 +9,7 @@ import MiniHasen from "./MiniHasen/MiniHasen";
 import Impressum from "../Components/Impressum/Impressum";
 import HomeTest from "../Pages/Home/HomeTest";
 import Programme from "../Components/Programme/Programme";
+import Datenschutz from "../Components/DatenSchutz/DatenSchutzHinweis";
 
 const routes = [
   { path: "/", element: <HomeTest />, Id: 1 },
@@ -19,8 +20,9 @@ const routes = [
   { path: "/superhasen", element: <SuperHasen />, Id: 6 },
   { path: "/minihasen", element: <MiniHasen />, Id: 7 },
   { path: "/impressum", element: <Impressum />, Id: 8 },
-  { path: "/programmeFoerKinder", element: <Programme />, Id: 8 },
-  { path: "*", element: <PageNotFound />, Id: 9 },
+  { path: "/programmeFuerKinder", element: <Programme />, Id: 8 },
+  { path: "/datenschutz", element: <Datenschutz />, Id: 9 },
+  { path: "*", element: <PageNotFound />, Id: 10 },
 ];
 
 export default routes;

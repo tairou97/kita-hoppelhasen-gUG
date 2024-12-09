@@ -17,6 +17,7 @@ const HomeTest = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+      <DatenSchutzHinweis />
       <motion.div
         className="back"
         initial={{ y: -50 }}
@@ -25,7 +26,6 @@ const HomeTest = () => {
       >
         <ScrollButton />
       </motion.div>
-
       <motion.div
         className="home1"
         initial={{ x: -100 }}
@@ -224,7 +224,6 @@ const HomeTest = () => {
             </p>
           </div>
         </motion.div>
-        <DatenSchutzHinweis />
       </div>
     </motion.section>
   );
