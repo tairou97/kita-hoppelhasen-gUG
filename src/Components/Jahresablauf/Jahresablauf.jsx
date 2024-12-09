@@ -2,6 +2,16 @@ import React from "react";
 import { motion } from "framer-motion"; // Importiere Framer Motion
 import "./Jahresablauf.css";
 import Img from "../../assets/img/img.png";
+import Laterne from "..//Jahresablauf/laterne.png";
+import Weihnachten from "..//Jahresablauf/xmas.png";
+import Karnaval from "..//Jahresablauf/karnav.png";
+import Ostern from "..//Jahresablauf/oster.png";
+// import Abschied from "..//Jahresablauf/abschied.png";
+import Sommer from "..//Jahresablauf/summer.png";
+import Zahn from "..//Jahresablauf/zahn.png";
+import Fototag from "..//Jahresablauf/foto.png";
+
+import ErsteHilfe from "..//Jahresablauf/hilfe.png";
 
 const Jahresablauf = () => {
   const jahresablaufData = [
@@ -15,61 +25,56 @@ const Jahresablauf = () => {
       id: 2,
       name: "Laternenfest",
       englishName: "Lantern Festival",
-      imgSrc: Img,
+      imgSrc: Laterne,
     },
     {
       id: 3,
       name: "Weihnachtsfeier",
       englishName: "Christmas Celebration",
-      imgSrc: Img,
+      imgSrc: Weihnachten,
     },
     {
       id: 4,
       name: "Fasching",
       englishName: "Carnival",
-      imgSrc: Img,
+      imgSrc: Karnaval,
     },
     {
       id: 5,
       name: "Osterfrühstück",
       englishName: "Easter Breakfast",
-      imgSrc: Img,
+      imgSrc: Ostern,
     },
+
     {
       id: 6,
-      name: "Abschiedsfeier der Vorschulkinder",
-      englishName: "Farewell Party for Preschool Children",
-      imgSrc: Img,
+      name: "Sommerfest",
+      englishName: "Summer Festival",
+      imgSrc: Sommer,
     },
     {
       id: 7,
-      name: "Sommerfest",
-      englishName: "Summer Festival",
-      imgSrc: Img,
+      name: "Fototag",
+      englishName: "Photo Day",
+      imgSrc: Fototag,
     },
     {
       id: 8,
-      name: "Fototag",
-      englishName: "Photo Day",
-      imgSrc: Img,
+      name: "Kroko Zahnpflege",
+      englishName: "Crocodile Dental Care",
+      imgSrc: Zahn,
     },
     {
       id: 9,
-      name: "Kroko Zahnpflege",
-      englishName: "Crocodile Dental Care",
+      name: "Abschiedsfeier der Vorschulkinder",
+      englishName: "Farewell Party for Preschool Children",
       imgSrc: Img,
     },
     {
       id: 10,
-      name: "Abschiedsfeier der Vorschulkinder",
-      englishName: "Farewell Party for Preschool Children",
-      imgSrc: Img,
-    },
-    {
-      id: 11,
       name: "Erste Hilfe Kurs der Erzieher/innen",
       englishName: "First Aid Course for Educators",
-      imgSrc: Img,
+      imgSrc: ErsteHilfe,
     },
   ];
 

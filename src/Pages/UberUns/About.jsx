@@ -11,14 +11,31 @@ const About = () => {
   return (
     <section className="about">
       <div className="container-about">
-        {" "}
-        <div className="imgeTop">
+        <motion.div
+          className="imgeTop"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <img src={UberUs} alt="" />
-        </div>
+        </motion.div>
+
         <article className="uber-uns">
           <div className="uberText">
-            <h1 className="head-h1">Über uns</h1>
-            <p className="text-p">
+            <motion.h1
+              className="head-h1"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              Über uns
+            </motion.h1>
+            <motion.p
+              className="text-p"
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.7 }}
+            >
               Im Juni 2017 wurde die Hoppelhasen gUG (haftungsbeschränkt) mit
               Sitz in Berlin zum Zweck des Betriebs von Kindertagesstätten
               gegründet. Unsere gemeinnützige Gesellschaft, die Hoppelhasen gUG
@@ -29,8 +46,13 @@ const About = () => {
               Bildungsprogramm, wobei in besonderem Maße die Sprachförderung im
               Fokus steht und zum anderen auf das Thema „Bewegung und
               Ernährung“, worauf wir besonders Wert legen.
-            </p>
-            <p className="text-p">
+            </motion.p>
+            <motion.p
+              className="text-p"
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.9 }}
+            >
               Der Träger ist an regelmäßigem Austausch mit dem Fachpersonal
               interessiert und offen für Wünsche und Kritik. Er prüft zusammen
               mit der Kita-Leitung die Umsetzung des Konzepts und trägt damit
@@ -38,27 +60,52 @@ const About = () => {
               wird an aktuelle Richtlinien angepasst. Unsere Arbeit wird an
               keiner Weltanschauung oder Religion ausgerichtet. Kinder aller
               Kulturen und Religionen sind bei uns herzlich Willkommen.
-            </p>
+            </motion.p>
           </div>
-          <div className="imguber">
+          <motion.div
+            className="imguber"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
             <img src={ImageTop} alt="" />
-          </div>
-        </article>{" "}
-        <article className="logo">
-          <div>
-            <Flag />
-          </div>
+          </motion.div>
         </article>
+
+        <article className="logo">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+          >
+            <Flag />
+          </motion.div>
+        </article>
+
         <article className="Leitbild">
-          <div className="imgLeitbild">
+          <motion.div
+            className="imgLeitbild"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
             <img src={ImageTop2} alt="" />
-          </div>
+          </motion.div>
           <div className="textLeitbild">
-            <h1 className="head-h1">
+            <motion.h1
+              className="head-h1"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.8 }}
+            >
               Leitbild der Hoppelhasen <span>gUG (haftungsbeschränkt)</span>
-            </h1>
-            <p className="text-p">
-              {" "}
+            </motion.h1>
+            <motion.p
+              className="text-p"
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 2 }}
+            >
               Von den elementaren Bedürfnissen der Kinder ausgehend, wollen wir
               in unserer Kita die Möglichkeit schaffen, dass diese individuell
               gelebt werden können. Wir wollen den Kindern helfen und sie
@@ -72,19 +119,24 @@ const About = () => {
               viele Möglichkeiten, sich mit den Dingen des täglichen Lebens
               auseinander zu setzen, Zusammenhänge zu erkennen, Kenntnisse zu
               vertiefen und zu begreifen.
-            </p>
+            </motion.p>
           </div>
         </article>
+
         <article className="lage">
-          <div className="lageText">
-            {" "}
+          <motion.div
+            className="lageText"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2.2 }}
+          >
             <h3 className="Lage-h3">Lage und soziales Umfeld</h3>
             <p className="text-p">
               Die Kita – Hoppelhasen gUG (haftungsbeschränkt) befindet sich im
               Bezirk Treptow-Köpenick und dort im Ortsteil Köpenick. Der Bezirk
               Treptow-Köpenick liegt im Südosten von Berlin.
             </p>
-          </div>
+          </motion.div>
 
           <div className="map">
             <iframe
@@ -105,99 +157,3 @@ const About = () => {
 };
 
 export default About;
-
-{
-  /* <h1 className="head-h1">Über uns</h1>
-<div>
-  <p className="text-p">
-    Im Juni 2017 wurde die Hoppelhasen gUG (haftungsbeschränkt) mit Sitz
-    in Berlin zum Zweck des Betriebs von Kindertagesstätten gegründet.
-    Unsere gemeinnützige Gesellschaft ist ein freier Träger der
-    Jugendhilfe. Wir betreuen insgesamt 36 Kinder ab dem ersten
-    Lebensjahr bis hin zum Schulalter.
-  </p>
-  <strong>Pädagogischer Schwerpunkt:</strong>
-  <p className="text-p">
-    Der Schwerpunkt der Kita Hoppelhasen liegt auf zwei wesentlichen
-    Themenbereichen:
-    <ol>
-      <li>
-        <strong> Berliner Bildungsprogramm: </strong>
-        Besonders die <strong>Sprachförderung</strong> steht hier im
-        Fokus. Wir legen großen Wert darauf, die sprachliche Entwicklung
-        jedes Kindes zu fördern.
-      </li>
-      <li>
-        <strong> Bewegung und Ernährung: </strong>
-        Wir achten besonders auf eine ausgewogene Ernährung und fördern
-        die körperliche Bewegung der Kinder durch verschiedene
-        Aktivitäten.
-      </li>
-    </ol>
-  </p>
-
-  <strong>Qualitätssicherung</strong>
-  <p className="text-p">
-    Der Träger ist an regelmäßigem Austausch mit dem Fachpersonal
-    interessiert und offen für <strong>Wünsche und Kritik</strong>.
-    Zusammen mit der
-    {""}
-    {""} <strong>Kita-Leitung</strong> prüft er die Umsetzung des
-    pädagogischen Konzepts und trägt somit zur kontinuierlichen{" "}
-    <strong>Qualitätssicherung</strong> bei. Unser Konzept ist dabei{" "}
-    {""}
-    {""}
-    dynamisch und wird regelmäßig an aktuelle Richtlinien angepasst.
-  </p>
-
-  <strong>Offenheit für Vielfalt</strong>
-  <p className="text-p">
-    Unsere Arbeit ist nicht an einer bestimmten Weltanschauung oder
-    Religion ausgerichtet. Kinder aller Kulturen und Religionen sind bei
-    uns herzlich willkommen.
-  </p>
-</div>
-</article>{" "}
-<article className="logo">
-<div>
-  {" "}
-  <img src={Logo} alt="" />
-</div>
-</article>
-<article className="Leitbild">
-<strong className="head-h4">
-  Leitbild der Hoppelhasen gUG (haftungsbeschränkt)
-</strong>
-<p className="text-p">
-  Ausgehend von den elementaren Bedürfnissen der Kinder wollen wir in
-  unserer Kita die Möglichkeit schaffen, dass diese individuell gelebt
-  werden können.
-</p>{" "}
-<p className="text-p">
-  Wir möchten den Kindern helfen, sich zu eigenverantwortlichen und
-  gemeinschaftsfähigen Persönlichkeiten zu entwickeln. Dabei legen wir
-  besonderen Wert darauf, dass sie die notwendigen Basiskompetenzen
-  erlangen und die vielfältigen Bildungsbereiche kennenlernen.
-</p>
-<p className="text-p">
-  Ein klar strukturierter, bewegungsorientierter Tag, stets verlässliche
-  Rituale sowie ein umfangreiches, frei zugängliches Angebot an Mal- und
-  Bastelmaterial in den Gruppenräumen eröffnen den Kindern viele
-  Möglichkeiten:
-  <ul>
-    <li>
-      Sich mit den Dingen des täglichen Lebens auseinanderzusetzen
-    </li>
-    <li>Zusammenhänge zu erkennen</li>
-    <li>Kenntnisse zu vertiefen und zu begreifen</li>
-  </ul>
-</p>
-<p className="text-p"></p>
-</article>
-<article className="logo">
-<strong>Lage und soziales Umfeld</strong>
-Die Kita – Hoppelhasen gUG (haftungsbeschränkt) befindet sich im Bezirk
-Treptow-Köpenick und dort im Ortsteil Köpenick. Der Bezirk
-Treptow-Köpenick liegt im Südosten von Berlin.
-</article> */
-}
