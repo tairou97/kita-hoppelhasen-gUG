@@ -37,7 +37,7 @@
     grid-template-areas:
         "uberText uberText uberText imguber imguber"
     ;
-    ;
+
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -55,9 +55,8 @@
 }
 
 .uberText .head-h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
-    color: #2f3105;
     color: #869f3e;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 0 1rem;

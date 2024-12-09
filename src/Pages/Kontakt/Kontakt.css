@@ -40,10 +40,11 @@
 
 .kontaktBox2 h1 {
     font-size: 4rem;
+    color: #869f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     padding: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #869f3d;
     text-align: center;
     font-family: "Lucida", cursive;
     display: flex;

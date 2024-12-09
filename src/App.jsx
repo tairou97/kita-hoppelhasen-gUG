@@ -8,7 +8,6 @@ function App() {
   return (
     <Layout>
       <ScrollButton />
-
       <Routes>
         {routes.map((route) => (
           <Route key={route.Id} {...route} />

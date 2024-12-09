@@ -41,7 +41,8 @@
 .gallery-container h1 {
     font-size: 4rem;
     font-weight: bold;
-    color: #869f3d;
+    color: #869f3e;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     grid-column: 1 / -1;
     grid-row: 1;

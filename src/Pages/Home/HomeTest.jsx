@@ -7,6 +7,7 @@ import MiniHasen from "../../assets/img/miniHasen.png";
 import SuperHasen from "../../assets/img/superHasen.png";
 import ScrollButton from "../../Components/ScrollButton";
 import Programm from "../../assets/img/programm.png";
+import DatenSchutzHinweis from "../../Components/DatenSchutz/DatenSchutzHinweis";
 
 const HomeTest = () => {
   return (
@@ -223,6 +224,7 @@ const HomeTest = () => {
             </p>
           </div>
         </motion.div>
+        <DatenSchutzHinweis />
       </div>
     </motion.section>
   );
