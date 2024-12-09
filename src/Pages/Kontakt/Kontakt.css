@@ -253,8 +253,19 @@
         align-items: center;
     }
 
-    img {
-        width: 100%;
+    .kontaktBox3 .kontaktAdresse p {
+        font-size: 1.2rem;
+    }
+
+
+    .kontaktBox3 .kontaktAdresse strong {
+        font-size: 1.3rem;
+        color: #c9f7a4;
+    }
+
+    .kontaktBox3 .kontaktAdresse span {
+        font-size: 1.3rem;
+        color: #feffe9;
     }
 
     .kontaktBox4 {
@@ -263,6 +274,22 @@
         justify-content: center;
         align-items: center;
 
+    }
+
+    .kontaktBox4 .kontaktAnsprech p {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+
+    .kontaktBox4 .kontaktAnsprech strong {
+        font-size: 1.3rem;
+        color: #c9f7a4;
+    }
+
+    .kontaktBox4 .kontaktAnsprech span {
+        font-size: 1.3rem;
+        color: #feffe9;
     }
 
     .kontaktBox1 {
