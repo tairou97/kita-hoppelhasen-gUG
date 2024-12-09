@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,26 +16,56 @@ const Navbar = () => {
 
   return (
     <nav className="mainNav">
-      {/* Burger-Icon */}
+      {/* Burger-Icon für kleine Bildschirme */}
+      {/* <h3>Kita Hoppelhasen gUG (haftungsbeschränkt)</h3> */}
       <div
         className={`burger ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <span className="line"></span>
-        <span className="line"></span>
-        <span className="line"></span>
+        {menuOpen ? (
+          <div className="close-icon">X</div>
+        ) : (
+          <>
+            <div className="burger-line"></div>
+            <div className="burger-line"></div>
+            <div className="burger-line"></div>
+          </>
+        )}
       </div>
 
-      {/* Menü */}
-      <ul className={`nav ${menuOpen ? "open" : ""}`}>
-        {navBar.map((item) => (
-          <li key={item.Id}>
-            <NavLink to={item.to} onClick={() => setMenuOpen(false)}>
-              {item.name}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+      {/* Normale Navbar für Desktop */}
+      <div className="desktopNav">
+        <ul className="nav">
+          {navBar.map((item) => (
+            <li key={item.Id}>
+              <NavLink to={item.to}>{item.name}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Menü für mobile Geräte mit Framer Motion (Sliding Effect) */}
+      <motion.div
+        className={`sideMenu ${menuOpen ? "open" : ""}`}
+        initial={{ width: 0 }}
+        animate={{ width: menuOpen ? "100%" : "0%" }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.ul
+          className="nav"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          {navBar.map((item) => (
+            <li key={item.Id}>
+              <NavLink to={item.to} onClick={() => setMenuOpen(false)}>
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
+        </motion.ul>
+      </motion.div>
     </nav>
   );
 };

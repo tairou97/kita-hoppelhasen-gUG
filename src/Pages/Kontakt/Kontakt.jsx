@@ -31,12 +31,12 @@ const Kontakt = () => {
           <p>
             <strong>Öffnungszeiten:</strong>
             <br />
-            <span>Montag - Freitag: 7:00 - 16:30 Uhr</span>
+            Montag - Freitag: 7:00 - 16:30 Uhr
             <br />
             <br />
             <strong>Sprechzeiten:</strong>
             <br />
-            <span>Dienstags - Donnerstags</span>
+            Dienstags - Donnerstags
           </p>
         </div>
       </div>
@@ -73,10 +73,6 @@ const Kontakt = () => {
           ></iframe>
         </div>
       </div>
-      <div className="kontaktBox6 kontakt">6</div>
-      <div className="kontaktBox7 kontakt">7</div>
-      <div className="kontaktBox8 kontakt">8</div>
-      <div className="kontaktBox9 kontakt">9</div>
     </div>
   );
 };

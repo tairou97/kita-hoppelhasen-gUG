@@ -1,167 +1,8 @@
-/* .mainContainer {
-    display: grid;
-    width: 100%;
-    min-height: 100vh;
-    grid-template-columns: repeat(1, 1fr);
-
-}
-
-.kontaktBox1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-radius: 10px;
-    padding: 0 1rem;
-    margin: 0.2rem;
-}
-
-.kontaktBox1 .imgHero {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    grid-column: 1/span 2;
-    grid-row: 1;
-}
-
-.kontaktBox1 .imgHero img {
-    width: 100%;
-    height: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    grid-column: 1/span 2;
-    grid-row: 1;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(80%);
-
-}
-
-.kontaktBox1 h1 {
-    grid-column: 1/span 2;
-    grid-row: 2;
-    font-size: 4rem;
-    padding: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #798645;
-    text-align: center;
-    font-family: "Lucida", cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.kontaktBox2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 3rem 3rem 3rem;
-    gap: 1rem;
-    border-radius: 10px;
-}
-
-.kontaktBox2 .adresse {
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: inset 5px 5px 3px #b7c197,
-        inset -5px -5px 3px #dfebb9;
-}
-
-.adresse strong {
-    color: darkolivegreen;
-    font-size: 1.5rem;
-}
-
-.adresse p {
-    font-size: 1.4rem;
-    padding: 1rem;
-}
-
-
-.kontaktBox2 .adresse a {
-    color: darkolivegreen;
-    text-decoration: none;
-}
-
-.kontaktBox2 .ansprechpartner {
-    border-radius: 10px;
-    padding: 1rem;
-    background: #cbd6a8;
-    box-shadow: inset 5px 5px 3px #b7c197,
-        inset -5px -5px 3px #dfebb9;
-
-}
-
-.ansprechpartner strong {
-    color: darkolivegreen;
-    font-size: 1.5rem;
-
-}
-
-.ansprechpartner p {
-    font-size: 1.4rem;
-    padding: 1rem;
-}
-
-.kontaktBox3 {
-    height: 30rem;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    padding: 0 3rem 3rem 3rem;
-}
-
-.kontaktBox3 iframe {
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
-
-    border-radius: 9px;
-    background: linear-gradient(145deg, #b7c197, #d9e5b4);
-    box-shadow: 5px 5px 3px #b7c197,
-        -5px -5px 3px #dfebb9;
-}
-
-@media screen and (max-width: 700px) {
-    .mainContainer {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .kontaktBox1 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .kontaktBox1 h1 {
-        font-size: 3rem;
-    }
-
-    .kontaktBox2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .kontaktBox2 .adresse {
-        padding: 1rem;
-    }
-
-    .kontaktBox2 .ansprechpartner {
-        padding: 1rem;
-    }
-
-    .kontaktBox3 {
-        padding: 1rem;
-    }
-
-    .kontaktBox3 iframe {
-        background-color: aqua;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-
-} */
-
 .kontaktContainer {
     min-height: 100dvh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     gap: 1rem;
     padding: 0 1rem;
 
@@ -202,25 +43,29 @@
     padding: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #798645;
+    color: #869f3d;
     text-align: center;
     font-family: "Lucida", cursive;
     display: flex;
     justify-content: start;
     align-items: start;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* ====================kontaktBox3=================== */
 .kontaktBox3 {
     grid-column: 1/span 2;
     grid-row: 3;
-    /* background-color: aqua; */
     height: 100%;
     width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;
     object-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
 }
 
 .kontaktBox3 .kontaktImg {
@@ -228,10 +73,12 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+
 }
 
 .kontaktBox3 .kontaktImg img {
     width: 100%;
+    border-radius: 15px;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -240,20 +87,36 @@
 .kontaktBox3 .kontaktAdresse {
     width: 100%;
     height: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 2rem;
     background-color: #798645;
-
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 3px #b7c197,
+        inset -5px -5px 3px #dfebb9;
 }
 
 .kontaktBox3 .kontaktAdresse p {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.4rem;
     color: #feffe9;
 }
+
+.kontaktBox3 .kontaktAdresse strong {
+    font-size: 1.5rem;
+    color: #c9f7a4;
+}
+
+
+.kontaktBox3 .kontaktAdresse span {
+    font-size: 1.5rem;
+    color: #feffe9;
+}
+
+
+
+.kontaktBox3 .kontaktAdresse a {
+    color: #feffe9;
+    text-decoration: none;
+}
+
 
 /* ======================kontaktBox4================= */
 .kontaktBox4 {
@@ -261,28 +124,37 @@
     grid-row: 4;
     height: 100%;
     width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 10px;
     object-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
 }
 
 .kontaktBox4 .kontaktAnsprech {
     width: 100%;
     height: 100%;
-    padding: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding: 2rem;
     background-color: #798645;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 3px #b7c197,
+        inset -5px -5px 3px #dfebb9;
 }
 
 .kontaktBox4 .kontaktAnsprech p {
     font-size: 1.5rem;
     padding: 1rem;
     color: #feffe9;
+
+}
+
+.kontaktBox4 .kontaktAnsprech strong {
+    font-size: 1.5rem;
+    color: #c9f7a4;
 }
 
 .kontaktBox4 .kontaktImg2 {
@@ -295,6 +167,8 @@
 .kontaktBox4 .kontaktImg2 img {
     background-color: aqua;
     width: 100%;
+    border-radius: 15px;
+    /* box-shadow: 1px 5px 5px #b7c197; */
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -304,8 +178,94 @@
 .kontaktBox5 {
     grid-column: 1/span 2;
     grid-row: 5;
-
     height: 100%;
     width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 15px;
+}
 
+.kontaktBox5 iframe {
+
+    border-radius: 15px;
+}
+
+
+@media (max-width: 1024px) {
+    .kontaktBox1 {
+        grid-template-columns: 1fr;
+        /* Eine Spalte für Tablets */
+        text-align: center;
+    }
+
+    .kontaktBox1 h1 {
+        font-size: 3rem;
+        /* Kleinere Schriftgröße */
+    }
+}
+
+@media (max-width: 768px) {
+    .kontaktBox1 {
+        padding: 0 0.5rem;
+    }
+
+    .kontaktBox1 .imgHero img {
+        border-radius: 10px;
+    }
+
+    .kontaktBox1 h1 {
+        font-size: 2.5rem;
+        /* Schriftgröße für kleinere Bildschirme */
+        padding: 1.5rem;
+    }
+
+    .kontaktBox3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kontaktBox4 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        grid-template-columns: 1fr;
+        /* Eine Spalte für Smartphones */
+    }
+
+    .kontaktBox2 h1 {
+        font-size: 2rem;
+        /* Schriftgröße für Smartphones */
+    }
+
+    .kontaktBox3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .kontaktBox4 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .kontaktBox1 {
+        padding: 0;
+    }
 }

@@ -41,8 +41,7 @@
 .gallery-container h1 {
     font-size: 4rem;
     font-weight: bold;
-    color: #2f3105;
-    color: #798645;
+    color: #869f3d;
     text-transform: uppercase;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -61,7 +60,8 @@
 
 .gallery-button {
     padding: 10px 15px;
-    background-color: #b8bc7f;
+    background-color: #869f3d;
+    color: #feffe9;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -72,13 +72,13 @@
 }
 
 .gallery-button.active {
-    background-color: #242221;
-    color: #feffe9;
+    background-color: #feffe9;
+    color: #869f3d;
     transform: scale(1.1);
 }
 
 .gallery-button:hover {
-    background-color: #242221;
+    background-color: #d6d02a;
     color: #feffe9;
 }
 
