@@ -1,6 +1,5 @@
 import React from "react";
 import "./Programme.css";
-import { Link } from "react-router-dom";
 
 import Img from "../Programme/img.png";
 import img1 from "../Programme/img1.png";

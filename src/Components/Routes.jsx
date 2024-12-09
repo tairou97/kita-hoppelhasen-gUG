@@ -20,7 +20,7 @@ const routes = [
   { path: "/superhasen", element: <SuperHasen />, Id: 6 },
   { path: "/minihasen", element: <MiniHasen />, Id: 7 },
   { path: "/impressum", element: <Impressum />, Id: 8 },
-  { path: "/programmeFuerKinder", element: <Programme />, Id: 8 },
+  { path: "/programmeFoerKinder", element: <Programme />, Id: 8 },
   { path: "/datenschutz", element: <Datenschutz />, Id: 9 },
   { path: "*", element: <PageNotFound />, Id: 10 },
 ];
