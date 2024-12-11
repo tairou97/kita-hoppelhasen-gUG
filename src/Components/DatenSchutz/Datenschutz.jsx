@@ -6,56 +6,40 @@ const Datenschutz = () => {
       <h1>Datenschutzerklärung</h1>
       <p>Stand: 10. Dezember 2024</p>
       <h2>Inhaltsübersicht</h2>
-      <ul class="index">
+      <ul>
         <li>
-          <a class="index-link" href="#m3">
-            Verantwortlicher
-          </a>
+          <a href="#m3">Verantwortlicher</a>
         </li>
         <li>
-          <a class="index-link" href="#mOverview">
-            Übersicht der Verarbeitungen
-          </a>
+          <a href="#mOverview">Übersicht der Verarbeitungen</a>
         </li>
         <li>
-          <a class="index-link" href="#m2427">
-            Maßgebliche Rechtsgrundlagen
-          </a>
+          <a href="#m2427">Maßgebliche Rechtsgrundlagen</a>
         </li>
         <li>
-          <a class="index-link" href="#m24">
-            Internationale Datentransfers
-          </a>
+          <a href="#m24">Internationale Datentransfers</a>
         </li>
         <li>
-          <a class="index-link" href="#m12">
+          <a href="#m12">
             Allgemeine Informationen zur Datenspeicherung und Löschung
           </a>
         </li>
         <li>
-          <a class="index-link" href="#m10">
-            Rechte der betroffenen Personen
-          </a>
+          <a href="#m10">Rechte der betroffenen Personen</a>
         </li>
         <li>
-          <a class="index-link" href="#m354">
+          <a href="#m354">
             Wahrnehmung von Aufgaben nach Satzung oder Geschäftsordnung
           </a>
         </li>
         <li>
-          <a class="index-link" href="#m225">
-            Bereitstellung des Onlineangebots und Webhosting
-          </a>
+          <a href="#m225">Bereitstellung des Onlineangebots und Webhosting</a>
         </li>
         <li>
-          <a class="index-link" href="#m134">
-            Einsatz von Cookies
-          </a>
+          <a href="#m134">Einsatz von Cookies</a>
         </li>
         <li>
-          <a class="index-link" href="#m328">
-            Plug-ins und eingebettete Funktionen sowie Inhalte
-          </a>
+          <a href="#m328">Plug-ins und eingebettete Funktionen sowie Inhalte</a>
         </li>
       </ul>
       <h2 id="m3">Verantwortlicher</h2>
@@ -237,7 +221,7 @@ const Datenschutz = () => {
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Aufbewahrung und Löschung von Daten: </strong>Die folgenden
           allgemeinen Fristen gelten für die Aufbewahrung und Archivierung nach
@@ -370,7 +354,7 @@ const Datenschutz = () => {
         können. Die Erforderlichkeit der Aufbewahrung der Daten wird regelmäßig
         überprüft; im Übrigen gelten die gesetzlichen Aufbewahrungspflichten.
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z. B. der
           vollständige Name, Wohnadresse, Kontaktinformationen, Kundennummer,
@@ -395,7 +379,7 @@ const Datenschutz = () => {
           Angaben im Abschnitt "Allgemeine Informationen zur Datenspeicherung
           und Löschung".
         </li>
-        <li class="">
+        <li>
           <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs.
           1 S. 1 lit. f) DSGVO). Vertrag über die Mitgliedschaft (Satzung) (Art.
           6 Abs. 1 S. 1 lit. b) DSGVO).
@@ -406,7 +390,7 @@ const Datenschutz = () => {
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Öffentlichkeitsarbeit: </strong>Verfahren umfassen die
           Erstellung und Verbreitung von Informationsmaterialien, die Pflege von
@@ -425,7 +409,7 @@ const Datenschutz = () => {
           Medien und Interessengruppen erfolgt durch direkte Kommunikation mit
           Journalisten, Bloggern und anderen Meinungsführern, das Beantworten
           von Anfragen und die Bereitstellung von Informationen;{" "}
-          <span class="">
+          <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
             Abs. 1 S. 1 lit. f) DSGVO), Vertrag über die Mitgliedschaft
             (Satzung) (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).
@@ -440,7 +424,7 @@ const Datenschutz = () => {
         unserer Online-Dienste an den Browser oder das Endgerät der Nutzer zu
         übermitteln.
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z. B.
           Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und
@@ -466,7 +450,7 @@ const Datenschutz = () => {
           Angaben im Abschnitt "Allgemeine Informationen zur Datenspeicherung
           und Löschung".
         </li>
-        <li class="">
+        <li>
           <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs.
           1 S. 1 lit. f) DSGVO).
         </li>
@@ -476,7 +460,7 @@ const Datenschutz = () => {
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>
             Bereitstellung Onlineangebot auf gemietetem Speicherplatz:{" "}
@@ -485,7 +469,7 @@ const Datenschutz = () => {
           Speicherplatz, Rechenkapazität und Software, die wir von einem
           entsprechenden Serveranbieter (auch "Webhoster" genannt) mieten oder
           anderweitig beziehen;{" "}
-          <span class="">
+          <span>
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
             Abs. 1 S. 1 lit. f) DSGVO).
           </span>
@@ -551,7 +535,7 @@ const Datenschutz = () => {
         entsprechend den gesetzlichen Vorgaben, auch mittels der
         Privatsphäre-Einstellungen ihres Browsers, erklären.
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Verarbeitete Datenarten:</strong> Meta-, Kommunikations- und
           Verfahrensdaten (z. B. IP-Adressen, Zeitangaben,
@@ -561,7 +545,7 @@ const Datenschutz = () => {
           <strong>Betroffene Personen:</strong> Nutzer (z. B. Webseitenbesucher,
           Nutzer von Onlinediensten).
         </li>
-        <li class="">
+        <li>
           <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs.
           1 S. 1 lit. f) DSGVO). Einwilligung (Art. 6 Abs. 1 S. 1 lit. a)
           DSGVO).
@@ -572,7 +556,7 @@ const Datenschutz = () => {
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>
             Verarbeitung von Cookie-Daten auf Grundlage einer Einwilligung:{" "}
@@ -605,7 +589,7 @@ const Datenschutz = () => {
           (z. B. betreffende Kategorien von Cookies und/oder Diensteanbieter)
           sowie Informationen über den Browser, das System und das verwendete
           Endgerät gespeichert wird;{" "}
-          <span class="">
+          <span>
             <strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1
             lit. a) DSGVO).
           </span>
@@ -647,7 +631,7 @@ const Datenschutz = () => {
         die Informationen zur Verwendung von Cookies in dieser
         Datenschutzerklärung hinweisen.
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z. B.
           Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und
@@ -673,7 +657,7 @@ const Datenschutz = () => {
           für einen Zeitraum von zwei Jahren auf den Geräten der Nutzer
           gespeichert werden.).
         </li>
-        <li class="">
+        <li>
           <strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1
           lit. a) DSGVO). Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f)
           DSGVO).
@@ -684,14 +668,14 @@ const Datenschutz = () => {
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
-      <ul class="m-elements">
+      <ul>
         <li>
           <strong>Google Maps: </strong>Wir binden die Landkarten des Dienstes
           "Google Maps" des Anbieters Google ein. Zu den verarbeiteten Daten
           können insbesondere IP-Adressen und Standortdaten der Nutzer gehören;{" "}
           <strong>Dienstanbieter:</strong> Google Cloud EMEA Limited, 70 Sir
           John Rogerson’s Quay, Dublin 2, Irland;{" "}
-          <span class="">
+          <span>
             <strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1
             lit. a) DSGVO);{" "}
           </span>
