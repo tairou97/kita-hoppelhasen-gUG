@@ -1,5 +1,5 @@
 import React from "react";
-import "./Datenschutz.css";
+import "./DatenSchutz.css";
 const Datenschutz = () => {
   return (
     <div className="DatenSchutz">
