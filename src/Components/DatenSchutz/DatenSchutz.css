@@ -67,3 +67,158 @@
 .DatenSchutz a:hover {
     color: #869f3e;
 }
+
+@media screen and (max-width: 1024px) {
+    .DatenSchutz {
+        padding: 1rem;
+    }
+
+    .DatenSchutz h1 {
+        font-size: 3rem;
+    }
+
+    .DatenSchutz h2 {
+        font-size: 2rem;
+    }
+
+    .DatenSchutz p {
+        font-size: 1.5rem;
+    }
+
+    .DatenSchutz a {
+        font-size: 1.5rem;
+    }
+
+    .DatenSchutz ul {
+        font-size: 1.5rem;
+    }
+
+    .DatenSchutz strong {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .DatenSchutz {
+        padding: 1rem;
+    }
+
+    .DatenSchutz h1 {
+        font-size: 2.8rem;
+    }
+
+    .DatenSchutz h2 {
+        font-size: 1.8rem;
+    }
+
+    .DatenSchutz p {
+        font-size: 1.2rem;
+    }
+
+    .DatenSchutz a {
+        font-size: 1.2rem;
+    }
+
+    .DatenSchutz ul {
+        font-size: 1.2rem;
+    }
+
+    .DatenSchutz strong {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .DatenSchutz {
+        padding: 1rem;
+    }
+
+    .DatenSchutz h1 {
+        font-size: 2.2rem;
+    }
+
+    .DatenSchutz h2 {
+        font-size: 1.5rem;
+    }
+
+    .DatenSchutz p {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz a {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz ul {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz strong {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .DatenSchutz {
+        padding: 1rem;
+    }
+
+    .DatenSchutz h1 {
+        font-size: 1.8rem;
+    }
+
+    .DatenSchutz h2 {
+        font-size: 1.2rem;
+    }
+
+    .DatenSchutz p {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz a {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz ul {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz strong {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .DatenSchutz {
+        padding: 1rem;
+    }
+
+    .DatenSchutz h1 {
+        font-size: 1.5rem;
+    }
+
+    .DatenSchutz h2 {
+        font-size: 1.2rem;
+    }
+
+    .DatenSchutz p {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz a {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz ul {
+        font-size: 1rem;
+    }
+
+    .DatenSchutz strong {
+        font-size: 1rem;
+    }
+
+}
