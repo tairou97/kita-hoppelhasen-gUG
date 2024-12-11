@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Impressum from "../Components/DatenSchutz/DatenSchutzHinweis";
+import Impressum from "../Components/DatenSchutz/Datenschutz";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -50,7 +50,7 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              <Link to="/datenschutz" className="imprint-link">
+              <Link to="/datenSchutz" className="imprint-link">
                 Datenschutz
               </Link>
             </p>
