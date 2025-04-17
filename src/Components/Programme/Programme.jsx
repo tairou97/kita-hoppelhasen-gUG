@@ -94,7 +94,7 @@ const Programme = () => {
         <ProgrammCard
           image={img5}
           title="Vielfältige Programme"
-          text="Abgestimmte Bildungsangebote für Kinder im Alter von 6 Wochen bis 6 Jahren – individuell und altersgerecht."
+          text="Abgestimmte Bildungsangebote für Kinder im Alter von 1 bis 6 Jahren – individuell und altersgerecht."
         />
       </div>
     </motion.div>

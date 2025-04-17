@@ -5,41 +5,47 @@ import HeroK2 from "../../assets/img/heroK2.png";
 import Img from "../Kontakt/kontakt.png";
 import Imge2 from "../Kontakt/kontakt2.png";
 
+// Parent-Animation (Container)
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3, // Abstand zwischen den Elementen
+    },
+  },
+};
+
+// Einzelne Box-Animation
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
 const Kontakt = () => {
   return (
     <motion.div
       className="kontaktContainer"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
     >
       {/* Hero Section */}
-      <motion.div
-        className="kontaktBox1 kontakt"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <motion.div className="kontaktBox1 kontakt" variants={itemVariants}>
         <img src={HeroK2} alt="Hero Image" />
       </motion.div>
 
       {/* Contact Header */}
-      <motion.div
-        className="kontaktBox2 kontakt"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-      >
+      <motion.div className="kontaktBox2 kontakt" variants={itemVariants}>
         <h1>Kontakt</h1>
       </motion.div>
 
       {/* Contact Information */}
-      <motion.div
-        className="kontaktBox3 kontakt"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-      >
+      <motion.div className="kontaktBox3 kontakt" variants={itemVariants}>
         <div className="kontaktImg">
           <img src={Img} alt="Contact Image" />
         </div>
@@ -67,12 +73,7 @@ const Kontakt = () => {
       </motion.div>
 
       {/* Contact Person and Management */}
-      <motion.div
-        className="kontaktBox4 kontakt"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-      >
+      <motion.div className="kontaktBox4 kontakt" variants={itemVariants}>
         <div className="kontaktAnsprech">
           <p>
             <strong>Ansprechpartnerinnen</strong>
@@ -93,12 +94,7 @@ const Kontakt = () => {
       </motion.div>
 
       {/* Google Maps */}
-      <motion.div
-        className="kontaktBox5 kontakt"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-      >
+      <motion.div className="kontaktBox5 kontakt" variants={itemVariants}>
         <div className="kontaktMap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4862.586439625965!2d13.5809876!3d52.4557169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84869bbefc2c7%3A0x272a277bc1bdef13!2sMandrellapl.%203%2C%2012555%20Berlin!5e0!3m2!1sde!2sde!4v1732031221219!5m2!1sde!2sde"

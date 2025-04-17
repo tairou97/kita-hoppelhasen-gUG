@@ -73,7 +73,7 @@ const HomeTest = () => {
             </h3>
             <p className="HeaderP">
               Wir sind eine Kindertagesstätte in Berlin, die sich auf die
-              Betreuung und Förderung von Kindern im Alter von 0 bis 6 Jahren
+              Betreuung und Förderung von Kindern im Alter von 1 bis 6 Jahren
               spezialisiert hat. Unser Ziel ist es, den Kindern eine sichere und
               liebevolle Umgebung zu bieten, in der sie sich entfalten und
               entwickeln können.
