@@ -1,4 +1,4 @@
-import "./Impressum.css"; // Importieren Sie Ihre CSS-Datei
+import "./impressum.css";
 
 const Impressum = () => {
   return (
