@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 .2rem;
 
 }
 
@@ -48,8 +48,7 @@
     text-align: center;
     font-family: "Lucida", cursive;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
 }

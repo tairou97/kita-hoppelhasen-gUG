@@ -6,10 +6,11 @@ import Laterne from "..//Jahresablauf/laterne.png";
 import Weihnachten from "..//Jahresablauf/xmas.png";
 import Karnaval from "..//Jahresablauf/karnav.png";
 import Ostern from "..//Jahresablauf/oster.png";
-// import Abschied from "..//Jahresablauf/abschied.png";
+import Abschied from "..//Jahresablauf/abschied.png";
 import Sommer from "..//Jahresablauf/summer.png";
 import Zahn from "..//Jahresablauf/zahn.png";
 import Fototag from "..//Jahresablauf/foto.png";
+import Meeting from "..//Jahresablauf/meeting.png";
 
 import ErsteHilfe from "..//Jahresablauf/hilfe.png";
 
@@ -19,7 +20,7 @@ const Jahresablauf = () => {
       id: 1,
       name: "Elternabend",
       englishName: "Parent-Teacher Meeting",
-      imgSrc: Img,
+      imgSrc: Meeting,
     },
     {
       id: 2,
@@ -68,7 +69,7 @@ const Jahresablauf = () => {
       id: 9,
       name: "Abschiedsfeier der Vorschulkinder",
       englishName: "Farewell Party for Preschool Children",
-      imgSrc: Img,
+      imgSrc: Abschied,
     },
     {
       id: 10,
@@ -100,11 +101,11 @@ const Jahresablauf = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: item.id * 0.2, duration: 0.5 }}
+              className="event-image"
             >
               <img
                 src={item.imgSrc}
                 alt={`${item.name} - ${item.englishName}`}
-                className="event-image"
               />
             </motion.div>
 

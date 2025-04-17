@@ -1,150 +1,108 @@
-import React from "react";
+import "./Impressum.css"; // Importieren Sie Ihre CSS-Datei
 
 const Impressum = () => {
-  const events = [
-    { date: "2024-10-04", title: "Brückentag", type: "Kita geschlossen" },
-    { date: "2024-11-01", title: "Konzeptionstag", type: "Kita geschlossen" },
-    {
-      date: "2024-12-23",
-      endDate: "2024-12-31",
-      title: "Weihnachtsschließzeit",
-      type: "Kita geschlossen",
-    },
-    {
-      date: "2024-10-02",
-      title: "Elternabend Superhasen (16:30 Uhr)",
-      type: "Event",
-    },
-    { date: "2024-11-15", title: "Laternenfest", type: "Event" },
-    {
-      date: "2024-12-13",
-      title: "Weihnachtsfeier (nur für die Kinder)",
-      type: "Event",
-    },
-    { date: "2025-05-02", title: "Brückentag", type: "Kita geschlossen" },
-    {
-      date: "2025-07-28",
-      endDate: "2025-08-18",
-      title: "Sommerschließung",
-      type: "Kita geschlossen",
-    },
-    { date: "2025-03-04", title: "Fasching", type: "Event" },
-    { date: "2025-06-05", title: "Fotograf", type: "Event" },
-    { date: "2025-07-04", title: "Sommerfest", type: "Event" },
-  ];
-
-  // iCal-Datei generieren
-  const generateICS = () => {
-    let icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//Kita Hoppelhasen//Kalender//DE`;
-
-    events.forEach((event) => {
-      const startDate = event.date.replace(/-/g, ""); // Format: YYYYMMDD
-      const endDate = event.endDate
-        ? event.endDate.replace(/-/g, "")
-        : startDate;
-
-      icsContent += `
-BEGIN:VEVENT
-SUMMARY:${event.title}
-DTSTART;VALUE=DATE:${startDate}
-DTEND;VALUE=DATE:${endDate}
-DESCRIPTION:${event.type}
-END:VEVENT`;
-    });
-
-    icsContent += `
-END:VCALENDAR`;
-
-    // Speichern als .ics-Datei
-    const blob = new Blob([icsContent], {
-      type: "text/calendar;charset=utf-8",
-    });
-    saveAs(blob, "Kita_Hoppelhasen_Kalender.ics");
-  };
-
   return (
-    <div style={styles.container}>
-      <h1 style={styles.header}>Kita Hoppelhasen Kalender 2024/2025</h1>
-      <table style={styles.table}>
-        <thead>
-          <tr>
-            <th style={styles.th}>Datum</th>
-            <th style={styles.th}>Titel</th>
-            <th style={styles.th}>Typ</th>
-          </tr>
-        </thead>
-        <tbody>
-          {events.map((event, index) => (
-            <tr key={index} style={styles.row}>
-              <td style={styles.td}>
-                {event.date} {event.endDate ? `- ${event.endDate}` : ""}
-              </td>
-              <td style={styles.td}>{event.title}</td>
-              <td style={styles.td}>{event.type}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <button style={styles.button} onClick={generateICS}>
-        Kalender als iCal exportieren
-      </button>
-      <p style={styles.footer}>
-        Sie können diese Datei in Google Calendar importieren!
-      </p>
+    <div className="containerImmpressum">
+      <h1>Impressum</h1>
+
+      <section className="companyDetails">
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+          Hoppelhasen gUG (haftungsbeschränkt)
+          <br />
+          Schönefelder Chaussee 168 A<br />
+          12524 Berlin
+        </p>
+
+        <h3>Vertreten durch</h3>
+        <p>Mustafa Tinmaz</p>
+
+        <h3>Registereintrag</h3>
+        <p>
+          Eintragung im Handelsregister.
+          <br />
+          Registergericht: Amtsgericht Charlottenburg
+          <br />
+          Registernummer: HRB 187415 B
+        </p>
+      </section>
+
+      <section className="contact">
+        <h2>Kontakt</h2>
+        <p>
+          Adresse: Schönefelder Chaussee 168 A, 12524 Berlin
+          <br />
+          {/* Platzhalter für Telefon und E-Mail - bitte ergänzen */}
+          Telefon: [Ihre Telefonnummer]
+          <br />
+          E-Mail: [Ihre E-Mail-Adresse]
+        </p>
+      </section>
+
+      <section className="legal-info">
+        <h2>Rechtliche Hinweise</h2>
+        <p>
+          Die Gesellschaftsversammlung hat am 28.11.2017 eine Änderung des
+          Gesellschaftsvertrags in § 1 (Firma) beschlossen. Diese Änderung wurde
+          am 12.01.2018 im Handelsregister eingetragen.
+        </p>
+
+        <h3>Wichtiger Hinweis</h3>
+        <p>
+          Bekanntmachungen der Handelsregistereintragungen erfolgen nur noch
+          online und nicht mehr in Papierform. Die Veröffentlichungen können
+          kostenlos im gemeinsamen Registerportal der Länder unter
+          <a
+            href="http://www.handelsregisterbekanntmachungen.de"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            http://www.handelsregisterbekanntmachungen.de
+          </a>{" "}
+          abgerufen werden.
+        </p>
+
+        <p>
+          Bei Fragen zu Zahlungsverpflichtungen oder zur Seriosität von
+          Adressbuchverlagen wenden Sie sich bitte an die IHK Berlin.
+        </p>
+      </section>
+
+      <section className="disclaimer">
+        <h2>Haftung für Inhalte</h2>
+        <p>
+          Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte
+          auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
+          §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+          verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+          überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+          Tätigkeit hinweisen.
+        </p>
+
+        <h2>Haftung für Links</h2>
+        <p>
+          Unser Angebot enthält Links zu externen Websites Dritter, auf deren
+          Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
+          fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+          verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
+          Seiten verantwortlich.
+        </p>
+
+        <h2>Urheberrecht</h2>
+        <p>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
+          Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
+          Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+          Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+          jeweiligen Autors bzw. Erstellers.
+        </p>
+      </section>
+
+      <footer>
+        <p>Stand: {new Date().toLocaleDateString("de-DE")}</p>
+      </footer>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    padding: "20px",
-    fontFamily: "'Arial', sans-serif",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "8px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    maxWidth: "800px",
-    margin: "auto",
-  },
-  header: {
-    textAlign: "center",
-    color: "#2c3e50",
-    marginBottom: "20px",
-  },
-  table: {
-    width: "100%",
-    borderCollapse: "collapse",
-    marginBottom: "20px",
-  },
-  th: {
-    border: "1px solid #ddd",
-    padding: "10px",
-    backgroundColor: "#2c3e50",
-    color: "#fff",
-    textAlign: "left",
-  },
-  td: {
-    border: "1px solid #ddd",
-    padding: "10px",
-    textAlign: "left",
-  },
-  row: {
-    backgroundColor: "#fff",
-  },
-  button: {
-    backgroundColor: "#2c3e50",
-    color: "white",
-    padding: "10px 20px",
-    border: "none",
-    borderRadius: "4px",
-    cursor: "pointer",
-  },
-  footer: {
-    textAlign: "center",
-    color: "#7f8c8d",
-    fontSize: "14px",
-  },
 };
 
 export default Impressum;

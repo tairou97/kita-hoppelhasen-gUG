@@ -1,0 +1,66 @@
+.containerImmpressum {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 1450px;
+    padding: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    min-height: 100vh;
+}
+
+.containerImmpressum h1 {
+    font-size: 4rem;
+    color: #859f3e;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-family: "Lucida", cursive;
+    text-align: center;
+}
+
+.companyDetails {
+    margin-bottom: 2rem;
+
+}
+
+.companyDetails p {
+    font-size: 1.2rem;
+    color: #859f3e;
+}
+
+/* Für Tablets */
+@media (max-width: 1024px) {
+    .containerImmpressum {
+        padding: 0 5rem 0 2rem;
+        margin-top: 6rem;
+    }
+
+    .containerImmpressum h1 {
+        font-size: 3rem;
+    }
+
+    .companyDetails p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Für Smartphones */
+@media (max-width: 600px) {
+    .containerImmpressum {
+        padding: 0 1.5rem;
+        margin-top: 7rem;
+    }
+
+    .containerImmpressum h1 {
+        font-size: 2.2rem;
+        text-align: center;
+
+    }
+
+    .companyDetails p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
