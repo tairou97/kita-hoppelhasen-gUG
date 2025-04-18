@@ -67,7 +67,6 @@ const Galerie = () => {
       { src: SuperHasen6, text: "Super-Hasen Bild 6" },
       { src: SuperHasen7, text: "Super-Hasen Bild 7" },
       { src: SuperHasen8, text: "Super-Hasen Bild 8" },
-      { src: SuperHasen9, text: "Super-Hasen Bild 9" },
       { src: SuperHasen10, text: "Super-Hasen Bild 10" },
     ],
     "hauseigene Küche": [
