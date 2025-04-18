@@ -12,6 +12,7 @@ import MiniHasen5 from "../../assets/image/miniHasen/mini5.png";
 import MiniHasen6 from "../../assets/image/miniHasen/mini6.png";
 import MiniHasen7 from "../../assets/image/miniHasen/mini7.png";
 import MiniHasen8 from "../../assets/image/miniHasen/mini8.png";
+import MiniHasen9 from "../../assets/image/miniHasen/mini9.png";
 import MiniHasen10 from "../../assets/image/miniHasen/mini10.png";
 import MiniHasen11 from "../../assets/image/miniHasen/mini11.png";
 import MiniHasen12 from "../../assets/image/miniHasen/mini12.png";
@@ -26,7 +27,6 @@ import SuperHasen5 from "../../assets/image/superHasen/super5.png";
 import SuperHasen6 from "../../assets/image/superHasen/super6.png";
 import SuperHasen7 from "../../assets/image/superHasen/super7.png";
 import SuperHasen8 from "../../assets/image/superHasen/super8.png";
-import SuperHasen9 from "../../assets/image/superHasen/super9.png";
 import SuperHasen10 from "../../assets/image/superHasen/super10.png";
 
 // Küche
