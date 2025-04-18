@@ -12,7 +12,7 @@ import SuperHasen5 from "../../assets/image/superHasen/super5.png";
 import SuperHasen6 from "../../assets/image/superHasen/super6.png";
 import SuperHasen7 from "../../assets/image/superHasen/super7.png";
 import SuperHasen8 from "../../assets/image/superHasen/super8.png";
-import SuperHasen9 from "../../assets/image/superHasen/super9.png";
+
 import SuperHasen10 from "../../assets/image/superHasen/super10.png";
 
 import "../SuperHasen/CardSliderSuper.css"; // Dein CSS-Datei einbinden
@@ -28,7 +28,7 @@ const CardSliderSuper = () => {
     SuperHasen6,
     SuperHasen7,
     SuperHasen8,
-    SuperHasen9,
+
     SuperHasen10,
   ];
 

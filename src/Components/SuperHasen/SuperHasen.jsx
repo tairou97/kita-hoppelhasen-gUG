@@ -14,22 +14,23 @@ const SuperHasen = () => {
       <div className="mini-text">
         <h1>Super Hasen</h1>
         <h2>
-          Super-Hasen: Kleine Umweltschützer bereit für die große Schulzeit
+          Von kleinen Entdeckern zu mutigen Schulstartern, unsere Super-Hasen
+          wachsen hinein
         </h2>
         <p>
-          Unsere Super-Hasen sind Kinder, die nicht nur voller Stolz auf die
-          Schule vorbereitet werden, sondern auch ein besonderes Bewusstsein für
-          die Umwelt entwickeln. Sie lernen spielerisch, wie wichtig es ist, die
-          Natur zu schützen, und entdecken kreative Möglichkeiten, selbst aktiv
-          dazu beizutragen.
+          Wenn Kinder bei uns zu Super-Hasen werden, dann merkt man: Da passiert
+          was! Sie sind stolz, wissbegierig und voller Tatendrang, sie spüren,
+          dass bald etwas Neues beginnt. Und wir unterstützen sie dabei, diesen
+          Schritt mit Freude und Selbstsicherheit zu gehen. Ob in kleinen
+          Projekten, beim Spielen oder im Alltag, die Kinder lernen, ihre
+          Meinung zu sagen, mit anderen zusammenzuarbeiten und ihre Ideen
+          einzubringen.
         </p>
         <p>
-          Mit spannenden Projekten, Ausflügen in die Natur und Aktivitäten wie
-          Müllsammeln erleben sie die Bedeutung des Naturschutzes hautnah.
-          Gleichzeitig fördern wir ihre sozialen, kreativen und kognitiven
-          Fähigkeiten, damit sie den nächsten Lebensabschnitt mit
-          Selbstvertrauen, Neugier und einem Sinn für Verantwortung beginnen
-          können.
+          Sie üben sich in Konzentration, entdecken Buchstaben und Zahlen,
+          basteln, forschen, und stellen viele Fragen. Auch über Themen wie
+          Natur, Umwelt oder „Wie kann ich helfen?“ sprechen wir gemeinsam. So
+          wächst ganz viel, nicht nur im Kopf, sondern auch im Herzen.
         </p>{" "}
         {/* <Flage />{" "} */}
       </div>

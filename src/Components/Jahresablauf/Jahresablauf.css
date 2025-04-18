@@ -127,14 +127,17 @@
 }
 
 @media screen and (max-width: 320px) {
+
+    .jahresablauf-container {}
+
     .jahres-header {
         font-size: 1.01rem;
-        padding: 0 1rem;
+        padding: 1rem;
     }
 
-    .box {
-        padding: 0 2rem;
-    }
+    .box {}
+
+    .box img {}
 
     .text {
         font-size: 1rem;

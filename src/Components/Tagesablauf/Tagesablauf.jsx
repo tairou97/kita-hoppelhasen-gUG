@@ -66,12 +66,11 @@ const Tagesablauf = () => {
           <div className="mittagessen">
             <h4>Mittagessen ab 11:00</h4>
             <p>
-              Die Kinder essen in ihren Stammgruppen. In der hauseigenen Küche
-              wird täglich frisch gekocht, wodurch eine gesunde und ausgewogene
-              Ernährung sichergestellt wird. Das gemeinsame Essen stärkt das
-              Gemeinschaftsgefühl und bietet den Kindern eine strukturierte
-              Pause. Zur Mittagszeit kommen beide Gruppen dafür zusammen und
-              genießen die Mahlzeit in gemeinsamer Runde.
+              Die Kinder essen gemeinsam in ihren Stammgruppen. In der
+              hauseigenen Küche wird täglich frisch gekocht, was eine gesunde
+              und ausgewogene Ernährung sicherstellt. Das gemeinsame Essen
+              stärkt das Gemeinschaftsgefühl und bietet den Kindern eine
+              strukturierte Pause.
             </p>
           </div>
         </motion.div>
@@ -105,10 +104,12 @@ const Tagesablauf = () => {
             <h4>Nachmittagszeit 14:30 - 16:30 Uhr</h4>
             <p>
               Während der Abholzeit können die Kinder den Tag bei freiem Spiel
-              im Haus oder Garten ausklingen lassen. Diese Phase bietet Raum für
-              soziale Interaktionen und kreative Aktivitäten, während Eltern
-              sich bei den Erzieher*innen über den Tagesverlauf austauschen
-              können.
+              im Haus oder im Garten ausklingen lassen. Diese Phase bietet Raum
+              für soziale Interaktionen und kreative Aktivitäten, während Eltern
+              sich mit den Erzieher*innen über den Tagesverlauf austauschen. Zum
+              Abschluss des Tages finden sich beide Gruppen zusammen und
+              genießen die letzten gemeinsamen Momente in vertrauter und
+              geborgener Atmosphäre.
             </p>
           </div>
         </motion.div>
