@@ -28,7 +28,6 @@ const CardSliderSuper = () => {
     SuperHasen6,
     SuperHasen7,
     SuperHasen8,
-
     SuperHasen10,
   ];
 
