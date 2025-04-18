@@ -10,8 +10,8 @@ const Impressum = () => {
         <p>
           Hoppelhasen gUG (haftungsbeschränkt)
           <br />
-          Schönefelder Chaussee 168 A<br />
-          12524 Berlin
+          Mandrellaplatz 3<br />
+          12555 Berlin
         </p>
 
         <h3>Vertreten durch</h3>
@@ -30,12 +30,12 @@ const Impressum = () => {
       <section className="contact">
         <h2>Kontakt</h2>
         <p>
-          Adresse: Schönefelder Chaussee 168 A, 12524 Berlin
+          Mandrellaplatz 3, 12555 Berlin , 12555 Berlin
           <br />
           {/* Platzhalter für Telefon und E-Mail - bitte ergänzen */}
-          Telefon: [Ihre Telefonnummer]
+          Telefon: 030/257 396 54
           <br />
-          E-Mail: [Ihre E-Mail-Adresse]
+          E-Mail: kita-hoppelhasen@web.de
         </p>
       </section>
 
