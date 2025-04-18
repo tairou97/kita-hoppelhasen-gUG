@@ -13,6 +13,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "box box box box ";
     margin-bottom: 3rem;
+    padding: 1rem;
 }
 
 .jahres-header {
@@ -35,7 +36,7 @@
     gap: 10px;
     animation: ease-in-out 1s;
     transition: 0.5s;
-
+    padding: .1rem;
     border-radius: 15px;
     background-color: rgba(84, 221, 153, 0);
     /* Leichte Transparenz */
@@ -128,6 +129,11 @@
 @media screen and (max-width: 320px) {
     .jahres-header {
         font-size: 1.01rem;
+        padding: 0 1rem;
+    }
+
+    .box {
+        padding: 0 2rem;
     }
 
     .text {
