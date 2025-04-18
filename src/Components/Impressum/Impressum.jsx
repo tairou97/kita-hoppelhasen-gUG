@@ -30,7 +30,7 @@ const Impressum = () => {
       <section className="contact">
         <h2>Kontakt</h2>
         <p>
-          Mandrellaplatz 3, 12555 Berlin , 12555 Berlin
+          Mandrellaplatz 3, 12555 Berlin
           <br />
           {/* Platzhalter für Telefon und E-Mail - bitte ergänzen */}
           Telefon: 030/257 396 54

@@ -75,7 +75,6 @@ const Galerie = () => {
       { src: Küche1, text: "Küche Bild 1" },
       { src: Küche2, text: "Küche Bild 2" },
       { src: Küche3, text: "Küche Bild 3" },
-      { src: Küche3, text: "Küche Bild 4" },
     ],
     Spielplatz: [
       { src: Spielplatz1, text: "Spielplatz Bild 1" },
@@ -83,7 +82,6 @@ const Galerie = () => {
       { src: Spielplatz3, text: "Spielplatz Bild 3" },
       { src: Spielplatz4, text: "Spielplatz Bild 4" },
       { src: Spielplatz5, text: "Spielplatz Bild 5" },
-      { src: Spielplatz6, text: "Spielplatz Bild 6" },
     ],
   };
 
